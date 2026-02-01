@@ -1,0 +1,892 @@
+[
+  {
+    "question": "Which SDLC phase ensures the system aligns with business needs?",
+    "choices": [
+      "Implementation",
+      "Design",
+      "Requirements Analysis",
+      "Testing"
+    ],
+    "answer": "Requirements Analysis"
+  },
+  {
+    "question": "Which testing ensures modules work together correctly?",
+    "choices": [
+      "Unit Testing",
+      "Integration Testing",
+      "Regression Testing",
+      "Stress Testing"
+    ],
+    "answer": "Integration Testing"
+  },
+  {
+    "question": "Which testing validates the full system functionality?",
+    "choices": [
+      "Unit Testing",
+      "Integration Testing",
+      "System Testing",
+      "Smoke Testing"
+    ],
+    "answer": "System Testing"
+  },
+  {
+    "question": "Which design pattern notifies objects when state changes?",
+    "choices": [
+      "Singleton",
+      "Observer",
+      "Factory",
+      "Adapter"
+    ],
+    "answer": "Observer"
+  },
+  {
+    "question": "In MVC, which part handles business logic?",
+    "choices": [
+      "Model",
+      "View",
+      "Controller",
+      "Database"
+    ],
+    "answer": "Model"
+  },
+  {
+    "question": "Which Git command initializes a repository?",
+    "choices": [
+      "git clone",
+      "git init",
+      "git push",
+      "git status"
+    ],
+    "answer": "git init"
+  },
+  {
+    "question": "Which Git command copies a remote repository?",
+    "choices": [
+      "git clone",
+      "git init",
+      "git pull",
+      "git checkout"
+    ],
+    "answer": "git clone"
+  },
+  {
+    "question": "Which Git command uploads commits to a remote?",
+    "choices": [
+      "git commit",
+      "git add",
+      "git push",
+      "git init"
+    ],
+    "answer": "git push"
+  },
+  {
+    "question": "Which Git command creates a new branch?",
+    "choices": [
+      "git init",
+      "git branch",
+      "git clone",
+      "git log"
+    ],
+    "answer": "git branch"
+  },
+  {
+    "question": "Which Git command combines branch changes?",
+    "choices": [
+      "git checkout",
+      "git merge",
+      "git clone",
+      "git init"
+    ],
+    "answer": "git merge"
+  },
+  {
+    "question": "Which Git command shows current file states?",
+    "choices": [
+      "git status",
+      "git log",
+      "git merge",
+      "git push"
+    ],
+    "answer": "git status"
+  },
+  {
+    "question": "Which practice improves readability?",
+    "choices": [
+      "Random variable names",
+      "Meaningful variable names",
+      "Long functions",
+      "Inline logic everywhere"
+    ],
+    "answer": "Meaningful variable names"
+  },
+  {
+    "question": "Which principle encourages short, focused functions?",
+    "choices": [
+      "DRY",
+      "Single Responsibility Principle",
+      "KISS",
+      "YAGNI"
+    ],
+    "answer": "Single Responsibility Principle"
+  },
+  {
+    "question": "Which loop iterates over sequences?",
+    "choices": [
+      "if",
+      "for",
+      "while",
+      "break"
+    ],
+    "answer": "for"
+  },
+  {
+    "question": "Which loop runs while a condition is true?",
+    "choices": [
+      "for",
+      "while",
+      "until",
+      "repeat"
+    ],
+    "answer": "while"
+  },
+  {
+    "question": "Which Python structure is immutable?",
+    "choices": [
+      "List",
+      "Dictionary",
+      "Tuple",
+      "Set"
+    ],
+    "answer": "Tuple"
+  },
+  {
+    "question": "Which Python structure stores key-value pairs?",
+    "choices": [
+      "List",
+      "Tuple",
+      "Dictionary",
+      "Array"
+    ],
+    "answer": "Dictionary"
+  },
+  {
+    "question": "Which function opens files in Python?",
+    "choices": [
+      "get()",
+      "open()",
+      "load()",
+      "read()"
+    ],
+    "answer": "open()"
+  },
+  {
+    "question": "Which format is lightweight and commonly used in APIs?",
+    "choices": [
+      "XML",
+      "JSON",
+      "YAML",
+      "HTML"
+    ],
+    "answer": "JSON"
+  },
+  {
+    "question": "JSON arrays are represented with:",
+    "choices": [
+      "{}",
+      "[]",
+      "<>",
+      "–"
+    ],
+    "answer": "[]"
+  },
+  {
+    "question": "What is the primary purpose of an API?",
+    "choices": [
+      "To allow software to communicate with hardware",
+      "To allow one piece of software to communicate with another",
+      "To replace operating systems",
+      "To configure network devices"
+    ],
+    "answer": "To allow one piece of software to communicate with another"
+  },
+  {
+    "question": "Which API design style waits for a response before continuing execution?",
+    "choices": [
+      "Asynchronous",
+      "Synchronous",
+      "REST",
+      "RPC"
+    ],
+    "answer": "Synchronous"
+  },
+  {
+    "question": "Which of the following is NOT one of the six REST principles?",
+    "choices": [
+      "Client-Server",
+      "Stateless",
+      "Cache",
+      "Multi-threading"
+    ],
+    "answer": "Multi-threading"
+  },
+  {
+    "question": "Which REST component identifies which resource the client wants to manipulate?",
+    "choices": [
+      "Header",
+      "Body",
+      "Uniform Resource Identifier (URI)",
+      "Method"
+    ],
+    "answer": "Uniform Resource Identifier (URI)"
+  },
+  {
+    "question": "Which HTTP method is used to remove a resource?",
+    "choices": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which part of a URI specifies the protocol (http/https)?",
+    "choices": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Query"
+    ],
+    "answer": "Scheme"
+  },
+  {
+    "question": "Which part of a URI represents the host and port?",
+    "choices": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Query"
+    ],
+    "answer": "Authority"
+  },
+  {
+    "question": "Which category of HTTP status codes indicates success?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "3xx",
+      "4xx"
+    ],
+    "answer": "2xx"
+  },
+  {
+    "question": "Which HTTP status code means ‘OK’?",
+    "choices": [
+      "200",
+      "201",
+      "400",
+      "404"
+    ],
+    "answer": "200"
+  },
+  {
+    "question": "Which HTTP status code means ‘Created’?",
+    "choices": [
+      "200",
+      "201",
+      "204",
+      "500"
+    ],
+    "answer": "201"
+  },
+  {
+    "question": "Which HTTP status code means ‘No Content’?",
+    "choices": [
+      "200",
+      "201",
+      "204",
+      "404"
+    ],
+    "answer": "204"
+  },
+  {
+    "question": "Which HTTP status code means ‘Unauthorized’?",
+    "choices": [
+      "400",
+      "401",
+      "403",
+      "404"
+    ],
+    "answer": "401"
+  },
+  {
+    "question": "Which HTTP status code means ‘Forbidden’?",
+    "choices": [
+      "400",
+      "401",
+      "403",
+      "500"
+    ],
+    "answer": "403"
+  },
+  {
+    "question": "Which HTTP status code means ‘Not Found’?",
+    "choices": [
+      "200",
+      "201",
+      "400",
+      "404"
+    ],
+    "answer": "404"
+  },
+  {
+    "question": "Which authentication mechanism transmits Base64 encoded credentials?",
+    "choices": [
+      "Basic Authentication",
+      "Bearer Token",
+      "API Key",
+      "OAuth"
+    ],
+    "answer": "Basic Authentication"
+  },
+  {
+    "question": "Which protocol is widely used for combining authentication and authorization?",
+    "choices": [
+      "Basic Authentication",
+      "Bearer Token",
+      "API Key",
+      "OAuth"
+    ],
+    "answer": "OAuth"
+  },
+  {
+    "question": "An API Rate Limit is primarily used to:",
+    "choices": [
+      "Increase server load",
+      "Prevent overload and DoS attacks",
+      "Allow unlimited access",
+      "Encrypt traffic"
+    ],
+    "answer": "Prevent overload and DoS attacks"
+  },
+  {
+    "question": "Which rate limit algorithm uses a queue and processes at a fixed rate?",
+    "choices": [
+      "Leaky Bucket",
+      "Token Bucket",
+      "Fixed Window Counter",
+      "Sliding Window Counter"
+    ],
+    "answer": "Leaky Bucket"
+  },
+  {
+    "question": "Which rate limit algorithm uses tokens consumed per request?",
+    "choices": [
+      "Leaky Bucket",
+      "Token Bucket",
+      "Fixed Window Counter",
+      "Sliding Window Counter"
+    ],
+    "answer": "Token Bucket"
+  },
+  {
+    "question": "Which rate limit algorithm checks requests within a moving time frame?",
+    "choices": [
+      "Leaky Bucket",
+      "Token Bucket",
+      "Fixed Window Counter",
+      "Sliding Window Counter"
+    ],
+    "answer": "Sliding Window Counter"
+  },
+  {
+    "question": "What does the HTTP header ‘X-RateLimit-Remaining’ represent?",
+    "choices": [
+      "Max requests per time unit",
+      "Remaining requests allowed",
+      "Reset time",
+      "Total connections"
+    ],
+    "answer": "Remaining requests allowed"
+  },
+  {
+    "question": "Which requirement is necessary to consume a webhook?",
+    "choices": [
+      "Application must be running to receive HTTP POST",
+      "Application must send a GET request",
+      "Application must disable SSL",
+      "Application must poll the server"
+    ],
+    "answer": "Application must be running to receive HTTP POST"
+  },
+  {
+    "question": "Which error category represents server-side mistakes?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "4xx",
+      "5xx"
+    ],
+    "answer": "5xx"
+  },
+  {
+    "question": "Which SDLC model delivers software in sequential steps?",
+    "choices": [
+      "Agile",
+      "Waterfall",
+      "Scrum",
+      "Kanban"
+    ],
+    "answer": "Waterfall"
+  },
+  {
+    "question": "Continuous Integration (CI) focuses on:",
+    "choices": [
+      "Writing documentation",
+      "Frequently merging code changes",
+      "Replacing Agile",
+      "Final deployment"
+    ],
+    "answer": "Frequently merging code changes"
+  },
+  {
+    "question": "Which testing checks system behavior under heavy load?",
+    "choices": [
+      "Unit Testing",
+      "Regression Testing",
+      "Stress Testing",
+      "Acceptance Testing"
+    ],
+    "answer": "Stress Testing"
+  },
+  {
+    "question": "Which testing ensures old features still work after changes?",
+    "choices": [
+      "Smoke Testing",
+      "Regression Testing",
+      "System Testing",
+      "Load Testing"
+    ],
+    "answer": "Regression Testing"
+  },
+  {
+    "question": "In MVC, which part interacts with the user?",
+    "choices": [
+      "Model",
+      "View",
+      "Controller",
+      "API"
+    ],
+    "answer": "View"
+  },
+  {
+    "question": "In MVC, which part processes input and updates the model?",
+    "choices": [
+      "Model",
+      "View",
+      "Controller",
+      "Database"
+    ],
+    "answer": "Controller"
+  },
+  {
+    "question": "Which keyword defines a function in Python?",
+    "choices": [
+      "function",
+      "def",
+      "func",
+      "return"
+    ],
+    "answer": "def"
+  },
+  {
+    "question": "Which keyword is used for decision-making?",
+    "choices": [
+      "if",
+      "for",
+      "while",
+      "else"
+    ],
+    "answer": "if"
+  },
+  {
+    "question": "Which statement exits a loop early?",
+    "choices": [
+      "continue",
+      "break",
+      "stop",
+      "return"
+    ],
+    "answer": "break"
+  },
+  {
+    "question": "Which format uses tags to store data?",
+    "choices": [
+      "XML",
+      "JSON",
+      "YAML",
+      "CSV"
+    ],
+    "answer": "XML"
+  },
+  {
+    "question": "Which format is indentation-sensitive?",
+    "choices": [
+      "JSON",
+      "XML",
+      "YAML",
+      "CSV"
+    ],
+    "answer": "YAML"
+  },
+  {
+    "question": "Which of these is NOT a characteristic of SOAP?",
+    "choices": [
+      "Independent",
+      "Neutral",
+      "Extensible",
+      "Stateless"
+    ],
+    "answer": "Stateless"
+  },
+  {
+    "question": "Which HTTP method is used to retrieve data from a server?",
+    "choices": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "answer": "GET"
+  },
+  {
+    "question": "In an HTTP header, information is formatted as:",
+    "choices": [
+      "Key=Value",
+      "Name:Value",
+      "Value-Name",
+      "Data|Type"
+    ],
+    "answer": "Name:Value"
+  },
+  {
+    "question": "Which part of a URI provides filtering or additional request details?",
+    "choices": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Query"
+    ],
+    "answer": "Query"
+  },
+  {
+    "question": "Which category of HTTP status codes indicates client error?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "3xx",
+      "4xx"
+    ],
+    "answer": "4xx"
+  },
+  {
+    "question": "Which HTTP status code means ‘Bad Request’?",
+    "choices": [
+      "400",
+      "401",
+      "403",
+      "500"
+    ],
+    "answer": "400"
+  },
+  {
+    "question": "Authentication proves:",
+    "choices": [
+      "Identity of the user",
+      "Permissions of the user",
+      "Data encryption",
+      "Server availability"
+    ],
+    "answer": "Identity of the user"
+  },
+  {
+    "question": "Which authentication mechanism uses a string generated by an authentication server?",
+    "choices": [
+      "Basic Authentication",
+      "Bearer Token",
+      "API Key",
+      "Session ID"
+    ],
+    "answer": "Bearer Token"
+  },
+  {
+    "question": "Which rate limit algorithm resets requests per fixed time window?",
+    "choices": [
+      "Leaky Bucket",
+      "Token Bucket",
+      "Fixed Window Counter",
+      "Sliding Window Counter"
+    ],
+    "answer": "Fixed Window Counter"
+  },
+  {
+    "question": "A Webhook is also known as:",
+    "choices": [
+      "Forward API",
+      "Reverse API",
+      "RESTful API",
+      "Proxy API"
+    ],
+    "answer": "Reverse API"
+  },
+  {
+    "question": "Which status code means ‘Internal Server Error’?",
+    "choices": [
+      "500",
+      "404",
+      "403",
+      "200"
+    ],
+    "answer": "500"
+  },
+  {
+    "question": "Which status code means ‘Service Unavailable’?",
+    "choices": [
+      "200",
+      "400",
+      "502",
+      "503"
+    ],
+    "answer": "503"
+  },
+  {
+    "question": "What is the primary advantage of Agile?",
+    "choices": [
+      "Heavy documentation",
+      "Flexibility and adaptability",
+      "Long release cycles",
+      "Predictability"
+    ],
+    "answer": "Flexibility and adaptability"
+  },
+  {
+    "question": "Which Agile framework is based on sprints and stand-ups?",
+    "choices": [
+      "Kanban",
+      "Scrum",
+      "XP",
+      "Lean"
+    ],
+    "answer": "Scrum"
+  },
+  {
+    "question": "Which Agile principle emphasizes customer involvement?",
+    "choices": [
+      "Documentation",
+      "Customer collaboration",
+      "Following a strict plan",
+      "Ignoring change"
+    ],
+    "answer": "Customer collaboration"
+  },
+  {
+    "question": "Which Git command saves changes permanently to history?",
+    "choices": [
+      "git add",
+      "git commit",
+      "git log",
+      "git branch"
+    ],
+    "answer": "git commit"
+  },
+  {
+    "question": "Which principle says “Don’t Repeat Yourself”?",
+    "choices": [
+      "DRY",
+      "KISS",
+      "SOLID",
+      "Agile"
+    ],
+    "answer": "DRY"
+  },
+  {
+    "question": "Which of the following makes code harder to maintain?",
+    "choices": [
+      "Modular functions",
+      "Proper naming",
+      "Code duplication",
+      "Clear comments"
+    ],
+    "answer": "Code duplication"
+  },
+  {
+    "question": "Which is the main advantage of YAML?",
+    "choices": [
+      "Machine efficiency",
+      "Human readability",
+      "Binary storage",
+      "Complexity"
+    ],
+    "answer": "Human readability"
+  },
+  {
+    "question": "Which of the following is NOT a benefit of using APIs?",
+    "choices": [
+      "Automation",
+      "Data Integration",
+      "Manual Data Entry",
+      "Functionality extension"
+    ],
+    "answer": "Manual Data Entry"
+  },
+  {
+    "question": "Which category of HTTP status codes indicates server error?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "3xx",
+      "5xx"
+    ],
+    "answer": "5xx"
+  },
+  {
+    "question": "Authorization defines:",
+    "choices": [
+      "Identity of the user",
+      "Permissions of the user",
+      "Encryption standards",
+      "Token format"
+    ],
+    "answer": "Permissions of the user"
+  },
+  {
+    "question": "Which error category represents client-side mistakes?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "4xx",
+      "5xx"
+    ],
+    "answer": "4xx"
+  },
+  {
+    "question": "Which Git command shows repository history?",
+    "choices": [
+      "git status",
+      "git log",
+      "git init",
+      "git commit"
+    ],
+    "answer": "git log"
+  },
+  {
+    "question": "Which API design style allows execution to continue while waiting for a response?",
+    "choices": [
+      "Asynchronous",
+      "Synchronous",
+      "REST",
+      "SOAP"
+    ],
+    "answer": "Asynchronous"
+  },
+  {
+    "question": "SOAP uses which format for messaging?",
+    "choices": [
+      "JSON",
+      "YAML",
+      "XML",
+      "CSV"
+    ],
+    "answer": "XML"
+  },
+  {
+    "question": "REST was authored by:",
+    "choices": [
+      "Roy Thomas Fielding",
+      "Tim Berners-Lee",
+      "Linus Torvalds",
+      "Dennis Ritchie"
+    ],
+    "answer": "Roy Thomas Fielding"
+  },
+  {
+    "question": "Which HTTP method is used to update an existing resource?",
+    "choices": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH"
+    ],
+    "answer": "PUT"
+  },
+  {
+    "question": "Which part of a URI represents the location of the resource?",
+    "choices": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Query"
+    ],
+    "answer": "Path"
+  },
+  {
+    "question": "Which authentication method uses unique alphanumeric keys assigned to users?",
+    "choices": [
+      "Basic Authentication",
+      "Bearer Token",
+      "API Key",
+      "Certificate"
+    ],
+    "answer": "API Key"
+  },
+  {
+    "question": "Which version of OAuth is not backward compatible?",
+    "choices": [
+      "OAuth 1.0",
+      "OAuth 2.0",
+      "OAuth 3.0",
+      "None"
+    ],
+    "answer": "OAuth 2.0"
+  },
+  {
+    "question": "YAML lists are represented with:",
+    "choices": [
+      "{}",
+      "Dash (- )",
+      "[]",
+      "<>"
+    ],
+    "answer": "Dash (- )"
+  },
+  {
+    "question": "Which HTTP status code means ‘Too Many Requests’?",
+    "choices": [
+      "429",
+      "403",
+      "500",
+      "503"
+    ],
+    "answer": "429"
+  },
+  {
+    "question": "What does API stand for?",
+    "choices": [
+      "Application Processing Integration",
+      "Application Programming Interface",
+      "Advanced Program Interaction",
+      "Automated Protocol Interface"
+    ],
+    "answer": "Application Programming Interface"
+  },
+  {
+    "question": "Which design pattern ensures only one instance of a class exists?",
+    "choices": [
+      "Singleton",
+      "Observer",
+      "Factory",
+      "Strategy"
+    ],
+    "answer": "Singleton"
+  }
+]

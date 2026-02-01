@@ -1,117 +1,124 @@
 [
-    {
-        "id": "dev-net",
-        "name": "Development Network",
-        "modules": [
-            {
-                "id": 1,
-                "name": "M1 – (Formative + NetAcad)",
-                "checkpoints": [
-                    "checkpoint1"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "M2 – (Formative + NetAcad)",
-                "checkpoints": [
-                    "checkpoint2"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "S1",
-                "checkpoints": [
-                    "checkpoint3"
-                ]
-            },
-            {
-                "id": 4,
-                "name": "M3 – (NetAcad)",
-                "checkpoints": [
-                    "checkpoint4"
-                ]
-            },
-            {
-                "id": 5,
-                "name": "M4 – (NetAcad)",
-                "checkpoints": [
-                    "checkpoint5"
-                ]
-            }
+  {
+    "id": "dev-net",
+    "name": "Development Network",
+    "modules": [
+      {
+        "id": 1,
+        "name": "M1 – (Formative + NetAcad)",
+        "checkpoints": [
+          "checkpoint1"
         ]
-    },
-    {
-        "id": "ecom",
-        "name": "E-Commerce With Digital Marketing",
-        "modules": [
-            {
-                "id": 1,
-                "name": "Module 1",
-                "checkpoints": [
-                    "checkpoint1"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Module 2",
-                "checkpoints": [
-                    "checkpoint2"
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Module 3",
-                "checkpoints": [
-                    "checkpoint3"
-                ]
-            },
-            {
-                "id": 4,
-                "name": "Module 4",
-                "checkpoints": [
-                    "checkpoint4"
-                ]
-            }
+      },
+      {
+        "id": 2,
+        "name": "M2 – (Formative + NetAcad)",
+        "checkpoints": [
+          "checkpoint2"
         ]
-    },
-    {
-        "id": "hci2",
-        "name": "Human Computer Interaction 2",
-        "modules": [
-            {
-                "id": 1,
-                "name": "Module 1",
-                "checkpoints": [
-                    "checkpoint1"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Module 2",
-                "checkpoints": [
-                    "checkpoint2"
-                ]
-            }
+      },
+      {
+        "id": 3,
+        "name": "S1 (M1 & M2)",
+        "checkpoints": [
+          "checkpoint3"
         ]
-    },
-    {
-        "id": "sys-integ",
-        "name": "Systems Integration And Architecture 1",
-        "modules": [
-            {
-                "id": 1,
-                "name": "Module 1",
-                "checkpoints": [
-                    "checkpoint1"
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Module 2",
-                "checkpoints": [
-                    "checkpoint2"
-                ]
-            }
+      },
+      {
+        "id": 4,
+        "name": "M3 – (NetAcad)",
+        "checkpoints": [
+          "checkpoint4"
         ]
-    }
+      },
+      {
+        "id": 5,
+        "name": "M4 – (NetAcad)",
+        "checkpoints": [
+          "checkpoint5"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "S2 (M3 & M4)",
+        "checkpoints": [
+          "checkpoint6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecom",
+    "name": "E-Commerce With Digital Marketing",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Module 1",
+        "checkpoints": [
+          "checkpoint1"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Module 2",
+        "checkpoints": [
+          "checkpoint2"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Module 3",
+        "checkpoints": [
+          "checkpoint3"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Module 4",
+        "checkpoints": [
+          "checkpoint4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hci2",
+    "name": "Human Computer Interaction 2",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Module 1",
+        "checkpoints": [
+          "checkpoint1"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Module 2",
+        "checkpoints": [
+          "checkpoint2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sys-integ",
+    "name": "Systems Integration And Architecture 1",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Module 1",
+        "checkpoints": [
+          "checkpoint1"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Module 2",
+        "checkpoints": [
+          "checkpoint2"
+        ]
+      }
+    ]
+  }
 ]
