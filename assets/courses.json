@@ -1,0 +1,44 @@
+[
+    {
+        "id": "dev-net",
+        "name": "Development Network",
+        "description": "DevNet Associate Certification",
+        "modules": [
+            {
+                "id": 1,
+                "name": "M1 – (Formative + NetAcad)",
+                "checkpoints": [
+                    "checkpoint1"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "M2 – (Formative + NetAcad)",
+                "checkpoints": [
+                    "checkpoint2"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "S1",
+                "checkpoints": [
+                    "checkpoint3"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "M3 – (NetAcad)",
+                "checkpoints": [
+                    "checkpoint4"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "M4 – (NetAcad)",
+                "checkpoints": [
+                    "checkpoint5"
+                ]
+            }
+        ]
+    }
+]
