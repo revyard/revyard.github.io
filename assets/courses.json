@@ -19,7 +19,7 @@
       },
       {
         "id": 3,
-        "name": "S1 (M1 & M2)",
+        "name": "S1 – (M1 & M2)",
         "checkpoints": [
           "checkpoint3"
         ]
@@ -40,7 +40,7 @@
       },
       {
         "id": 6,
-        "name": "S2 (M3 & M4)",
+        "name": "S2 – (M3 & M4)",
         "checkpoints": [
           "checkpoint6"
         ]
