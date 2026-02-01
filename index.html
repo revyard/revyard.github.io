@@ -674,7 +674,6 @@
     <!-- Course Selection Screen -->
     <div class="container" id="courseMenu">
         <h1>RevYard</h1>
-        <p class="page-subtitle">Select a course to begin</p>
 
         <div id="courseChoices">
             <!-- Courses will be dynamically loaded here -->
@@ -688,7 +687,6 @@
     <!-- Module Selection Screen -->
     <div class="container" id="mainMenu" style="display: none;">
         <h1 id="courseTitle">Course Name</h1>
-        <h2 id="courseSubtitle">Select modules</h2>
 
         <div id="moduleChoices">
             <!-- Modules will be dynamically loaded here -->
@@ -780,7 +778,6 @@
                 courseCard.onclick = () => selectCourse(course);
                 courseCard.innerHTML = `
                     <div class="course-name">${course.name}</div>
-                    <div class="course-description">${course.description}</div>
                 `;
                 courseChoices.appendChild(courseCard);
             });
@@ -792,7 +789,6 @@
 
             // Update module menu title
             document.getElementById('courseTitle').textContent = course.name;
-            document.getElementById('courseSubtitle').textContent = 'Select modules';
 
             // Display modules
             const moduleChoices = document.getElementById('moduleChoices');

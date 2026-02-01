@@ -2,7 +2,6 @@
     {
         "id": "dev-net",
         "name": "Development Network",
-        "description": "DevNet Associate Certification",
         "modules": [
             {
                 "id": 1,

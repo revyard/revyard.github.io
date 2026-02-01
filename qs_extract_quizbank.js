@@ -2,17 +2,117 @@ const fs = require('fs');
 const { JSDOM } = require('jsdom');
 const path = require('path');
 
-// Get checkpoint filename from command line argument
-const checkpointName = process.argv[2];
+// Get course folder and checkpoint filename from command line arguments
+const courseFolder = process.argv[2];
+const checkpointName = process.argv[3];
 
-if (!checkpointName) {
-  console.error('❌ Please provide a checkpoint name: node extractCheckpoint.js <name>');
-  console.error('   Example: node extractCheckpoint.js checkpoint1.2');
+if (!courseFolder || !checkpointName) {
+  console.error('❌ Usage: node qs_extract_quizbank.js <course_folder> <checkpoint_name>');
+  console.error('   Example: node qs_extract_quizbank.js dev-net checkpoint1');
   process.exit(1);
 }
 
-const htmlPath = `./assets/html/${checkpointName}.html`;
-const jsonPath = `./assets/json/${checkpointName}.json`;
+// Ensure course structure exists
+function ensureCourseStructure(courseFolder) {
+  const assetsDir = 'assets';
+  const courseDir = path.join(assetsDir, courseFolder);
+  const htmlDir = path.join(courseDir, 'html');
+  const jsonDir = path.join(courseDir, 'json');
+
+  // Create directories if they don't exist
+  if (!fs.existsSync(htmlDir)) {
+    fs.mkdirSync(htmlDir, { recursive: true });
+    console.log(`📁 Created: ${htmlDir}`);
+  }
+  if (!fs.existsSync(jsonDir)) {
+    fs.mkdirSync(jsonDir, { recursive: true });
+    console.log(`📁 Created: ${jsonDir}`);
+  }
+
+  // Update courses.json if course doesn't exist
+  const coursesFile = path.join(assetsDir, 'courses.json');
+  let courses = [];
+
+  if (fs.existsSync(coursesFile)) {
+    courses = JSON.parse(fs.readFileSync(coursesFile, 'utf-8'));
+  }
+
+  const courseExists = courses.some(c => c.id === courseFolder);
+
+  if (!courseExists) {
+    const courseName = courseFolder
+      .replace(/-/g, ' ')
+      .replace(/_/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase());
+
+    const newCourse = {
+      id: courseFolder,
+      name: courseName,
+      modules: []
+    };
+    courses.push(newCourse);
+
+    fs.writeFileSync(coursesFile, JSON.stringify(courses, null, 2), 'utf-8');
+    console.log(`📝 Added course "${courseName}" to courses.json`);
+  }
+
+  return { courseDir, htmlDir, jsonDir };
+}
+
+// Update course module in courses.json
+function updateCourseModule(courseFolder, checkpointName) {
+  const coursesFile = 'assets/courses.json';
+
+  if (!fs.existsSync(coursesFile)) return;
+
+  const courses = JSON.parse(fs.readFileSync(coursesFile, 'utf-8'));
+
+  for (const course of courses) {
+    if (course.id === courseFolder) {
+      const modules = course.modules || [];
+
+      // Check if checkpoint already exists in any module
+      let checkpointExists = false;
+      for (const module of modules) {
+        if (module.checkpoints && module.checkpoints.includes(checkpointName)) {
+          checkpointExists = true;
+          break;
+        }
+      }
+
+      if (!checkpointExists) {
+        // Determine next module ID
+        const existingIds = modules.map(m => m.id || 0);
+        const nextId = Math.max(0, ...existingIds) + 1;
+
+        // Create new module
+        const moduleName = checkpointName
+          .replace(/_/g, ' ')
+          .replace(/-/g, ' ')
+          .replace(/\b\w/g, c => c.toUpperCase());
+
+        const newModule = {
+          id: nextId,
+          name: moduleName,
+          checkpoints: [checkpointName]
+        };
+        modules.push(newModule);
+        course.modules = modules;
+
+        fs.writeFileSync(coursesFile, JSON.stringify(courses, null, 2), 'utf-8');
+        console.log(`📚 Added module: ${checkpointName} (ID: ${nextId})`);
+      }
+
+      break;
+    }
+  }
+}
+
+// Ensure course structure
+const { htmlDir, jsonDir } = ensureCourseStructure(courseFolder);
+
+const htmlPath = path.join(htmlDir, `${checkpointName}.html`);
+const jsonPath = path.join(jsonDir, `${checkpointName}.json`);
 
 // Check if HTML file exists
 if (!fs.existsSync(htmlPath)) {
@@ -124,6 +224,9 @@ questionElements.forEach((questionEl) => {
 
 // Write to JSON file
 fs.writeFileSync(jsonPath, JSON.stringify(extractedQuestions, null, 2), 'utf-8');
+
+// Update courses.json with the new module
+updateCourseModule(courseFolder, checkpointName);
 
 // Display results
 console.log(`\n📊 ${checkpointName} - Comparison:`);

@@ -5,8 +5,8 @@ HTML Quiz Parser - Extracts quiz questions from HTML and converts to JSON format
 This script automatically installs required dependencies (beautifulsoup4) if not present.
 No manual dependency installation required!
 
-Usage: python3 html_to_json_parser.py <html_file_path>
-Example: python3 html_to_json_parser.py assets/html/checkpoint1.html
+Usage: python3 qs_extract_ccna.py <course_folder> <html_file_path>
+Example: python3 qs_extract_ccna.py dev-net assets/dev-net/html/checkpoint1.html
 """
 
 import re
@@ -426,12 +426,108 @@ def validate_questions(questions, output_file_path):
     
     return len(errors) == 0
 
+def ensure_course_structure(course_folder):
+    """Create course folder structure and update courses.json if needed"""
+    assets_dir = Path('assets')
+    course_dir = assets_dir / course_folder
+    html_dir = course_dir / 'html'
+    json_dir = course_dir / 'json'
+    
+    # Create directories
+    html_dir.mkdir(parents=True, exist_ok=True)
+    json_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Update courses.json if course doesn't exist
+    courses_file = assets_dir / 'courses.json'
+    
+    if courses_file.exists():
+        with open(courses_file, 'r', encoding='utf-8') as f:
+            courses = json.load(f)
+    else:
+        courses = []
+    
+    # Check if course already exists
+    course_exists = any(c['id'] == course_folder for c in courses)
+    
+    if not course_exists:
+        # Add new course with a formatted name
+        course_name = course_folder.replace('-', ' ').replace('_', ' ').title()
+        new_course = {
+            "id": course_folder,
+            "name": course_name,
+            "modules": []
+        }
+        courses.append(new_course)
+        
+        with open(courses_file, 'w', encoding='utf-8') as f:
+            json.dump(courses, f, indent=2, ensure_ascii=False)
+        
+        print(f"📁 Created course: {course_folder}")
+        print(f"📝 Added to courses.json")
+    
+    return course_dir, json_dir
+
+def update_course_module(course_folder, checkpoint_name):
+    """Add or update a module in the course's modules list"""
+    courses_file = Path('assets/courses.json')
+    
+    if not courses_file.exists():
+        return
+    
+    with open(courses_file, 'r', encoding='utf-8') as f:
+        courses = json.load(f)
+    
+    # Find the course
+    for course in courses:
+        if course['id'] == course_folder:
+            modules = course.get('modules', [])
+            
+            # Check if checkpoint already exists in any module
+            checkpoint_exists = False
+            for module in modules:
+                if checkpoint_name in module.get('checkpoints', []):
+                    checkpoint_exists = True
+                    break
+            
+            if not checkpoint_exists:
+                # Determine module ID (next available)
+                existing_ids = [m.get('id', 0) for m in modules]
+                next_id = max(existing_ids, default=0) + 1
+                
+                # Create new module
+                new_module = {
+                    "id": next_id,
+                    "name": checkpoint_name.replace('_', ' ').replace('-', ' ').title(),
+                    "checkpoints": [checkpoint_name]
+                }
+                modules.append(new_module)
+                course['modules'] = modules
+                
+                with open(courses_file, 'w', encoding='utf-8') as f:
+                    json.dump(courses, f, indent=2, ensure_ascii=False)
+                
+                print(f"📚 Added module: {checkpoint_name} (ID: {next_id})")
+            
+            break
+
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python qs_extract_ccna.py <html_file_path>")
+    if len(sys.argv) != 3:
+        print("Usage: python qs_extract_ccna.py <course_folder> <html_file_path>")
+        print("Example: python qs_extract_ccna.py dev-net checkpoint1.html")
+        print("         python qs_extract_ccna.py ccna assets/ccna/html/module1.html")
         sys.exit(1)
     
-    html_file_path = Path(sys.argv[1])
+    course_folder = sys.argv[1]
+    html_file_arg = sys.argv[2]
+    
+    # Ensure course structure exists
+    course_dir, json_dir = ensure_course_structure(course_folder)
+    
+    # Determine HTML file path
+    html_file_path = Path(html_file_arg)
+    if not html_file_path.exists():
+        # Try relative to course html folder
+        html_file_path = course_dir / 'html' / html_file_arg
     
     if not html_file_path.exists():
         print(f"Error: File {html_file_path} does not exist")
@@ -450,14 +546,7 @@ def main():
     
     # Determine output file path
     input_name = html_file_path.stem
-    
-    if 'html' in str(html_file_path.parent):
-        output_dir = Path(str(html_file_path.parent).replace('html', 'json'))
-    else:
-        output_dir = html_file_path.parent
-    
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_file_path = output_dir / f"{input_name}.json"
+    output_file_path = json_dir / f"{input_name}.json"
     
     # Write JSON output
     try:
@@ -470,6 +559,9 @@ def main():
     except Exception as e:
         print(f"Error writing JSON file: {e}")
         sys.exit(1)
+    
+    # Update courses.json with the new module
+    update_course_module(course_folder, input_name)
     
     # Run quality validation
     success = validate_questions(questions, output_file_path)
