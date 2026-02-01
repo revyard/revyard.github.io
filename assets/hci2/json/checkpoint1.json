@@ -1,0 +1,262 @@
+[
+  {
+    "question": "Who is the author of The Design of Everyday Things?",
+    "choices": [
+      "Ben Shneiderman",
+      "Steve Krug",
+      "Jakob Nielsen",
+      "Don Norman"
+    ],
+    "answer": "Don Norman"
+  },
+  {
+    "question": "What is the focus of industrial designers?",
+    "choices": [
+      "Emotional impact",
+      "Usability",
+      "Interface layout",
+      "Form and material"
+    ],
+    "answer": "Form and material"
+  },
+  {
+    "question": "Which of the following is a tangible user interface example?",
+    "choices": [
+      "Smartwatch",
+      "Smartphone",
+      "Laptop",
+      "Reactable"
+    ],
+    "answer": "Reactable"
+  },
+  {
+    "question": "What does Ben Shneiderman’s rule “Strive for Consistency” mean?",
+    "choices": [
+      "Avoid user feedback",
+      "Use consistent design patterns",
+      "Change layout frequently",
+      "Use random colors"
+    ],
+    "answer": "Use consistent design patterns"
+  },
+  {
+    "question": "Which rule helps expert users perform tasks faster?",
+    "choices": [
+      "Add constraints",
+      "Use signifiers",
+      "Offer shortcuts",
+      "Reduce memory load"
+    ],
+    "answer": "Offer shortcuts"
+  },
+  {
+    "question": "What does “Design Dialog to Yield Closure” mean?",
+    "choices": [
+      "Provide clear task completion feedback",
+      "Use pop-ups",
+      "Avoid user interaction",
+      "Keep users guessing"
+    ],
+    "answer": "Provide clear task completion feedback"
+  },
+  {
+    "question": "What is the purpose of error handling in UI design?",
+    "choices": [
+      "To hide system flaws",
+      "To log errors silently",
+      "To confuse users",
+      "To help users understand and fix issues"
+    ],
+    "answer": "To help users understand and fix issues"
+  },
+  {
+    "question": "What does “Permit Easy Reversal of Actions” refer to?",
+    "choices": [
+      "Encrypting user data",
+      "Allowing users to go back or undo actions",
+      "Disabling undo",
+      "Locking user input"
+    ],
+    "answer": "Allowing users to go back or undo actions"
+  },
+  {
+    "question": "A usability test is conducted in users’ homes via video call. What kind of testing is this?",
+    "choices": [
+      "In-lab testing",
+      "Remote usability testing",
+      "Automated inspection",
+      "Expert review"
+    ],
+    "answer": "Remote usability testing"
+  },
+  {
+    "question": "A participant completes all tasks correctly but takes longer than expected. What should be analyzed?",
+    "choices": [
+      "User satisfaction",
+      "Task abandonment",
+      "Time performance",
+      "Interface layout"
+    ],
+    "answer": "Time performance"
+  },
+  {
+    "question": "A usability test is conducted with wireframes. What type of prototype is this?",
+    "choices": [
+      "Final version",
+      "High-fidelity",
+      "Functional",
+      "Low-fidelity"
+    ],
+    "answer": "Low-fidelity"
+  },
+  {
+    "question": "A team wants to test a new interface with users from different regions. What method is best?",
+    "choices": [
+      "Expert review",
+      "In-lab testing",
+      "Remote usability testing",
+      "Validation testing"
+    ],
+    "answer": "Remote usability testing"
+  },
+  {
+    "question": "A usability test reveals users often miss a key button. What should be adjusted?",
+    "choices": [
+      "Button label",
+      "Button placement",
+      "All of the above",
+      "Button color"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What does HCI stand for?",
+    "choices": [
+      "Human Cognitive Interface",
+      "Hybrid Computing Interface",
+      "Human-Computer Interaction",
+      "Human-Centered Innovation"
+    ],
+    "answer": "Human-Computer Interaction"
+  },
+  {
+    "question": "Which type of designer focuses on usability and understandability?",
+    "choices": [
+      "Experience designer",
+      "Interaction designer",
+      "Graphic designer",
+      "Industrial designer"
+    ],
+    "answer": "Interaction designer"
+  },
+  {
+    "question": "A usability test is conducted using screen mock-ups. What type of prototype is this?",
+    "choices": [
+      "Functional prototype",
+      "Low-fidelity",
+      "Final version",
+      "High-fidelity"
+    ],
+    "answer": "Low-fidelity"
+  },
+  {
+    "question": "What are “signifiers” used for?",
+    "choices": [
+      "To decorate the interface",
+      "To store user data",
+      "To reduce memory load",
+      "To indicate where actions take place"
+    ],
+    "answer": "To indicate where actions take place"
+  },
+  {
+    "question": "What is a “conceptual model”?",
+    "choices": [
+      "A wireframe",
+      "A database schema",
+      "A user’s mental understanding of how a system works",
+      "A visual layout"
+    ],
+    "answer": "A user’s mental understanding of how a system works"
+  },
+  {
+    "question": "What does “Reduce Short-Term Memory Load” aim to do?",
+    "choices": [
+      "Make users memorize steps",
+      "Add more features",
+      "Simplify recognition over recall",
+      "Increase cognitive effort"
+    ],
+    "answer": "Simplify recognition over recall"
+  },
+  {
+    "question": "A team wants to evaluate a paper prototype of a new dashboard. Which type of testing should they use?",
+    "choices": [
+      "Formative testing",
+      "Automated testing",
+      "Summative testing",
+      "Validation testing"
+    ],
+    "answer": "Formative testing"
+  },
+  {
+    "question": "A usability test is conducted over the web with screen recording. What is a major drawback?",
+    "choices": [
+      "Slow data collection",
+      "Inability to observe nonverbal cues",
+      "High cost",
+      "Limited participant pool"
+    ],
+    "answer": "Inability to observe nonverbal cues"
+  },
+  {
+    "question": "A usability test is conducted with a moderator asking questions during the session. What type of testing is this?",
+    "choices": [
+      "Summative",
+      "Automated",
+      "Validation",
+      "Formative"
+    ],
+    "answer": "Formative"
+  },
+  {
+    "question": "A company wants to test a new interface with real users before launch. What is this called?",
+    "choices": [
+      "Automated inspection",
+      "Expert review",
+      "Beta testing",
+      "Usability testing"
+    ],
+    "answer": "Usability testing"
+  },
+  {
+    "question": "A user completes a task incorrectly but quickly. What metric is affected?",
+    "choices": [
+      "Time performance",
+      "Task performance",
+      "Interface clarity",
+      "User satisfaction"
+    ],
+    "answer": "Task performance"
+  },
+  {
+    "question": "What does “discoverability” refer to in interaction design?",
+    "choices": [
+      "How users find possible actions",
+      "How users feel about a product",
+      "How secure a system is",
+      "How fast a product loads"
+    ],
+    "answer": "How users find possible actions"
+  },
+  {
+    "question": "A usability test is conducted in a fixed lab. What is a potential benefit?",
+    "choices": [
+      "Controlled environment",
+      "Remote access",
+      "Real-time feedback",
+      "Natural user behavior"
+    ],
+    "answer": "Controlled environment"
+  }
+]

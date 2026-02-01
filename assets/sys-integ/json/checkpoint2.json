@@ -1,0 +1,611 @@
+[
+  {
+    "question": "All unit tests are executed daily and ideally should be automated.",
+    "choices": [
+      "No answer text provided.",
+      "XP Design",
+      "XP Coding",
+      "XP Testing"
+    ],
+    "answer": "XP Testing"
+  },
+  {
+    "question": "This is different customers' needs need to be assimilated. Different vision or beyond their authority.",
+    "choices": [
+      "Lack of formal design",
+      "Lack of program design",
+      "Conflicting customer needs",
+      "Requirements volatility"
+    ],
+    "answer": "Conflicting customer needs"
+  },
+  {
+    "question": "“demos” are not delivered to the customer with the time-box allocated. May not contain all functionalities.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The development guidelines stress delivery over analysis and design although these activates are not discouraged, and active and continuous communication between developers and customers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Delivers multiple ‘software increments’, deliver an operational prototype or portion of an OS to collect customer feedback for adaption.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Delivers multiple ‘software decrements’, deliver an operational prototype or portion of an OS to collect customer feedback for adaption.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Agile processes harness change for the customer's competitive advantage.",
+    "choices": [
+      "Welcome changing",
+      "eliver working software frequently",
+      "satisfies the customer",
+      "satisfies the employer"
+    ],
+    "answer": "Welcome changing"
+  },
+  {
+    "question": "The most efficient and ineffective method of conveying information too and within a development team is face–to–ear conversation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Collaboration and consensus occur when the collective knowledge of members of the team is combined.",
+    "choices": [
+      "Take notes and document decisionsTake notes and document decisions",
+      "Stay focused, modularize your discussion",
+      "Strive for collaboration",
+      "Stay focus on the customer needs"
+    ],
+    "answer": "Strive for collaboration"
+  },
+  {
+    "question": "The information domain of a problem must be represented and understood.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Component-level design should be functionally independent.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The design should be developed iteratively. With each iteration, the designer should strive for greater simplicity.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The construction activity encompasses a set of coding and testing tasks that lead to operational software that is ready for delivery to the customer or end-user.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Lots of things can go wrong as software is being developed.",
+    "choices": [
+      "Assess Risk",
+      "Build an effective team",
+      "Manage Change",
+      "No answer text provided."
+    ],
+    "answer": "Assess Risk"
+  },
+  {
+    "question": "The approach may be either formal or informal, but mechanisms must be established to manage the way changes are requested, assessed, approved and implemented.",
+    "choices": [
+      "No answer text provided.",
+      "Manage Change",
+      "Assess Risk",
+      "Build an effective team"
+    ],
+    "answer": "Manage Change"
+  },
+  {
+    "question": "The process molds to the _______ and team, not the other way around.",
+    "choices": [
+      "working software",
+      "needs of people",
+      "self–organizing"
+    ],
+    "answer": "needs of people"
+  },
+  {
+    "question": "_________ XP deemphasizes the need for architectural design.",
+    "choices": [
+      "Requirements volatility",
+      "Conflicting customer needs",
+      "Lack of formal design",
+      "No answer text provided."
+    ],
+    "answer": "Lack of formal design"
+  },
+  {
+    "question": "Testing and documentation are on-going as the product is constructed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is our highest priority through early and continuous delivery of valuable software.",
+    "choices": [
+      "Welcome changing",
+      "satisfies the customer",
+      "deliver working software frequently",
+      "No answer text provided."
+    ],
+    "answer": "satisfies the customer"
+  },
+  {
+    "question": "Leading a team so that it is in control of the work performed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The only really important work product is an operational “software increment” that is delivered.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Someone participating in the communication should serve as a “recorder” and write down all important points and decisions.",
+    "choices": [
+      "Strive for collaboration",
+      "Take notes and document decisions",
+      "Stay focused on the customer needs",
+      "Stay focused, modularize your discussion"
+    ],
+    "answer": "Take notes and document decisions"
+  },
+  {
+    "question": "Design models represent characteristics of the software that help practitioners to construct it effectively.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The analysis task should move from essential information toward implementation detail.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Components should be loosely coupled to one another and to the external environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Design representations (models) should be easily understandable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The construction activity encompasses a set of coding and testing tasks that lead to operational software that is ready for delivery to the customer or end-user.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A software development method Originally proposed by Schwaber and Beedle (an activity occurs during a rugby match) in early 1990.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "“demos” are delivered to the customer with the time-box allocated. May not contain all functionalities.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Separation of concerns (Principle #1) establishes a philosophy for software.",
+    "choices": [
+      "Build software that exhibits effective modularity",
+      "Focus on the transfer of information",
+      "Look for patterns.",
+      "Take notes and report"
+    ],
+    "answer": "Build software that exhibits effective modularity"
+  },
+  {
+    "question": "Try to focus on the speaker’s words, rather than formulating your response to those words.",
+    "choices": [
+      "Prepare for customer needs",
+      "Someone should facilitate the activity",
+      "Prepare you communicate",
+      "Listen"
+    ],
+    "answer": "Listen"
+  },
+  {
+    "question": "Design of data is as important as design of processing functions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "User interface design should be tuned to the needs of the end-user. However, in every case, it should stress ease of use.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The modern business environment is fast-paced and ever-changing.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The most efficient and effective method of conveying information to and within a development team is face–to–face conversation",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This is the primary measure of progress.",
+    "choices": [
+      "working software",
+      "Efficiency and Effectiveness",
+      "Self–organizing",
+      "Simplicity"
+    ],
+    "answer": "working software"
+  },
+  {
+    "question": "Every communication meeting should have a leader (a facilitator) to keep the conversation moving in a productive direction.",
+    "choices": [
+      "Prepare for customer needs",
+      "Someone should facilitate the activity",
+      "Listen",
+      "Prepare you communicate"
+    ],
+    "answer": "Someone should facilitate the activity"
+  },
+  {
+    "question": "User interface design should be not tuned to the needs of the end-user. However, in every case, it should distress ease of use.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Testing principles and concepts lead to the design of tests that systematically uncover different classes of errors and to do so with a minimum amount of time and effort.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Stated in a more technical manner, analysis and design should always emphasize separation of concerns (SoC).",
+    "choices": [
+      "Understand the use of abstraction",
+      "No answer text provided.",
+      "Strive for consistency",
+      "Divide and conquer"
+    ],
+    "answer": "Divide and conquer"
+  },
+  {
+    "question": "Speculation project is initiated and adaptive cycle planning is conducted.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Emphasize an incremental delivery strategy as opposed to intermediate products that gets working software to the customer as rapidly as feasible.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+    "choices": [
+      "deliver working software frequently",
+      "satisfies the employer",
+      "Welcome changing",
+      "satisfies the customer"
+    ],
+    "answer": "deliver working software frequently"
+  },
+  {
+    "question": "______ is a broad array of principles, concepts, methods and tools that you must consider as software is planned and developed.",
+    "choices": [
+      "Software Process",
+      "Software Application",
+      "Software Engineer",
+      "Software Practice"
+    ],
+    "answer": "Software Practice"
+  },
+  {
+    "question": "Design of data is as important as design of processing non-functions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Component-level design should be non- functionally independent.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The construction activity encompasses a set of coding and testing tasks that is not lead to operational software that is not readyfor delivery to the customer or end-user.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The development guidelines stress delivery over analysis and design although these activates are discouraged, and active and has no continuous communication between developers and customers",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "_________ customer is an active member of XP team, changes to requirements are requested informally and frequently.",
+    "choices": [
+      "Conflicting customer needs",
+      "Lack of program design",
+      "Lack of formal design",
+      "Requirements volatility"
+    ],
+    "answer": "Requirements volatility"
+  },
+  {
+    "question": "Brad Appleton [App00] suggests that: “The goal of patterns within the software community is to create a body of literature to help software developers resolve recurring problems encountered throughout all of software development.",
+    "choices": [
+      "Focus on the customer",
+      "Look for patterns.",
+      "Focus on the transfer of information",
+      "Build software that exhibits effective modularity"
+    ],
+    "answer": "Look for patterns."
+  },
+  {
+    "question": "Design models represent characteristics of the software that will not help practitioners to construct it effectively.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Encourages _______ an iterative refinement of the internal program design.",
+    "choices": [
+      "spike solution",
+      "refactoring",
+      "No answer text provided.",
+      "self–organizing"
+    ],
+    "answer": "refactoring"
+  },
+  {
+    "question": "Organizing a team so that it is in control of the work performed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Testing principles and concepts lead to the design of tests that systematically cover different classes of not free for errors and to do so with a minimum amount of time and effort.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The functions that the software performs must be defined.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The analysis task should not move from essential information toward implementation detail",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Components should be loosely coupled to other components and to the internal environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The more people involved in any communication, the more likely that discussion will bounce from one topic to the next.",
+    "choices": [
+      "Take notes and document decisions",
+      "Take notes and report",
+      "Stay focused, modularize your discussion",
+      "Strive for collaboration"
+    ],
+    "answer": "Stay focused, modularize your discussion"
+  },
+  {
+    "question": "Conventional wisdom is that the cost of change decrease linear as a project progresses.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Deliver working software frequently, from a couple of days to a couple of months, with no preference to the shorter timescale.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Give them the environment and support they need, and trust them to get the job done.",
+    "choices": [
+      "Satisfy customer",
+      "Satisfy employer",
+      "Face-to-face",
+      "Motivated Individual"
+    ],
+    "answer": "Motivated Individual"
+  },
+  {
+    "question": "A software development method Originally proposed by Schwaber and Beedle (an activity occurs during a rugby match) in early 1992.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The models that depict information, function, and behavior must be partitioned in a manner that uncovers detail in a layered (or hierarchical) fashion.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The only really important work product is an operational “software decrement” that is not delivered.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Pay special attention to the analysis, design, construction, and testing of interfaces.",
+    "choices": [
+      "Look for patterns.",
+      "Build software that exhibits effective modularity",
+      "Focus on the customer",
+      "Focus on the transfer of information"
+    ],
+    "answer": "Focus on the transfer of information"
+  },
+  {
+    "question": "Software engineering process and practice are important, but the bottom line is people.",
+    "choices": [
+      "No answer text provided.",
+      "Manage Change",
+      "Assess Risk",
+      "Build an effective team"
+    ],
+    "answer": "Build an effective team"
+  },
+  {
+    "question": "Define Conventional wisdom.",
+    "choices": [
+      "No answer text provided.",
+      "the cost of change increases nonlinearly as a project progresses.",
+      "The development guidelines stress delivery over analysis and design although these activates are not discouraged, and active and continuous communication between developers and customers.",
+      "the art of maximizing the amount of work not done – is essential."
+    ],
+    "answer": "the cost of change increases nonlinearly as a project progresses."
+  },
+  {
+    "question": "Our highest priority is to satisfy the customer through early and continuous delivery of non-valuable software.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  }
+]

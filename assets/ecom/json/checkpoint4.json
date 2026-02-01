@@ -1,0 +1,402 @@
+[
+  {
+    "question": "What does B2B e-commerce primarily refer to?",
+    "choices": [
+      "Transactions between businesses and consumers",
+      "Transactions between businesses conducted electronically",
+      "Transactions between consumers only",
+      "Transactions using physical catalogs"
+    ],
+    "answer": "Transactions between businesses conducted electronically"
+  },
+  {
+    "question": "Which procurement method aggregates participants’ demands for better prices?",
+    "choices": [
+      "Private auction",
+      "Group purchasing",
+      "Internal buyer catalog",
+      "Bartering"
+    ],
+    "answer": "Group purchasing"
+  },
+  {
+    "question": "Which of the following is a limitation of e-procurement?",
+    "choices": [
+      "Lower administrative costs",
+      "Subject to hacker attacks",
+      "Improved payment process",
+      "Reduced maverick buying"
+    ],
+    "answer": "Subject to hacker attacks"
+  },
+  {
+    "question": "Dynamic pricing is best exemplified by:",
+    "choices": [
+      "Fixed-price catalogs",
+      "Stock exchanges and auctions",
+      "Group purchasing",
+      "Bartering"
+    ],
+    "answer": "Stock exchanges and auctions"
+  },
+  {
+    "question": "Which of the following is NOT a function of B2B exchanges?",
+    "choices": [
+      "Matching buyers and sellers",
+      "Facilitating transactions",
+      "Developing exchange policies",
+      "Manufacturing products"
+    ],
+    "answer": "Manufacturing products"
+  },
+  {
+    "question": "Which social network is commonly used for B2B networking?",
+    "choices": [
+      "Instagram",
+      "LinkedIn",
+      "TikTok",
+      "Snapchat"
+    ],
+    "answer": "LinkedIn"
+  },
+  {
+    "question": "Virtual trade shows are:",
+    "choices": [
+      "Physical exhibitions",
+      "Online analogs of physical trade fairs",
+      "Internal buyer catalogs",
+      "Reverse auctions"
+    ],
+    "answer": "Online analogs of physical trade fairs"
+  },
+  {
+    "question": "Which payment method is common for large B2B purchases?",
+    "choices": [
+      "Credit cards",
+      "Cash on delivery",
+      "Specialized payment arrangements",
+      "Cryptocurrency"
+    ],
+    "answer": "Specialized payment arrangements"
+  },
+  {
+    "question": "Which of the following is NOT a benefit of B2B e-commerce?",
+    "choices": [
+      "Eliminates paper and reduces administrative costs",
+      "Increases procurement costs",
+      "Expedites processing and reduces trading cycle time",
+      "Lowers search costs for buyers"
+    ],
+    "answer": "Increases procurement costs"
+  },
+  {
+    "question": "Which type of marketplace serves a single industry segment?",
+    "choices": [
+      "Horizontal marketplace",
+      "Vertical marketplace",
+      "Consortium marketplace",
+      "Public exchange"
+    ],
+    "answer": "Vertical marketplace"
+  },
+  {
+    "question": "A manufacturing company wants to sell its products to multiple retailers through an extranet. Which B2B model applies?",
+    "choices": [
+      "Buy-side",
+      "Sell-side",
+      "Marketplace",
+      "Consortium"
+    ],
+    "answer": "Sell-side"
+  },
+  {
+    "question": "A large corporation creates a portal for employees to access training materials and company news. Which type of portal is this?",
+    "choices": [
+      "Customer portal",
+      "Corporate portal",
+      "Employee portal",
+      "Mobile portal"
+    ],
+    "answer": "Employee portal"
+  },
+  {
+    "question": "A buyer uses an online exchange to purchase raw materials from multiple suppliers in different countries. What is the main advantage?",
+    "choices": [
+      "Limited supplier options",
+      "Increased geographic reach",
+      "Higher procurement costs",
+      "Reduced collaboration"
+    ],
+    "answer": "Increased geographic reach"
+  },
+  {
+    "question": "A company uses virtual games to train employees on market predictions and decision-making. What is this practice called?",
+    "choices": [
+      "Gamification",
+      "Dynamic pricing",
+      "Bartering",
+      "Forward auction"
+    ],
+    "answer": "Gamification"
+  },
+  {
+    "question": "A business joins a vertical marketplace specializing in hospital supplies. What does “vertical” mean in this context?",
+    "choices": [
+      "Covers multiple industries",
+      "Focuses on one industry segment",
+      "Includes only buyers",
+      "Includes only sellers"
+    ],
+    "answer": "Focuses on one industry segment"
+  },
+  {
+    "question": "A company wants to customize e-catalogs with different prices for different customers. Which benefit of B2B applies?",
+    "choices": [
+      "Dynamic pricing",
+      "Customized catalogs",
+      "Maverick buying",
+      "Bartering"
+    ],
+    "answer": "Customized catalogs"
+  },
+  {
+    "question": "A business uses a mobile portal to allow suppliers to track orders via smartphones. Which portal type is this?",
+    "choices": [
+      "Corporate portal",
+      "Customer portal",
+      "Mobile portal",
+      "Employee portal"
+    ],
+    "answer": "Mobile portal"
+  },
+  {
+    "question": "A hospital needs to purchase medical supplies from several suppliers and decides to use an online auction where suppliers compete for the lowest price. What is this called?",
+    "choices": [
+      "Forward auction",
+      "Reverse auction",
+      "Bartering",
+      "Dynamic pricing"
+    ],
+    "answer": "Reverse auction"
+  },
+  {
+    "question": "A company aggregates orders from multiple small businesses to negotiate better prices for office supplies. Which procurement method is being used?",
+    "choices": [
+      "Maverick buying",
+      "Group purchasing",
+      "Bartering",
+      "Consortium exchange"
+    ],
+    "answer": "Group purchasing"
+  },
+  {
+    "question": "A steel company creates its own e-marketplace to sell products directly to multiple buyers. Which model is this?",
+    "choices": [
+      "Buy-side",
+      "Sell-side",
+      "Marketplace",
+      "Collaborative commerce"
+    ],
+    "answer": "Sell-side"
+  },
+  {
+    "question": "Maverick buying refers to:",
+    "choices": [
+      "Planned purchases at negotiated prices",
+      "Unplanned purchases at non-negotiated prices",
+      "Group purchasing",
+      "Bartering"
+    ],
+    "answer": "Unplanned purchases at non-negotiated prices"
+  },
+  {
+    "question": "E-procurement refers to:",
+    "choices": [
+      "Manual purchase of goods",
+      "Online purchase of supplies and services",
+      "Physical trade shows",
+      "Bartering without money"
+    ],
+    "answer": "Online purchase of supplies and services"
+  },
+  {
+    "question": "Gamification in B2B refers to:",
+    "choices": [
+      "Playing games for entertainment",
+      "Virtual games for training and decision-making",
+      "Auctions with dynamic pricing",
+      "Bartering exchanges"
+    ],
+    "answer": "Virtual games for training and decision-making"
+  },
+  {
+    "question": "Which of the following is a basic type of B2B transaction?",
+    "choices": [
+      "Sell-side",
+      "Buy-side",
+      "Marketplaces",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "A company exchanges surplus goods for needed items without using money, through an online platform. What is this called?",
+    "choices": [
+      "Reverse auction",
+      "Bartering exchange",
+      "Group purchasing",
+      "Maverick buying"
+    ],
+    "answer": "Bartering exchange"
+  },
+  {
+    "question": "A buyer uses reverse auctions to reduce corruption and speed up delivery times. Which benefit is being realized?",
+    "choices": [
+      "Increased administrative costs",
+      "Lower procurement efficiency",
+      "Reduced bribery and faster fulfillment",
+      "Higher supplier prices"
+    ],
+    "answer": "Reduced bribery and faster fulfillment"
+  },
+  {
+    "question": "A company participates in a consortium-owned exchange. What does this mean?",
+    "choices": [
+      "Exchange owned by one seller",
+      "Exchange owned by a few large buyers or sellers",
+      "Exchange owned by government",
+      "Exchange owned by intermediaries only"
+    ],
+    "answer": "Exchange owned by a few large buyers or sellers"
+  },
+  {
+    "question": "A buyer makes an urgent purchase without following the company’s procurement process, resulting in higher costs. What is this practice called?",
+    "choices": [
+      "Desktop purchasing",
+      "Maverick buying",
+      "Reverse auction",
+      "Dynamic pricing"
+    ],
+    "answer": "Maverick buying"
+  },
+  {
+    "question": "A procurement manager uses an online system to compare prices, negotiate contracts, and place orders electronically. What is this process called?",
+    "choices": [
+      "E-procurement",
+      "Bartering",
+      "Dynamic pricing",
+      "Forward auction"
+    ],
+    "answer": "E-procurement"
+  },
+  {
+    "question": "Which portal type facilitates collaboration with suppliers and employees?",
+    "choices": [
+      "Customer portal",
+      "Corporate portal",
+      "Mobile portal",
+      "Employee portal"
+    ],
+    "answer": "Corporate portal"
+  },
+  {
+    "question": "Direct materials are:",
+    "choices": [
+      "Used in making products",
+      "Office supplies",
+      "Items for maintenance and repair",
+      "Nonproduction materials"
+    ],
+    "answer": "Used in making products"
+  },
+  {
+    "question": "Reverse auctions occur in which model?",
+    "choices": [
+      "Sell-side",
+      "Buy-side",
+      "Collaborative commerce",
+      "Supply chain improvement"
+    ],
+    "answer": "Buy-side"
+  },
+  {
+    "question": "Which of the following is a major benefit of reverse auctions?",
+    "choices": [
+      "Higher procurement costs",
+      "Increased corruption",
+      "Lower cost of items purchased",
+      "Longer delivery times"
+    ],
+    "answer": "Lower cost of items purchased"
+  },
+  {
+    "question": "A business uses LinkedIn to find new partners and generate sales leads. Which concept does this illustrate?",
+    "choices": [
+      "E-procurement",
+      "B2B social networking",
+      "Dynamic pricing",
+      "Consortium exchange"
+    ],
+    "answer": "B2B social networking"
+  },
+  {
+    "question": "A car manufacturer joins an online platform where many buyers and sellers trade automotive parts. What type of e-marketplace is this?",
+    "choices": [
+      "Private marketplace",
+      "Public exchange",
+      "Internal catalog",
+      "Group purchasing"
+    ],
+    "answer": "Public exchange"
+  },
+  {
+    "question": "A company wants to reduce administrative costs and improve payment cycles by automating procurement. Which benefit of e-procurement applies?",
+    "choices": [
+      "Increased maverick buying",
+      "Streamlined purchasing process",
+      "Higher total cost of ownership",
+      "Reduced collaboration"
+    ],
+    "answer": "Streamlined purchasing process"
+  },
+  {
+    "question": "A supplier participates in an online auction where the highest bidder wins the product. What type of auction is this?",
+    "choices": [
+      "Reverse auction",
+      "Forward auction",
+      "Dynamic pricing auction",
+      "Bartering auction"
+    ],
+    "answer": "Forward auction"
+  },
+  {
+    "question": "A procurement officer complains that the e-procurement system is too complex and uses outdated EDI standards. Which limitation is this?",
+    "choices": [
+      "Hacker attacks",
+      "Integration difficulty",
+      "High TCO",
+      "Technology complexity"
+    ],
+    "answer": "Technology complexity"
+  },
+  {
+    "question": "In a sell-side e-marketplace, the model is:",
+    "choices": [
+      "One buyer to many sellers",
+      "One seller to many buyers",
+      "Many sellers to many buyers",
+      "Many buyers to one seller"
+    ],
+    "answer": "One seller to many buyers"
+  },
+  {
+    "question": "Which term refers to many buyers and many sellers meeting electronically to trade?",
+    "choices": [
+      "Private marketplace",
+      "Public exchange",
+      "Reverse auction",
+      "Consortium"
+    ],
+    "answer": "Public exchange"
+  }
+]

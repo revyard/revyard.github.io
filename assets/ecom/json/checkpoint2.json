@@ -1,0 +1,312 @@
+[
+  {
+    "question": "What is a penny auction?",
+    "choices": [
+      "An auction where bids are free",
+      "An auction where participants pay a small fee for each bid",
+      "An auction with fixed prices",
+      "An auction limited to one buyer and one seller"
+    ],
+    "answer": "An auction where participants pay a small fee for each bid"
+  },
+  {
+    "question": "Which of the following is a limitation of e-auctions?",
+    "choices": [
+      "Increased participation",
+      "Minimal security",
+      "Guaranteed authenticity",
+      "No fraud risk"
+    ],
+    "answer": "Minimal security"
+  },
+  {
+    "question": "What is the main feature of avatars in virtual worlds?",
+    "choices": [
+      "They are static images",
+      "They represent users in 2D or 3D environments",
+      "They cannot move or interact",
+      "They are used only in social networks"
+    ],
+    "answer": "They represent users in 2D or 3D environments"
+  },
+  {
+    "question": "Which technology supplements real-world environments with computer-generated input?",
+    "choices": [
+      "Virtual reality",
+      "Augmented reality",
+      "Crowdsourcing",
+      "Semantic Web"
+    ],
+    "answer": "Augmented reality"
+  },
+  {
+    "question": "Which of the following refers to prices that fluctuate based on supply and demand?",
+    "choices": [
+      "Fixed pricing",
+      "Dynamic pricing",
+      "Negotiated pricing",
+      "Discount pricing"
+    ],
+    "answer": "Dynamic pricing"
+  },
+  {
+    "question": "What is the main function of an electronic catalog?",
+    "choices": [
+      "To process payments",
+      "To advertise and promote products",
+      "To manage inventory",
+      "To provide shipment tracking"
+    ],
+    "answer": "To advertise and promote products"
+  },
+  {
+    "question": "Which of the following is considered a front-end component of an e-marketplace?",
+    "choices": [
+      "Inventory management",
+      "Payment gateway",
+      "Accounting system",
+      "Packaging and delivery"
+    ],
+    "answer": "Payment gateway"
+  },
+  {
+    "question": "What is the primary role of intermediaries in e-commerce?",
+    "choices": [
+      "To eliminate sellers",
+      "To manage physical warehouses",
+      "To match buyers and sellers and provide escrow services",
+      "To create product catalogs"
+    ],
+    "answer": "To match buyers and sellers and provide escrow services"
+  },
+  {
+    "question": "Which tool allows customers to accumulate items before checkout?",
+    "choices": [
+      "Search engine",
+      "Shopping cart",
+      "Auction engine",
+      "Payment gateway"
+    ],
+    "answer": "Shopping cart"
+  },
+  {
+    "question": "A buyer joins an online group to discuss camera features before purchasing. What is this group called?",
+    "choices": [
+      "Virtual community",
+      "Internet mall",
+      "Web portal",
+      "Crowdsourcing platform"
+    ],
+    "answer": "Virtual community"
+  },
+  {
+    "question": "A customer uses a site that shows competitor prices alongside its own. Which feature is being used?",
+    "choices": [
+      "Dynamic pricing",
+      "Price comparison",
+      "Negotiated pricing",
+      "Crowdsourcing"
+    ],
+    "answer": "Price comparison"
+  },
+  {
+    "question": "A social networking site allows users to create profiles, share content, and connect with others. Which type of community is this?",
+    "choices": [
+      "Transaction community",
+      "Social network",
+      "Fantasy community",
+      "Knowledge portal"
+    ],
+    "answer": "Social network"
+  },
+  {
+    "question": "A company wants to sell customized laptops directly to consumers through its own website. Which type of e-marketplace is this?",
+    "choices": [
+      "Public e-marketplace",
+      "Private sell-side e-marketplace",
+      "Buy-side e-marketplace",
+      "Consortium marketplace"
+    ],
+    "answer": "Private sell-side e-marketplace"
+  },
+  {
+    "question": "A company plans to build a future platform where machines and humans interact symbiotically. Which web generation does this describe?",
+    "choices": [
+      "Web 2.0",
+      "Web 3.0",
+      "Web 4.0",
+      "Web 5.0"
+    ],
+    "answer": "Web 4.0"
+  },
+  {
+    "question": "A customer abandons a shopping cart because the site lacks secure payment options. Which component is missing?",
+    "choices": [
+      "Front end",
+      "Back end",
+      "Payment gateway",
+      "Auction engine"
+    ],
+    "answer": "Payment gateway"
+  },
+  {
+    "question": "A company wants to create a small website to promote a new product line without changing its main site. What should it use?",
+    "choices": [
+      "Web portal",
+      "Microsite",
+      "Internet mall",
+      "Virtual community"
+    ],
+    "answer": "Microsite"
+  },
+  {
+    "question": "A retailer wants to attract customers by offering prices that change based on demand. Which pricing strategy is used?",
+    "choices": [
+      "Fixed pricing",
+      "Negotiated pricing",
+      "Dynamic pricing",
+      "Discount pricing"
+    ],
+    "answer": "Dynamic pricing"
+  },
+  {
+    "question": "A company wants to allow customers to design their own sneakers online. Which feature is needed?",
+    "choices": [
+      "Electronic catalog",
+      "Product configuration (self-customization)",
+      "Auction engine",
+      "Shopping cart"
+    ],
+    "answer": "Product configuration (self-customization)"
+  },
+  {
+    "question": "What is a microsite?",
+    "choices": [
+      "A small physical store",
+      "A supplementary webpage external to the main website",
+      "A type of search engine",
+      "A payment processing system"
+    ],
+    "answer": "A supplementary webpage external to the main website"
+  },
+  {
+    "question": "What does e-bartering involve?",
+    "choices": [
+      "Exchange of goods and services online",
+      "Selling goods at fixed prices",
+      "Dynamic pricing through auctions",
+      "Payment through credit cards only"
+    ],
+    "answer": "Exchange of goods and services online"
+  },
+  {
+    "question": "A business wants to gather innovative ideas for a new product by inviting suggestions from thousands of users online. Which concept applies?",
+    "choices": [
+      "Augmented reality",
+      "Crowdsourcing",
+      "Dynamic pricing",
+      "Web portal"
+    ],
+    "answer": "Crowdsourcing"
+  },
+  {
+    "question": "A company wants to create an online mall where multiple sellers can display their catalogs. Which platform should it build?",
+    "choices": [
+      "Webstore",
+      "E-mall",
+      "Microsite",
+      "Corporate portal"
+    ],
+    "answer": "E-mall"
+  },
+  {
+    "question": "A user searches for antique furniture on a site where sellers bid for the buyer’s order. Which auction type is this?",
+    "choices": [
+      "One seller, many buyers",
+      "One buyer, many sellers",
+      "Many sellers, many buyers",
+      "Penny auction"
+    ],
+    "answer": "One buyer, many sellers"
+  },
+  {
+    "question": "Which of the following best describes a virtual community?",
+    "choices": [
+      "A group interacting physically in a store",
+      "A group interacting via computer networks",
+      "A group limited to offline communication",
+      "A group of intermediaries only"
+    ],
+    "answer": "A group interacting via computer networks"
+  },
+  {
+    "question": "A private e-marketplace owned by a single company is typically used for:",
+    "choices": [
+      "Government auctions",
+      "Sell-side or buy-side transactions",
+      "Public stock exchanges",
+      "Crowdsourcing activities"
+    ],
+    "answer": "Sell-side or buy-side transactions"
+  },
+  {
+    "question": "Which of the following is an example of a public e-marketplace?",
+    "choices": [
+      "dell.com",
+      "target.com",
+      "Stock exchange",
+      "starbucks.com"
+    ],
+    "answer": "Stock exchange"
+  },
+  {
+    "question": "A customer visits an online store, adds items to a virtual basket, and proceeds to checkout. Which tool enables this process?",
+    "choices": [
+      "Search engine",
+      "Shopping cart",
+      "Auction engine",
+      "Payment gateway"
+    ],
+    "answer": "Shopping cart"
+  },
+  {
+    "question": "A business wants to make its web applications smarter and more interactive using semantic technologies. Which web generation is this?",
+    "choices": [
+      "Web 2.0",
+      "Web 3.0",
+      "Web 4.0",
+      "Web 5.0"
+    ],
+    "answer": "Web 3.0"
+  },
+  {
+    "question": "A buyer compares prices of smartphones across multiple websites using a mobile app. Which feature supports this activity?",
+    "choices": [
+      "Dynamic pricing",
+      "Price comparison service",
+      "Auction engine",
+      "Merchant software"
+    ],
+    "answer": "Price comparison service"
+  },
+  {
+    "question": "A business wants to provide employees secure access to internal reports through a single web interface. Which portal type is suitable?",
+    "choices": [
+      "Commercial portal",
+      "Corporate portal",
+      "Mobile portal",
+      "Publishing portal"
+    ],
+    "answer": "Corporate portal"
+  },
+  {
+    "question": "What is the primary purpose of an e-marketplace?",
+    "choices": [
+      "To provide physical meeting spaces",
+      "To enable transactions between buyers and sellers online",
+      "To store physical goods",
+      "To eliminate intermediaries completely"
+    ],
+    "answer": "To enable transactions between buyers and sellers online"
+  }
+]

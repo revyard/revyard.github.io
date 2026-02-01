@@ -1,0 +1,402 @@
+[
+  {
+    "question": "A customer wants to buy a rare collectible item that is not available in local stores. Which e-tailing advantage applies?",
+    "choices": [
+      "Flash deals",
+      "Lower supply chain cost",
+      "Group buying",
+      "Shop globally"
+    ],
+    "answer": "Shop globally"
+  },
+  {
+    "question": "A company adds an escrow service to ensure safe transactions between buyers and sellers. Which concept applies?",
+    "choices": [
+      "Channel conflict",
+      "Disintermediation",
+      "Pure-play retailing",
+      "Reintermediation"
+    ],
+    "answer": "Reintermediation"
+  },
+  {
+    "question": "A customer orders groceries online and requests delivery within an hour. Which service is this?",
+    "choices": [
+      "On-demand delivery",
+      "Standard shipping",
+      "Scheduled delivery",
+      "Express mail"
+    ],
+    "answer": "On-demand delivery"
+  },
+  {
+    "question": "A gamer buys virtual items in an online world that can be used in real-world purchases. Which concept applies?",
+    "choices": [
+      "Group buying",
+      "Flash deals",
+      "Virtual world shopping",
+      "Social TV"
+    ],
+    "answer": "Virtual world shopping"
+  },
+  {
+    "question": "A small company wants to compete with large retailers by selling online. Which e-tailing benefit helps them most?",
+    "choices": [
+      "Lower product cost",
+      "Provide customization",
+      "Engage customers in discussions",
+      "Enable small companies to compete"
+    ],
+    "answer": "Enable small companies to compete"
+  },
+  {
+    "question": "A retailer wants to understand customer preferences and personalize product recommendations online. Which advantage applies?",
+    "choices": [
+      "Provide global reach",
+      "Better understand customers",
+      "Enable small companies to compete",
+      "Lower supply chain cost"
+    ],
+    "answer": "Better understand customers"
+  },
+  {
+    "question": "A manufacturer allows customers to design and order laptops online. Which model is this?",
+    "choices": [
+      "Make-to-order",
+      "Click-and-mortar",
+      "Pure-play e-tailer",
+      "Online mall"
+    ],
+    "answer": "Make-to-order"
+  },
+  {
+    "question": "A retailer offers a 70% discount for 24 hours on selected items. Which B2C model is being used?",
+    "choices": [
+      "Private shopping club",
+      "Flash deals",
+      "Online group buying",
+      "Event shopping"
+    ],
+    "answer": "Flash deals"
+  },
+  {
+    "question": "A group of friends collaborates online to buy a wedding gift. Which model applies?",
+    "choices": [
+      "Private shopping club",
+      "Group gifting",
+      "Flash deals",
+      "Event shopping"
+    ],
+    "answer": "Group gifting"
+  },
+  {
+    "question": "A company sells both through physical stores and an online website. Which business model is this?",
+    "choices": [
+      "Direct marketing",
+      "Virtual mall",
+      "Click-and-mortar",
+      "Pure-play e-tailer"
+    ],
+    "answer": "Click-and-mortar"
+  },
+  {
+    "question": "Which of the following is a major issue in B2C e-commerce?",
+    "choices": [
+      "No price competition",
+      "Limited global reach",
+      "Lack of customization",
+      "Channel conflict"
+    ],
+    "answer": "Channel conflict"
+  },
+  {
+    "question": "Which of the following is NOT a benefit of online travel services?",
+    "choices": [
+      "Complex trip arrangements easily handled",
+      "Elimination of commissions",
+      "Reduced processing fees",
+      "Access to last-minute deals"
+    ],
+    "answer": "Complex trip arrangements easily handled"
+  },
+  {
+    "question": "Which term refers to online banking?",
+    "choices": [
+      "Cyberbanking",
+      "All of the above",
+      "E-banking",
+      "Virtual banking"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which delivery option requires immediate fulfillment after order?",
+    "choices": [
+      "Scheduled delivery",
+      "On-demand delivery",
+      "Express mail",
+      "Standard shipping"
+    ],
+    "answer": "On-demand delivery"
+  },
+  {
+    "question": "Which of the following is an example of social shopping?",
+    "choices": [
+      "Comparing prices on portals",
+      "Buying in groups with friends",
+      "Purchasing flash deals",
+      "Using shopping robots"
+    ],
+    "answer": "Buying in groups with friends"
+  },
+  {
+    "question": "Which of the following is NOT an advantage of e-tailing for customers?",
+    "choices": [
+      "Shop anytime and anywhere",
+      "Physical inspection of all products",
+      "Find products not available locally",
+      "Pay less than in traditional stores"
+    ],
+    "answer": "Physical inspection of all products"
+  },
+  {
+    "question": "What does “pure-play e-tailer” mean?",
+    "choices": [
+      "Retailer operating only online",
+      "Retailer with both online and offline stores",
+      "Retailer selling only digital goods",
+      "Retailer using mail-order catalogs"
+    ],
+    "answer": "Retailer operating only online"
+  },
+  {
+    "question": "Which of the following is an example of a multichannel business model?",
+    "choices": [
+      "Flash deals",
+      "Pure-play e-tailers",
+      "Click-and-mortar retailers",
+      "Online private shopping clubs"
+    ],
+    "answer": "Click-and-mortar retailers"
+  },
+  {
+    "question": "Which type of online mall provides a directory and transfers users to vendor sites?",
+    "choices": [
+      "Virtual world mall",
+      "Shared services mall",
+      "Flash sale mall",
+      "Referring directory"
+    ],
+    "answer": "Referring directory"
+  },
+  {
+    "question": "What is “disintermediation” in e-commerce?",
+    "choices": [
+      "Removing intermediaries between trading partners",
+      "Increasing channel partners",
+      "Creating new online malls",
+      "Adding new intermediaries"
+    ],
+    "answer": "Removing intermediaries between trading partners"
+  },
+  {
+    "question": "A retailer removes wholesalers and sells directly to customers online. What is this called?",
+    "choices": [
+      "Disintermediation",
+      "Channel conflict",
+      "Multichanneling",
+      "Reintermediation"
+    ],
+    "answer": "Disintermediation"
+  },
+  {
+    "question": "A bank offers customers the ability to pay bills and transfer funds online. Which term describes this?",
+    "choices": [
+      "E-banking",
+      "Virtual banking",
+      "All of the above",
+      "Cyberbanking"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "A consumer uses Facebook reviews and friends’ ratings before buying a product online. Which concept is this?",
+    "choices": [
+      "Virtual mall",
+      "Social shopping",
+      "Shopping robot",
+      "Shopping portal"
+    ],
+    "answer": "Social shopping"
+  },
+  {
+    "question": "A company offers discounted membership for customers to access exclusive deals online for a limited time. Which model is this?",
+    "choices": [
+      "Event shopping",
+      "Flash deals",
+      "Private shopping club",
+      "Group gifting"
+    ],
+    "answer": "Private shopping club"
+  },
+  {
+    "question": "A customer receives ads on their phone for nearby restaurants while walking downtown. Which technology is used?",
+    "choices": [
+      "GPS",
+      "NFC",
+      "QR codes",
+      "RFID"
+    ],
+    "answer": "GPS"
+  },
+  {
+    "question": "Which term refers to adding new intermediaries in online transactions?",
+    "choices": [
+      "Multichanneling",
+      "Reintermediation",
+      "Channel conflict",
+      "Disintermediation"
+    ],
+    "answer": "Reintermediation"
+  },
+  {
+    "question": "Location-based e-commerce uses which technology?",
+    "choices": [
+      "RFID",
+      "GPS",
+      "NFC",
+      "QR codes"
+    ],
+    "answer": "GPS"
+  },
+  {
+    "question": "Which service allows customers to configure and order directly from manufacturers?",
+    "choices": [
+      "Online mall",
+      "Make-to-order",
+      "Direct marketing",
+      "Pure-play retailing"
+    ],
+    "answer": "Make-to-order"
+  },
+  {
+    "question": "Which term refers to sellers who conduct retail business online?",
+    "choices": [
+      "E-tailers",
+      "E-vendors",
+      "E-shoppers",
+      "E-marketers"
+    ],
+    "answer": "E-tailers"
+  },
+  {
+    "question": "Which factor influences online vs offline retail competition?",
+    "choices": [
+      "All of the above",
+      "Delivery time",
+      "Tax differences",
+      "Search cost"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "A click-and-mortar retailer struggles to keep prices competitive both online and in-store. Which issue is this?",
+    "choices": [
+      "Price comparison",
+      "Disintermediation",
+      "Reintermediation",
+      "Channel conflict"
+    ],
+    "answer": "Channel conflict"
+  },
+  {
+    "question": "A consumer visits an online mall that redirects them to a vendor’s website to complete the purchase. Which type of mall is this?",
+    "choices": [
+      "Shared services mall",
+      "Referring directory",
+      "Virtual world mall",
+      "Flash sale mall"
+    ],
+    "answer": "Referring directory"
+  },
+  {
+    "question": "A consumer uses a website that compares prices across multiple online stores. Which tool is being used?",
+    "choices": [
+      "Shopping portal",
+      "Shopping robot",
+      "Virtual mall",
+      "Social shopping"
+    ],
+    "answer": "Shopping robot"
+  },
+  {
+    "question": "What is electronic retailing commonly called?",
+    "choices": [
+      "E-tailing",
+      "E-commerce",
+      "E-shopping",
+      "E-marketing"
+    ],
+    "answer": "E-tailing"
+  },
+  {
+    "question": "Which B2C model offers heavily discounted products for a short time?",
+    "choices": [
+      "Online group buying",
+      "Private shopping club",
+      "Event shopping",
+      "Flash deals"
+    ],
+    "answer": "Flash deals"
+  },
+  {
+    "question": "Which of these goods is most likely to sell online?",
+    "choices": [
+      "Fresh fruits",
+      "Furniture requiring assembly",
+      "Custom jewelry without images",
+      "Canned foods"
+    ],
+    "answer": "Canned foods"
+  },
+  {
+    "question": "A customer prefers buying software online because it is in a digitized format. Which product characteristic supports this?",
+    "choices": [
+      "Service guarantee",
+      "Physical inspection required",
+      "Digitized format",
+      "Brand name recognition"
+    ],
+    "answer": "Digitized format"
+  },
+  {
+    "question": "Which business model combines physical stores and online presence?",
+    "choices": [
+      "Click-and-mortar",
+      "Pure-play e-tailer",
+      "Virtual mall",
+      "Flash sale"
+    ],
+    "answer": "Click-and-mortar"
+  },
+  {
+    "question": "Which tool helps consumers compare prices across multiple sites?",
+    "choices": [
+      "Social TV",
+      "Shopping portals",
+      "Virtual malls",
+      "Shopping robots"
+    ],
+    "answer": "Shopping robots"
+  },
+  {
+    "question": "A traveler uses an app to find last-minute flight deals and book tickets online. Which service is this?",
+    "choices": [
+      "Online private shopping club",
+      "Online travel service",
+      "Flash deals",
+      "Virtual mall"
+    ],
+    "answer": "Online travel service"
+  }
+]

@@ -1,0 +1,556 @@
+[
+  {
+    "question": "What is Software?",
+    "choices": [
+      "systems that are marketed and sold to any customer who wishes to buy them.",
+      "Software that is commissioned by a specific customer to meet their own needs.",
+      "Software that is not commissioned by a specific customer to meet their own needs.",
+      "The product that software professionals build and then support over the long term."
+    ],
+    "answer": "The product that software professionals build and then support over the long term."
+  },
+  {
+    "question": "Characterized by “number crunching “algorithms such as automotive stress analysis, molecular biology, orbital dynamics etc.",
+    "choices": [
+      "System Software",
+      "Engineering / Scientific Software",
+      "Mobile Software",
+      "Application Software"
+    ],
+    "answer": "Engineering / Scientific Software"
+  },
+  {
+    "question": "What is AI?",
+    "choices": [
+      "stand-alone programs for specific needs",
+      "focus on a limited marketplace to address mass consumer market.",
+      "software uses non-numerical algorithm to solve complex problem."
+    ],
+    "answer": "software uses non-numerical algorithm to solve complex problem."
+  },
+  {
+    "question": "What is data structures?",
+    "choices": [
+      "No answer text provided.",
+      "enable the programs to adequately store and manipulate information",
+      "describes the operation and use of the programs.",
+      "executed provide desired features, function, and performance"
+    ],
+    "answer": "enable the programs to adequately store and manipulate information"
+  },
+  {
+    "question": "Planning: creates a “Sketch” defines the work by describing the tasks, risks and resources, work products and work schedule.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It concerned with cost-effective software development.",
+    "choices": [
+      "System Costs",
+      "Software System",
+      "Software engineering",
+      "Software Costs"
+    ],
+    "answer": "Software engineering"
+  },
+  {
+    "question": "What is Concurrent Model?",
+    "choices": [
+      "Good to develop large-scale system as software evolves as the process progresses and risk should be understood and properly reacted to",
+      "applicable to all types of software development and provides an accurate picture of the current state of a project.",
+      "controllable as it demands considerable risk assessment expertise"
+    ],
+    "answer": "applicable to all types of software development and provides an accurate picture of the current state of a project."
+  },
+  {
+    "question": "This activity isolates requirements and develops both size and resource estimates. In addition, a defect estimate (the number of defects projected for the work) is made.",
+    "choices": [
+      "Development",
+      "Low-Level Design",
+      "Planning",
+      "High-Level Design"
+    ],
+    "answer": "Planning"
+  },
+  {
+    "question": "Planning this activity carry the requirements and create both size and resource are not estimates. In addition, a defect estimate (the number of defects projected for the work) is made.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "High-level design is an internal requirement specification for each component to be constructed are developed and a component design is not created.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Software is embodied knowledge that is initially dispersed, tacit and incomplete.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A number of software process assessment mechanisms that enable us to determine the maturity of the software process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Linear process flow executes each of the four activities in sequence",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Software project non- tracking and uncontrol: assess progress against the plan and take actions to maintain the schedule.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Risk management: assesses risks that may affect the outcome and quality.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It provides a diagnostic technique for assessing the relative maturity of a software organization; uses the SEI CMM as the basis for the assessment [Dun01]",
+    "choices": [
+      "SPICE—The SPICE (ISO/IEC15504)",
+      "ISO 9001:2000  for Software",
+      "CMM-Based Appraisal for Internal Process Improvement (CBA IPI)"
+    ],
+    "answer": "CMM-Based Appraisal for Internal Process Improvement (CBA IPI)"
+  },
+  {
+    "question": "The component level design is refined and reviewed. Code is generated, reviewed, compiled, and tested.",
+    "choices": [
+      "Low-Level Design",
+      "Planning",
+      "High-Level Design",
+      "Development"
+    ],
+    "answer": "Development"
+  },
+  {
+    "question": "Flow executes each of the five activities in sequence.",
+    "choices": [
+      "evolutionary process",
+      "No answer text provided.",
+      "linear process",
+      "iterative process"
+    ],
+    "answer": "linear process"
+  },
+  {
+    "question": "Software is embodied knowledge that is initially disappeared,  tacit and complete.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Stage patterns defines a problem associated with a framework activity for the process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Stage patterns defines a problem associated without a framework activity for the process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "What is Net sourcing?",
+    "choices": [
+      "pervasive, ubiquitous, distributed computing due to wireless networking. How to allow mobile devices, personal computer, enterprise system to communicate across vast network.",
+      ".” free” source code opens to the computing community (a blessing, but also a potential curse!)",
+      "No answer text provided.",
+      "the Web as a computing engine. How to architect simple and sophisticated applications to target end-users worldwide."
+    ],
+    "answer": "the Web as a computing engine. How to architect simple and sophisticated applications to target end-users worldwide."
+  },
+  {
+    "question": "Software should not make wasteful use of system resources such as memory and processor cycles.",
+    "choices": [
+      "Efficiency",
+      "Maintainability",
+      "Acceptability",
+      "No answer text provided."
+    ],
+    "answer": "Efficiency"
+  },
+  {
+    "question": "Tools provide automated or semi-automated support for the process and methods.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Technical reviews: assesses work products to uncover and remove errors before going to the next activity.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It such as compilers, editors, file management utilities",
+    "choices": [
+      "Scientific Software",
+      "Application Software",
+      "System Software",
+      "Engineering Software"
+    ],
+    "answer": "System Software"
+  },
+  {
+    "question": "What is a Definition of Software Process?",
+    "choices": [
+      "a set of umbrella activities- project tracking and control, risk management, quality assurance, configuration management, technical reviews, and others are applied throughout the process",
+      "A framework for the activities, actions, and tasks that are required to build high-quality software.",
+      "process framework for software engineering defines five framework activities-communication, planning, modeling, construction, and deployment."
+    ],
+    "answer": "A framework for the activities, actions, and tasks that are required to build high-quality software."
+  },
+  {
+    "question": "A software prototype that identifies basic requirements. (modes of interaction, computational features, processing functions) is approved by stakeholders.",
+    "choices": [
+      "Solution Context",
+      "Problem Context",
+      "Resulting context",
+      "Related Patterns"
+    ],
+    "answer": "Resulting context"
+  },
+  {
+    "question": "A standard defines a set of requirements for software process assessment.",
+    "choices": [
+      "SPICE—The SPICE (ISO/IEC15504)",
+      "CMM-Based Appraisal for Internal Process Improvement (CBA IPI)",
+      "ISO 9001:2000  for Software"
+    ],
+    "answer": "SPICE—The SPICE (ISO/IEC15504)"
+  },
+  {
+    "question": "A road map that helps you create a timely, high-quality results.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Linear process flow executes each of the five activities in sequence.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It focus on a limited marketplace to address mass consumer market. (word processing, graphics, database management)",
+    "choices": [
+      "Product-line software",
+      "System software",
+      "Embedded software",
+      "Application software"
+    ],
+    "answer": "Product-line software"
+  },
+  {
+    "question": "Method cannot provides technical how-to’s for building software.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Modeling: Create a “sketch”, what it looks like architecturally, how the constituent parts fit together and other characteristics.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Software quality assurance: cannot define and conduct activities to ensure quality.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Software development is essentially an iterative social learning process, and the outcome is “software capital”.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Iterative process flow repeats one or more of the activities before proceeding to the next.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Evolutionary process flow executes the activities in a non-circular manner.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Parallel process flow is not executes one or more activities in parallel without other activities.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It resides within a product or system. (key pad control of a microwave oven, digital function of dashboard displays in a car)",
+    "choices": [
+      "Engineering/scientific software",
+      "Application Software",
+      "System software",
+      "Embedded software"
+    ],
+    "answer": "Embedded software"
+  },
+  {
+    "question": "It is a mode of communication between stakeholders and the software team has been established",
+    "choices": [
+      "No answer text provided.",
+      "Solution",
+      "Initial context",
+      "problem"
+    ],
+    "answer": "Initial context"
+  },
+  {
+    "question": "Communication: communicate with customer to understand objectives and gather requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Communication: will not communicate with customer to understand objectives and gather requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Software quality assurance: defines and conduct activities to ensure quality.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The costs of software on a PC are often greater than the hardware cost.",
+    "choices": [
+      "Software engineering",
+      "Software costs",
+      "No answer text provided.",
+      "System costs"
+    ],
+    "answer": "Software costs"
+  },
+  {
+    "question": "High-level design is an External specification for each component to be constructed are developed and a component design is created.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The establishment and use of sound engineering principles in order to obtain economically software that is reliable and works efficiently on real machines.",
+    "choices": [
+      "Software Programming",
+      "System Programming",
+      "Software engineering",
+      "System Engineering"
+    ],
+    "answer": "Software engineering"
+  },
+  {
+    "question": "Defines a problem associated with a software engineering action or work task and relevant to successful software engineering practice",
+    "choices": [
+      "Stage Patterns",
+      "Task patterns",
+      "Phase patterns",
+      "Process Patterns"
+    ],
+    "answer": "Task patterns"
+  },
+  {
+    "question": "Define Open source?",
+    "choices": [
+      "the Web as a computing engine. How to architect simple and sophisticated applications to target end-users worldwide.",
+      "pervasive, ubiquitous, distributed computing due to wireless networking. How to allow mobile devices, personal computer, enterprise system to communicate across vast network.",
+      ".” free” source code opens to the computing community (a blessing, but also a potential curse!)"
+    ],
+    "answer": ".” free” source code opens to the computing community (a blessing, but also a potential curse!)"
+  },
+  {
+    "question": "Systems that are marketed and sold to any customer who wishes to buy them.",
+    "choices": [
+      "Data consolidation",
+      "Generic products",
+      "Customized products",
+      "Data structures"
+    ],
+    "answer": "Generic products"
+  },
+  {
+    "question": "Deployment: Delivered to the customer who not evaluates the products and will not provide feedback based on the evaluation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Planning this activity isolates requirements and develops both size and resource estimates. In addition, a defect estimate (the number of defects projected for the work) is made.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Measures and centimeter should not provide guidance for modifying the process to improve its effectiveness.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "A generic standard that applies to any organization that wants to improve the overall quality of the products, systems, or services that it provides.",
+    "choices": [
+      "SPICE—The SPICE (ISO/IEC15504)",
+      "No answer text provided.",
+      "CMM-Based Appraisal for Internal Process Improvement (CBA IPI)",
+      "ISO 9001:2000  for Software"
+    ],
+    "answer": "ISO 9001:2000  for Software"
+  },
+  {
+    "question": "Formal user verification methods are applied to cover errors in the design.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Software Process  is a collection of the unfamiliar activities, actions and tasks that are not performed when some work product is to be created.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Defines a problem associated with a framework activity for the process. It includes multiple task patterns as well.",
+    "choices": [
+      "No answer text provided.",
+      "Stage Patterns",
+      "Phase patterns",
+      "Task patterns"
+    ],
+    "answer": "Stage Patterns"
+  },
+  {
+    "question": "Process layer as the foundation defines a framework with activities for effective delivery of software engineering technology.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "External specifications for each component to be constructed are developed and a component design is created.",
+    "choices": [
+      "Planning",
+      "Low-Level Design",
+      "High-Level Design",
+      "Development"
+    ],
+    "answer": "High-Level Design"
+  },
+  {
+    "question": "SP defines the approach that is taken as software is engineered.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Process layer as the foundation defines a framework without activities and not effective delivery of software engineering technology.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Tools cannot provide automated or semi-automated not support for the process and methods.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Its characteristics that make it different from other things human being build.",
+    "choices": [
+      "Featured System",
+      "Featured Software",
+      "Featured Costs",
+      "Featured Hardware"
+    ],
+    "answer": "Featured Software"
+  }
+]

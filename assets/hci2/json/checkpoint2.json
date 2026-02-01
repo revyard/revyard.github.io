@@ -1,0 +1,242 @@
+[
+  {
+    "question": "What is the primary goal of usability testing?",
+    "choices": [
+      "To create new interfaces",
+      "To generalize findings to other systems",
+      "To improve interface quality by identifying flaws",
+      "To replace traditional research methods"
+    ],
+    "answer": "To improve interface quality by identifying flaws"
+  },
+  {
+    "question": "What is a key difference between classical research and usability testing?",
+    "choices": [
+      "Usability testing uses more participants",
+      "Classical research is informal",
+      "Usability testing does not aim for generalization",
+      "Classical research focuses on fixing interface flaws"
+    ],
+    "answer": "Usability testing does not aim for generalization"
+  },
+  {
+    "question": "What is the “Wizard of Oz” technique?",
+    "choices": [
+      "A method for automating usability tests",
+      "A type of expert review",
+      "A remote usability test",
+      "A test where users interact with a human pretending to be the system"
+    ],
+    "answer": "A test where users interact with a human pretending to be the system"
+  },
+  {
+    "question": "When is summative usability testing typically conducted?",
+    "choices": [
+      "With high-fidelity prototypes",
+      "During brainstorming",
+      "After interface release",
+      "Before any design work"
+    ],
+    "answer": "With high-fidelity prototypes"
+  },
+  {
+    "question": "What is a common tool for measuring user satisfaction?",
+    "choices": [
+      "Heatmap",
+      "Survey",
+      "Stopwatch",
+      "Code analyzer"
+    ],
+    "answer": "Survey"
+  },
+  {
+    "question": "Which type of usability testing uses software to evaluate interfaces?",
+    "choices": [
+      "Formative",
+      "Summative",
+      "Expert-based",
+      "Automated"
+    ],
+    "answer": "Automated"
+  },
+  {
+    "question": "According to Rubin and Chisnell, what is the first step in usability testing?",
+    "choices": [
+      "Analyze data",
+      "Develop the test plan",
+      "Conduct test sessions",
+      "Select users"
+    ],
+    "answer": "Develop the test plan"
+  },
+  {
+    "question": "A smart mirror displays weather and news updates. What type of interface is this?",
+    "choices": [
+      "Voice UI",
+      "Augmented Reality",
+      "GUI",
+      "Tangible UI"
+    ],
+    "answer": "Tangible UI"
+  },
+  {
+    "question": "A user presses a button and nothing happens. What is missing?",
+    "choices": [
+      "Mapping",
+      "Signifier",
+      "Constraint",
+      "Feedback"
+    ],
+    "answer": "Feedback"
+  },
+  {
+    "question": "A user is forced to watch a tutorial before using the app. What principle is violated?",
+    "choices": [
+      "Affordance",
+      "Internal Locus of Control",
+      "Mapping",
+      "Feedback"
+    ],
+    "answer": "Internal Locus of Control"
+  },
+  {
+    "question": "A user clicks “Submit” and sees a confirmation message. What principle is applied?",
+    "choices": [
+      "Mapping",
+      "Feedback",
+      "Affordance",
+      "Closure"
+    ],
+    "answer": "Closure"
+  },
+  {
+    "question": "What is the main purpose of expert-based usability testing?",
+    "choices": [
+      "To gather user satisfaction data",
+      "To test code functionality",
+      "To have interface experts inspect the design",
+      "To simulate user behavior"
+    ],
+    "answer": "To have interface experts inspect the design"
+  },
+  {
+    "question": "What is measured by time performance?",
+    "choices": [
+      "Time to complete tasks successfully",
+      "Number of errors",
+      "Number of clicks",
+      "Time spent on incorrect tasks"
+    ],
+    "answer": "Time to complete tasks successfully"
+  },
+  {
+    "question": "What is a key limitation of expert-based testing?",
+    "choices": [
+      "Experts are too expensive",
+      "Experts are biased",
+      "Experts cannot use prototypes",
+      "Experts are unfamiliar with interface tasks"
+    ],
+    "answer": "Experts are unfamiliar with interface tasks"
+  },
+  {
+    "question": "A microwave has a button labeled “Start” but no indication of what it does. What is missing?",
+    "choices": [
+      "Mapping",
+      "Signifier",
+      "Feedback",
+      "Constraint"
+    ],
+    "answer": "Signifier"
+  },
+  {
+    "question": "A user is confused by a button labeled “Execute.” What’s missing?",
+    "choices": [
+      "Signifier",
+      "Constraint",
+      "Mapping",
+      "Feedback"
+    ],
+    "answer": "Signifier"
+  },
+  {
+    "question": "What is a key characteristic of formative testing?",
+    "choices": [
+      "It evaluates final designs",
+      "It requires benchmark comparisons",
+      "It is exploratory and informal",
+      "It uses automated tools"
+    ],
+    "answer": "It is exploratory and informal"
+  },
+  {
+    "question": "A user interface prevents submission until all fields are filled What principle is used?",
+    "choices": [
+      "Feedback",
+      "Closure",
+      "Affordance",
+      "Constraint"
+    ],
+    "answer": "Constraint"
+  },
+  {
+    "question": "A user interface uses a calendar picker for date input. What principle is applied?",
+    "choices": [
+      "Feedback",
+      "Mapping",
+      "Closure",
+      "Constraint"
+    ],
+    "answer": "Constraint"
+  },
+  {
+    "question": "A user interface allows users to undo, redo, and go back easily. Which principle is applied?",
+    "choices": [
+      "Closure",
+      "Mapping",
+      "Reversal of Actions",
+      "Feedback"
+    ],
+    "answer": "Reversal of Actions"
+  },
+  {
+    "question": "What is a drawback of remote usability testing?",
+    "choices": [
+      "Limited participant pool",
+      "Difficulty in providing real-time help",
+      "Inability to collect clickstream data",
+      "High cost"
+    ],
+    "answer": "Difficulty in providing real-time help"
+  },
+  {
+    "question": "A user interface uses consistent icons across screens. What rule is followed?",
+    "choices": [
+      "Mapping",
+      "Feedback",
+      "Consistency",
+      "Affordance"
+    ],
+    "answer": "Consistency"
+  },
+  {
+    "question": "A user expects a slider to adjust volume but it changes brightness. What’s wrong?",
+    "choices": [
+      "Signifier",
+      "Mapping",
+      "Affordance",
+      "Feedback"
+    ],
+    "answer": "Mapping"
+  },
+  {
+    "question": "A user interface shows a progress bar during file upload What principle is applied?",
+    "choices": [
+      "Closure",
+      "Mapping",
+      "Affordance",
+      "Feedback"
+    ],
+    "answer": "Feedback"
+  }
+]
