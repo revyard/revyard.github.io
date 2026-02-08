@@ -38,7 +38,8 @@
     "answer": "n"
   },
   {
-    "question": "Simulate the given program below:\n0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0108 mov dl,30\n0123:010A int 21\n0123:01C  mov dl,32\n0123:010E int 21\n0123:0110 mov dl,30\n0123:0112 int 21\n0123:0114  int 20\n \nWhat is the output?",
+    "question": "Simulate the given program below. What is the output?",
+    "pre": "0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0108 mov dl,30\n0123:010A int 21\n0123:01C  mov dl,32\n0123:010E int 21\n0123:0110 mov dl,30\n0123:0112 int 21\n0123:0114  int 20",
     "choices": [
       "3232",
       "error",
@@ -418,7 +419,8 @@
     "answer": "2210"
   },
   {
-    "question": "Simulate the given program below:\n0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0114  in 20\n \nWhat is the output?",
+    "question": "Simulate the given program below. What is the output?",
+    "pre": "0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0114  in 20",
     "choices": [
       "3232",
       "2020",
