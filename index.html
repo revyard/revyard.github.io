@@ -199,33 +199,6 @@
             color: var(--text-color);
         }
 
-        /* Course Card Styles */
-        .course-card {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px 25px;
-            border: 1px solid var(--btn-border);
-            background: var(--container-bg);
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: left;
-            backdrop-filter: blur(10px);
-        }
-
-
-
-        .course-card .course-name {
-            font-size: 16px;
-            color: var(--text-color);
-        }
-
-        .course-card .course-description {
-            font-size: 14px;
-            color: var(--text-color);
-            opacity: 0.7;
-        }
-
         .question {
             font-size: clamp(16px, 4vw, 18px);
             /* Responsive font size */
@@ -439,21 +412,6 @@
                 padding: 10px 8px;
                 font-size: 11px;
                 min-width: 70px;
-            }
-
-            /* Mobile-friendly course cards */
-            .course-card {
-                padding: 15px 20px;
-                max-width: 100%;
-                margin: 0 5px;
-            }
-
-            .course-card .course-name {
-                font-size: 14px;
-            }
-
-            .course-card .course-description {
-                font-size: 12px;
             }
         }
 
@@ -776,19 +734,17 @@
             }
         }
 
-        // Display course cards
+        // Display course buttons (matching module selection style)
         function displayCourses() {
             const courseChoices = document.getElementById('courseChoices');
             courseChoices.innerHTML = '';
 
             coursesData.forEach(course => {
-                const courseCard = document.createElement('div');
-                courseCard.className = 'course-card';
-                courseCard.onclick = () => selectCourse(course);
-                courseCard.innerHTML = `
-                    <div class="course-name">${course.name}</div>
-                `;
-                courseChoices.appendChild(courseCard);
+                const courseBtn = document.createElement('button');
+                courseBtn.className = 'btn';
+                courseBtn.textContent = course.name;
+                courseBtn.onclick = () => selectCourse(course);
+                courseChoices.appendChild(courseBtn);
             });
         }
 
