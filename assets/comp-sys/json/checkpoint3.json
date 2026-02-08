@@ -1,0 +1,480 @@
+[
+  {
+    "question": "it is a dos command that lets you display the directory structure in your current working directory",
+    "choices": [
+      "move",
+      "ren",
+      "copy",
+      "tree"
+    ],
+    "answer": "tree"
+  },
+  {
+    "question": "move command is an external DOS command the lets you change name of a subdirectory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is the hexadecimal value of (capital letter) J.",
+    "choices": [
+      "49",
+      "48",
+      "4B",
+      "4A"
+    ],
+    "answer": "4A"
+  },
+  {
+    "question": "it is a debug command that lets you give a filename to a program.",
+    "choices": [
+      "w",
+      "r",
+      "t",
+      "n"
+    ],
+    "answer": "n"
+  },
+  {
+    "question": "Simulate the given program below:\n0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0108 mov dl,30\n0123:010A int 21\n0123:01C  mov dl,32\n0123:010E int 21\n0123:0110 mov dl,30\n0123:0112 int 21\n0123:0114  int 20\n \nWhat is the output?",
+    "choices": [
+      "3232",
+      "error",
+      "2020",
+      "no output"
+    ],
+    "answer": "2020"
+  },
+  {
+    "question": "It is a type of memory which can be read by the computer but not altered in any way.",
+    "choices": [
+      "Read Only Memory",
+      "Erasable Programmable Read Only Memory",
+      "Programmable Read Only Memory",
+      "Random Access Memory"
+    ],
+    "answer": "Read Only Memory"
+  },
+  {
+    "question": "it is one of the advantage of  using high-level languages over low-level languages",
+    "choices": [
+      "Easy to Learn",
+      "Flexibility",
+      "Speed",
+      "Compact Code"
+    ],
+    "answer": "Easy to Learn"
+  },
+  {
+    "question": "Convert binary 111111110010 to hexadecimal.",
+    "choices": [
+      "EE216",
+      "2FE16",
+      "FD216",
+      "FF216"
+    ],
+    "answer": "FF216"
+  },
+  {
+    "question": "Convert hexadecimal value C1 to binary.",
+    "choices": [
+      "111000001",
+      "11000001",
+      "1000111",
+      "111000100"
+    ],
+    "answer": "11000001"
+  },
+  {
+    "question": "given the directory structure above, write a command  from the root directory to move all the files form meat to fruits subdirectory",
+    "img": "https://feu.instructure.com/users/2525/files/6407455/preview?verifier=qitDhLqwoE36AlouL06AYhWIHKmJ72ha88fRTTM0",
+    "choices": [
+      "c:\\dos>copy meat *.* fruits",
+      "c:\\>copy meat\\*.* fruits",
+      "c:\\dos>copy meat\\*.* fruits",
+      "c:\\>copy meat *.* fruits"
+    ],
+    "answer": "c:\\>copy meat\\*.* fruits"
+  },
+  {
+    "question": "Convert the following octal number to decimal 178",
+    "choices": [
+      "15",
+      "82",
+      "57",
+      "51"
+    ],
+    "answer": "15"
+  },
+  {
+    "question": "Convert the following binary number to octal.010 111 1002",
+    "choices": [
+      "2748",
+      "1748",
+      "2728",
+      "1728"
+    ],
+    "answer": "2748"
+  },
+  {
+    "question": "The binary number for octal 458 is ________.",
+    "choices": [
+      "100010",
+      "110101",
+      "100100",
+      "100101"
+    ],
+    "answer": "100101"
+  },
+  {
+    "question": "The sum of 11101 + 10111 equals ________.",
+    "choices": [
+      "100001",
+      "110011",
+      "110100",
+      "100100"
+    ],
+    "answer": "110100"
+  },
+  {
+    "question": "The difference of 1000 − 100 equals",
+    "choices": [
+      "101",
+      "110",
+      "111",
+      "100"
+    ],
+    "answer": "100"
+  },
+  {
+    "question": "3 × 101 + 7 × 100 is equal to ________.",
+    "choices": [
+      "3.7",
+      "37",
+      "10",
+      "370"
+    ],
+    "answer": "37"
+  },
+  {
+    "question": "Convert 52716 to binary.",
+    "choices": [
+      "10 0000 1111",
+      "0111 0010 0101",
+      "0011 0100 0111",
+      "0101 0010 0111"
+    ],
+    "answer": "0101 0010 0111"
+  },
+  {
+    "question": "How many bits are in an ASCII character?",
+    "choices": [
+      "8",
+      "4",
+      "7",
+      "16"
+    ],
+    "answer": "7"
+  },
+  {
+    "question": "move is an external dos command that lets you move one or more files to the location you specify.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "How many binary digits are required to count to 10010?",
+    "choices": [
+      "100",
+      "2",
+      "3",
+      "7"
+    ],
+    "answer": "7"
+  },
+  {
+    "question": "When using even parity, where is the parity bit placed?",
+    "choices": [
+      "After the odd parity bit",
+      "In the parity word",
+      "After the LSB",
+      "Before the MSB"
+    ],
+    "answer": "Before the MSB"
+  },
+  {
+    "question": "Convert the binary number 1100 to Gray code.",
+    "choices": [
+      "100",
+      "1010",
+      "1001",
+      "0011"
+    ],
+    "answer": "1010"
+  },
+  {
+    "question": "3428 is the decimal value for which of the following binary-coded decimal (BCD) groupings?",
+    "choices": [
+      "110100001101010",
+      "11010000101000",
+      "11010001001000",
+      "011010010000010"
+    ],
+    "answer": "11010000101000"
+  },
+  {
+    "question": "from the given directory structure above, write the  command from the root directory that will copy all the files inside meat including vitc subdirectory to veggies subdirectory",
+    "img": "https://feu.instructure.com/users/2525/files/6407455/preview?verifier=qitDhLqwoE36AlouL06AYhWIHKmJ72ha88fRTTM0",
+    "choices": [
+      "c:\\>copy meat veggies /s",
+      "c:\\>xcopy meat veggies /s",
+      "c:\\>xcopy meat veggies /e",
+      "c:\\xcopy meat veggies /e"
+    ],
+    "answer": "c:\\>xcopy meat veggies /s"
+  },
+  {
+    "question": "It is an internal DOS command used to remove a directory.",
+    "choices": [
+      "dir",
+      "md",
+      "rd",
+      "cd"
+    ],
+    "answer": "rd"
+  },
+  {
+    "question": "It is a symbol used for wild card that can specify more than one character in DOS.",
+    "choices": [
+      "*",
+      "?",
+      "\\",
+      "/"
+    ],
+    "answer": "*"
+  },
+  {
+    "question": "It is the hexadecimal value of decimal number 5.",
+    "choices": [
+      "45",
+      "55",
+      "65",
+      "35"
+    ],
+    "answer": "35"
+  },
+  {
+    "question": "It is the extension name for assembly language program created using DEBUG command.",
+    "choices": [
+      "obj",
+      "bat",
+      "com",
+      "txt"
+    ],
+    "answer": "com"
+  },
+  {
+    "question": "It is a type of memory where information is written to a chip after it is manufactured this chip cannot be erased or re-written.",
+    "choices": [
+      "RAM",
+      "EPROM",
+      "PROM",
+      "ROM"
+    ],
+    "answer": "PROM"
+  },
+  {
+    "question": "What does P mean in PROM?",
+    "choices": [
+      "Programming",
+      "Progress",
+      "Program",
+      "Programmable"
+    ],
+    "answer": "Programmable"
+  },
+  {
+    "question": "It is  program that run the computer,  designed to perform a particular type of  task.",
+    "choices": [
+      "Application Software",
+      "Software",
+      "Operating System",
+      "Programming Language"
+    ],
+    "answer": "Application Software"
+  },
+  {
+    "question": "Convert decimal 213 to binary.",
+    "choices": [
+      "11001101",
+      "01111001",
+      "11010101",
+      "11100011"
+    ],
+    "answer": "11010101"
+  },
+  {
+    "question": "it is the command to save a text file created using copy con command",
+    "choices": [
+      "ctrl+x",
+      "ctrl+z",
+      "ctrl+d",
+      "ctrl+c"
+    ],
+    "answer": "ctrl+z"
+  },
+  {
+    "question": "It is a symbol used for wild card that can specify only one character in DOS.",
+    "choices": [
+      "\\",
+      "?",
+      "*",
+      "/"
+    ],
+    "answer": "?"
+  },
+  {
+    "question": "Offset address is also known as:",
+    "choices": [
+      "physical address",
+      "effective address",
+      "logical address",
+      "base address"
+    ],
+    "answer": "effective address"
+  },
+  {
+    "question": "It is a debug command that lets you write or store the program on the cpu memory.",
+    "choices": [
+      "t",
+      "w",
+      "r",
+      "n"
+    ],
+    "answer": "w"
+  },
+  {
+    "question": "It is a programming languages that were developed because of the difficulty of programming using assembly languages and is easier to use than machine and assembly languages because their commands are closer to natural human language.",
+    "choices": [
+      "High Level Language",
+      "Assembly Language",
+      "Machine Language",
+      "Love Level Language"
+    ],
+    "answer": "High Level Language"
+  },
+  {
+    "question": "Convert decimal 64 to binary.",
+    "choices": [
+      "0100 0000",
+      "00100000",
+      "01001000",
+      "00110110"
+    ],
+    "answer": "0100 0000"
+  },
+  {
+    "question": "Convert the following binary number to decimal.100110102",
+    "choices": [
+      "157",
+      "155",
+      "153",
+      "154"
+    ],
+    "answer": "154"
+  },
+  {
+    "question": "Convert 5278 to binary.",
+    "choices": [
+      "011100111",
+      "101010111",
+      "111010101",
+      "343"
+    ],
+    "answer": "101010111"
+  },
+  {
+    "question": "It is the only memory address visible to the user when writing an assembly language program using DEBUG command.",
+    "choices": [
+      "effective address",
+      "logical address",
+      "physical address",
+      "base address"
+    ],
+    "answer": "logical address"
+  },
+  {
+    "question": "Convert hexadecimal value 16 to decimal.",
+    "choices": [
+      "2210",
+      "2010",
+      "1010",
+      "1610"
+    ],
+    "answer": "2210"
+  },
+  {
+    "question": "Simulate the given program below:\n0123:0100 mov ah,02\n0123:0102 mov dl,32\n0123:0104 int 21\n0123:0114  in 20\n \nWhat is the output?",
+    "choices": [
+      "3232",
+      "2020",
+      "no output",
+      "ERROR"
+    ],
+    "answer": "ERROR"
+  },
+  {
+    "question": "It  is one of the tangible parts of a computer system.",
+    "choices": [
+      "Graphical User Interface",
+      "Application Swoftware",
+      "CPU",
+      "Operating System"
+    ],
+    "answer": "CPU"
+  },
+  {
+    "question": "It is an electronic device that accepts, processes, stores, and outputs data at high speeds according to programmed instructions.",
+    "choices": [
+      "Computer",
+      "Hardware",
+      "Register",
+      "Buffer"
+    ],
+    "answer": "Computer"
+  },
+  {
+    "question": "It is the hexadecimal value of (capital letter) A.",
+    "choices": [
+      "42h",
+      "61h",
+      "62h",
+      "41h"
+    ],
+    "answer": "41h"
+  },
+  {
+    "question": "What is the difference between binary coding and binary-coded decimal?",
+    "choices": [
+      "Binary coding is pure binary.",
+      "BCD has no decimal format.",
+      "Binary coding has a decimal format.",
+      "BCD is pure binary."
+    ],
+    "answer": "Binary coding is pure binary."
+  },
+  {
+    "question": "It is used to convert assembly language progrms to a machine-language program .",
+    "choices": [
+      "assembler",
+      "linker",
+      "interprter",
+      "Compiler"
+    ],
+    "answer": "assembler"
+  }
+]

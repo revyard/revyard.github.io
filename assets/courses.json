@@ -120,5 +120,25 @@
         ]
       }
     ]
+  },
+  {
+    "id": "com-sys",
+    "name": "Computer Systems And Platform Technologies",
+    "modules": [
+      {
+        "id": 1,
+        "name": "F1",
+        "checkpoints": [
+          "checkpoint1"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "S1 – (M1 M2 M3)",
+        "checkpoints": [
+          "checkpoint3"
+        ]
+      }
+    ]
   }
 ]

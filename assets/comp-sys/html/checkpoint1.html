@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[F1-FORMATIVE] Module 1 - Data Manipulation - QuizBank Export</title>
+    <style>
+        :root {
+            --ic-brand-primary: #667eea;
+            --ic-brand-font-color-dark: #2D3B45;
+        }
+        
+        body {
+            font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #2D3B45;
+            line-height: 1.5;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .quiz-header {
+            background: white;
+            color: #2D3B45;
+            padding: 24px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .quiz-header h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .quiz-header .subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: #f7f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-label {
+            font-size: 10px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        
+        .course-section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .course-section-title {
+            margin: 0 0 16px 0;
+            font-size: 20px;
+            color: #9C27B0;
+            border-bottom: 2px solid #E1BEE7;
+            padding-bottom: 8px;
+        }
+        
+        .quiz-section {
+            margin-bottom: 20px;
+        }
+        
+        .quiz-section-title {
+            margin: 16px 0 12px 0;
+            font-size: 16px;
+            color: #667eea;
+        }
+        
+        .display_question {
+            background: white;
+            padding: 0;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid #c7cdd1;
+        }
+        
+        .display_question .header {
+            background: #f7f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #c7cdd1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .question_name { font-weight: 600; color: #2D3B45; font-size: 15px; }
+        .question_points_holder { font-size: 14px; color: #73818f; }
+        .display_question .text { padding: 20px 16px; }
+        .question_text { font-size: 15px; line-height: 1.6; margin-bottom: 16px; }
+        
+        .answer-source-badge, .correct-answer-badge, .wrong-answer-badge {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .knowledge_bank-source { background: linear-gradient(135deg, #4CAF50, #45a049); color: white; }
+        .canvas-source { background: linear-gradient(135deg, #2196F3, #1976D2); color: white; }
+        .new-source { background: linear-gradient(135deg, #FF9800, #F57C00); color: white; }
+        .correct-answer-badge { background: #4CAF50 !important; color: white !important; }
+        .wrong-answer-badge { background: #ff5722 !important; color: white !important; }
+        
+        .answers { margin-top: 12px; }
+        fieldset { border: none; padding: 0; margin: 0; }
+        .answer { border-bottom: 1px solid #f0f0f0; }
+        .answer:last-child { border-bottom: none; }
+        .answer_row { display: flex; align-items: flex-start; padding: 10px 12px; }
+        .answer_input { margin-right: 10px; }
+        .answer_label { flex: 1; font-size: 14px; }
+        
+        .move, .links, .original_question_text, .screenreader-only { display: none !important; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #73818f;
+            font-size: 13px;
+            background: white;
+            border-radius: 8px;
+        }
+        
+        @media print {
+            body { background: white; }
+            .display_question { page-break-inside: avoid; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-header">
+        <h1>📚 [F1-FORMATIVE] Module 1 - Data Manipulation</h1>
+        <div class="subtitle">[F1-FORMATIVE] Module 1 - Data Manipulation: 2TSY2526_IT0047_TW34-10</div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Questions</div>
+                <div class="stat-value">20</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">✅ Correct</div>
+                <div class="stat-value">15</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">🚫 Wrong</div>
+                <div class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">✨ New</div>
+                <div class="stat-value">5</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="questions-container">
+        <div class="display_question question multiple_choice_question" id="question_21871327">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871327" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989651</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert 59.72&lt;sub&gt;10&amp;nbsp;&lt;/sub&gt;to BCD.</textarea>
+      </div>
+      <div id="question_21871327_question_text" class="question_text user_content enhanced">
+          Convert 59.72<sub>10&nbsp;</sub>to BCD.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871327" value="4718" id="question_21871327_answer_4718" aria-labelledby="question_21871327_answer_4718_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871327_answer_4718_label">
+        111011
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871327" value="8744" id="question_21871327_answer_8744" aria-labelledby="question_21871327_answer_8744_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871327_answer_8744_label">
+        01011001.01110010
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871327" value="4186" id="question_21871327_answer_4186" aria-labelledby="question_21871327_answer_4186_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871327_answer_4186_label">
+        1110.11
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871327" value="8321" id="question_21871327_answer_8321" aria-labelledby="question_21871327_answer_8321_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871327_answer_8321_label">
+        0101100101110010
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871330">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871330" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989664</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert hexadecimal value C1 to binary.</textarea>
+      </div>
+      <div id="question_21871330_question_text" class="question_text user_content enhanced">
+          Convert hexadecimal value C1 to binary.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871330" value="3289" id="question_21871330_answer_3289" aria-labelledby="question_21871330_answer_3289_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871330_answer_3289_label">
+        11000001
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871330" value="9980" id="question_21871330_answer_9980" aria-labelledby="question_21871330_answer_9980_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871330_answer_9980_label">
+        1000111
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871330" value="7953" id="question_21871330_answer_7953" aria-labelledby="question_21871330_answer_7953_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871330_answer_7953_label">
+        111000001
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871330" value="604" id="question_21871330_answer_604" aria-labelledby="question_21871330_answer_604_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871330_answer_604_label">
+        111000100
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871331">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871331" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989678</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">How many binary digits are required to count to 100&lt;sub&gt;10&lt;/sub&gt;?</textarea>
+      </div>
+      <div id="question_21871331_question_text" class="question_text user_content enhanced">
+          How many binary digits are required to count to 100<sub>10</sub>?
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871331" value="1270" id="question_21871331_answer_1270" aria-labelledby="question_21871331_answer_1270_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871331_answer_1270_label">
+        100
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871331" value="36" id="question_21871331_answer_36" aria-labelledby="question_21871331_answer_36_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871331_answer_36_label">
+        3
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871331" value="571" id="question_21871331_answer_571" aria-labelledby="question_21871331_answer_571_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871331_answer_571_label">
+        7
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871331" value="8008" id="question_21871331_answer_8008" aria-labelledby="question_21871331_answer_8008_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871331_answer_8008_label">
+        2
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871332">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871332" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989681</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">The binary number for octal 45&lt;sub&gt;8&lt;/sub&gt;&amp;nbsp;is ________.</textarea>
+      </div>
+      <div id="question_21871332_question_text" class="question_text user_content enhanced">
+          The binary number for octal 45<sub>8</sub>&nbsp;is ________.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871332" value="1768" id="question_21871332_answer_1768" aria-labelledby="question_21871332_answer_1768_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871332_answer_1768_label">
+        100010
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871332" value="4945" id="question_21871332_answer_4945" aria-labelledby="question_21871332_answer_4945_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871332_answer_4945_label">
+        100100
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871332" value="1243" id="question_21871332_answer_1243" aria-labelledby="question_21871332_answer_1243_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871332_answer_1243_label">
+        110101
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871332" value="3259" id="question_21871332_answer_3259" aria-labelledby="question_21871332_answer_3259_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871332_answer_3259_label">
+        100101
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871333">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871333" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989699</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;table width="100%"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p&gt;A binary number's value changes most drastically when the ________ is changed.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</textarea>
+      </div>
+      <div id="question_21871333_question_text" class="question_text user_content enhanced">
+          <table width="100%">
+<tbody>
+<tr>
+<td>
+<p>A binary number's value changes most drastically when the ________ is changed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871333" value="2192" id="question_21871333_answer_2192" aria-labelledby="question_21871333_answer_2192_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871333_answer_2192_label">
+        frequency
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871333" value="4321" id="question_21871333_answer_4321" aria-labelledby="question_21871333_answer_4321_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871333_answer_4321_label">
+        duty cycle
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871333" value="9095" id="question_21871333_answer_9095" aria-labelledby="question_21871333_answer_9095_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871333_answer_9095_label">
+        LSB
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871333" value="459" id="question_21871333_answer_459" aria-labelledby="question_21871333_answer_459_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871333_answer_459_label">
+        MSB
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871335">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871335" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989923</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">The sum of 11101 + 10111 equals ________.</textarea>
+      </div>
+      <div id="question_21871335_question_text" class="question_text user_content enhanced">
+          The sum of 11101 + 10111 equals ________.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871335" value="9680" id="question_21871335_answer_9680" aria-labelledby="question_21871335_answer_9680_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871335_answer_9680_label">
+        100001
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871335" value="6409" id="question_21871335_answer_6409" aria-labelledby="question_21871335_answer_6409_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871335_answer_6409_label">
+        100100
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871335" value="963" id="question_21871335_answer_963" aria-labelledby="question_21871335_answer_963_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871335_answer_963_label">
+        110011
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871335" value="8833" id="question_21871335_answer_8833" aria-labelledby="question_21871335_answer_8833_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871335_answer_8833_label">
+        110100
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871337">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871337" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989945</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;The sum of 1111 + 1111 in binary equals&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_21871337_question_text" class="question_text user_content enhanced">
+          <strong>The sum of 1111 + 1111 in binary equals</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871337" value="6462" id="question_21871337_answer_6462" aria-labelledby="question_21871337_answer_6462_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871337_answer_6462_label">
+        11111
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871337" value="8592" id="question_21871337_answer_8592" aria-labelledby="question_21871337_answer_8592_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871337_answer_8592_label">
+        0000
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871337" value="3799" id="question_21871337_answer_3799" aria-labelledby="question_21871337_answer_3799_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871337_answer_3799_label">
+        2222
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871337" value="1600" id="question_21871337_answer_1600" aria-labelledby="question_21871337_answer_1600_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871337_answer_1600_label">
+        11110
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871339">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871339" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991741</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">One hex digit is sometimes referred to as a(n):</textarea>
+      </div>
+      <div id="question_21871339_question_text" class="question_text user_content enhanced">
+          One hex digit is sometimes referred to as a(n):
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871339" value="8371" id="question_21871339_answer_8371" aria-labelledby="question_21871339_answer_8371_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871339_answer_8371_label">
+        nibble
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871339" value="5693" id="question_21871339_answer_5693" aria-labelledby="question_21871339_answer_5693_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871339_answer_5693_label">
+        grouping
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871339" value="4099" id="question_21871339_answer_4099" aria-labelledby="question_21871339_answer_4099_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871339_answer_4099_label">
+        instruction
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871339" value="8654" id="question_21871339_answer_8654" aria-labelledby="question_21871339_answer_8654_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871339_answer_8654_label">
+        byte
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871340">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871340" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991746</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Assign the proper odd parity bit to the code 111001.</textarea>
+      </div>
+      <div id="question_21871340_question_text" class="question_text user_content enhanced">
+          Assign the proper odd parity bit to the code 111001.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871340" value="4438" id="question_21871340_answer_4438" aria-labelledby="question_21871340_answer_4438_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871340_answer_4438_label">
+        0011111
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871340" value="5656" id="question_21871340_answer_5656" aria-labelledby="question_21871340_answer_5656_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871340_answer_5656_label">
+        1111001
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871340" value="1527" id="question_21871340_answer_1527" aria-labelledby="question_21871340_answer_1527_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871340_answer_1527_label">
+        0111111
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871340" value="3183" id="question_21871340_answer_3183" aria-labelledby="question_21871340_answer_3183_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871340_answer_3183_label">
+        1111011
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871343">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871343" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991787</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Which of the following is an invalid BCD code?</textarea>
+      </div>
+      <div id="question_21871343_question_text" class="question_text user_content enhanced">
+          Which of the following is an invalid BCD code?
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871343" value="5390" id="question_21871343_answer_5390" aria-labelledby="question_21871343_answer_5390_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871343_answer_5390_label">
+        0011
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871343" value="7316" id="question_21871343_answer_7316" aria-labelledby="question_21871343_answer_7316_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871343_answer_7316_label">
+        1001
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871343" value="3592" id="question_21871343_answer_3592" aria-labelledby="question_21871343_answer_3592_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871343_answer_3592_label">
+        0101
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871343" value="4502" id="question_21871343_answer_4502" aria-labelledby="question_21871343_answer_4502_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871343_answer_4502_label">
+        1101
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871345">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871345" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989636</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert binary 111111110010 to hexadecimal.</textarea>
+      </div>
+      <div id="question_21871345_question_text" class="question_text user_content enhanced">
+          Convert binary 111111110010 to hexadecimal.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871345" value="65" id="question_21871345_answer_65" aria-labelledby="question_21871345_answer_65_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871345_answer_65_label">
+        2FE<sub>16</sub>
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871345" value="3528" id="question_21871345_answer_3528" aria-labelledby="question_21871345_answer_3528_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871345_answer_3528_label">
+        EE2<sub>16</sub>
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871345" value="5152" id="question_21871345_answer_5152" aria-labelledby="question_21871345_answer_5152_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871345_answer_5152_label">
+        FD2<sub>16</sub>
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871345" value="1764" id="question_21871345_answer_1764" aria-labelledby="question_21871345_answer_1764_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871345_answer_1764_label">
+        FF2<sub>16</sub>
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871347">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871347" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989685</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert the following binary number to decimal.&lt;br&gt;10011010&lt;sub&gt;2&lt;/sub&gt;
+</textarea>
+      </div>
+      <div id="question_21871347_question_text" class="question_text user_content enhanced">
+          Convert the following binary number to decimal.<br>10011010<sub>2</sub>
+
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871347" value="9921" id="question_21871347_answer_9921" aria-labelledby="question_21871347_answer_9921_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871347_answer_9921_label">
+        155
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871347" value="9601" id="question_21871347_answer_9601" aria-labelledby="question_21871347_answer_9601_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871347_answer_9601_label">
+        157
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871347" value="3858" id="question_21871347_answer_3858" aria-labelledby="question_21871347_answer_3858_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871347_answer_3858_label">
+        153
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871347" value="233" id="question_21871347_answer_233" aria-labelledby="question_21871347_answer_233_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871347_answer_233_label">
+        154
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871354">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871354" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989640</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert the following binary number to decimal.&lt;br&gt;01011&lt;sub&gt;2&lt;/sub&gt;
+</textarea>
+      </div>
+      <div id="question_21871354_question_text" class="question_text user_content enhanced">
+          Convert the following binary number to decimal.<br>01011<sub>2</sub>
+
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871354" value="8494" id="question_21871354_answer_8494" aria-labelledby="question_21871354_answer_8494_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871354_answer_8494_label">
+        10
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871354" value="7891" id="question_21871354_answer_7891" aria-labelledby="question_21871354_answer_7891_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871354_answer_7891_label">
+        11
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871354" value="5030" id="question_21871354_answer_5030" aria-labelledby="question_21871354_answer_5030_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871354_answer_5030_label">
+        15
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871354" value="8594" id="question_21871354_answer_8594" aria-labelledby="question_21871354_answer_8594_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871354_answer_8594_label">
+        35
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871355">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871355" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989668</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert the following octal number to decimal 17&lt;sub&gt;8&lt;/sub&gt;
+</textarea>
+      </div>
+      <div id="question_21871355_question_text" class="question_text user_content enhanced">
+          Convert the following octal number to decimal 17<sub>8</sub>
+
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871355" value="2728" id="question_21871355_answer_2728" aria-labelledby="question_21871355_answer_2728_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871355_answer_2728_label">
+        51
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871355" value="1278" id="question_21871355_answer_1278" aria-labelledby="question_21871355_answer_1278_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871355_answer_1278_label">
+        82
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871355" value="8756" id="question_21871355_answer_8756" aria-labelledby="question_21871355_answer_8756_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871355_answer_8756_label">
+        15
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871355" value="8484" id="question_21871355_answer_8484" aria-labelledby="question_21871355_answer_8484_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871355_answer_8484_label">
+        57
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871357">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871357" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989711</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert binary 01001110 to decimal.</textarea>
+      </div>
+      <div id="question_21871357_question_text" class="question_text user_content enhanced">
+          Convert binary 01001110 to decimal.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871357" value="7245" id="question_21871357_answer_7245" aria-labelledby="question_21871357_answer_7245_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871357_answer_7245_label">
+        4E
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871357" value="7482" id="question_21871357_answer_7482" aria-labelledby="question_21871357_answer_7482_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871357_answer_7482_label">
+        78
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871357" value="9567" id="question_21871357_answer_9567" aria-labelledby="question_21871357_answer_9567_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871357_answer_9567_label">
+        116
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871357" value="7832" id="question_21871357_answer_7832" aria-labelledby="question_21871357_answer_7832_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871357_answer_7832_label">
+        76
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871372">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871372" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989937</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;The difference of 1000 −&amp;nbsp;100 equals&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_21871372_question_text" class="question_text user_content enhanced">
+          <strong>The difference of 1000 −&nbsp;100 equals</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871372" value="7974" id="question_21871372_answer_7974" aria-labelledby="question_21871372_answer_7974_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871372_answer_7974_label">
+        100
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871372" value="700" id="question_21871372_answer_700" aria-labelledby="question_21871372_answer_700_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871372_answer_700_label">
+        110
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871372" value="9355" id="question_21871372_answer_9355" aria-labelledby="question_21871372_answer_9355_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871372_answer_9355_label">
+        101
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871372" value="8293" id="question_21871372_answer_8293" aria-labelledby="question_21871372_answer_8293_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871372_answer_8293_label">
+        111
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871373">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871373" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991780</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert the binary number 1100 to Gray code.</textarea>
+      </div>
+      <div id="question_21871373_question_text" class="question_text user_content enhanced">
+          Convert the binary number 1100 to Gray code.
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871373" value="9858" id="question_21871373_answer_9858" aria-labelledby="question_21871373_answer_9858_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871373_answer_9858_label">
+        1010
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871373" value="9762" id="question_21871373_answer_9762" aria-labelledby="question_21871373_answer_9762_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871373_answer_9762_label">
+        100
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871373" value="3352" id="question_21871373_answer_3352" aria-labelledby="question_21871373_answer_3352_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871373_answer_3352_label">
+        0011
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871373" value="5379" id="question_21871373_answer_5379" aria-labelledby="question_21871373_answer_5379_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871373_answer_5379_label">
+        1001
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871466">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871466" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991805</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">3428 is the decimal value for which of the following binary-coded decimal (BCD) groupings?</textarea>
+      </div>
+      <div id="question_21871466_question_text" class="question_text user_content enhanced">
+          3428 is the decimal value for which of the following binary-coded decimal (BCD) groupings?
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871466" value="6263" id="question_21871466_answer_6263" aria-labelledby="question_21871466_answer_6263_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871466_answer_6263_label">
+        011010010000010
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871466" value="2086" id="question_21871466_answer_2086" aria-labelledby="question_21871466_answer_2086_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871466_answer_2086_label">
+        11010001001000
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871466" value="4490" id="question_21871466_answer_4490" aria-labelledby="question_21871466_answer_4490_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871466_answer_4490_label">
+        110100001101010
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871466" value="5943" id="question_21871466_answer_5943" aria-labelledby="question_21871466_answer_5943_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871466_answer_5943_label">
+        11010000101000
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871469">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871469" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35989933</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">The difference of 111 – 001 equals ________.</textarea>
+      </div>
+      <div id="question_21871469_question_text" class="question_text user_content enhanced">
+          The difference of 111 – 001 equals ________.
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871469" value="6635" id="question_21871469_answer_6635" aria-labelledby="question_21871469_answer_6635_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871469_answer_6635_label">
+        001
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871469" value="6265" id="question_21871469_answer_6265" aria-labelledby="question_21871469_answer_6265_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871469_answer_6265_label">
+        110
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871469" value="5578" id="question_21871469_answer_5578" aria-labelledby="question_21871469_answer_5578_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871469_answer_5578_label">
+        111
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871469" value="504" id="question_21871469_answer_504" aria-labelledby="question_21871469_answer_504_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871469_answer_504_label">
+        100
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_21871487">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107511/quizzes/1571751/questions/21871487" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35991791</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">Convert the Gray code 1011 to binary.</textarea>
+      </div>
+      <div id="question_21871487_question_text" class="question_text user_content enhanced">
+          Convert the Gray code 1011 to binary.
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871487" value="4568" id="question_21871487_answer_4568" aria-labelledby="question_21871487_answer_4568_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871487_answer_4568_label">
+        1011
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871487" value="491" id="question_21871487_answer_491" aria-labelledby="question_21871487_answer_491_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871487_answer_491_label">
+        1010
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871487" value="9762" id="question_21871487_answer_9762" aria-labelledby="question_21871487_answer_9762_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871487_answer_9762_label">
+        1101
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_21871487" value="4932" id="question_21871487_answer_4932" aria-labelledby="question_21871487_answer_4932_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_21871487_answer_4932_label">
+        0100
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+    </div>
+    
+    <div class="footer">
+        <strong>Generated by QuizBank</strong><br>
+        2/8/2026, 1:28:04 AM
+    </div>
+</body>
+</html>
