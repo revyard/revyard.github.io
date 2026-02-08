@@ -1,0 +1,480 @@
+[
+  {
+    "question": "What is the data bus size of 8086 processor?",
+    "choices": [
+      "16",
+      "8",
+      "32",
+      "64"
+    ],
+    "answer": "16"
+  },
+  {
+    "question": "What is the maximum number of addressable memory of a processor that has a 20 bits of address bus lines?",
+    "choices": [
+      "102400",
+      "1048676",
+      "10240",
+      "1048576"
+    ],
+    "answer": "1048576"
+  },
+  {
+    "question": "What is the maximum number of addressable memory (in English) of a processor that has a 20 bits of address bus lines?",
+    "choices": [
+      "4MB",
+      "2MB",
+      "1MB",
+      "8MB"
+    ],
+    "answer": "1MB"
+  },
+  {
+    "question": "This the first sequence of  a write memory operation.",
+    "choices": [
+      "2. MM reads the data stored at that address and sends it to the CPU.",
+      "Data is written at desired location.",
+      "CPU sends address of the desired location to the MM, together with the data to be stored into that location.",
+      "CPU sends address of the desired location."
+    ],
+    "answer": "CPU sends address of the desired location to the MM, together with the data to be stored into that location."
+  },
+  {
+    "question": "A word of data will consume two consecutive memory addresses.",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "answer": "true"
+  },
+  {
+    "question": "Fetch instruction is an instruction for transferring the data from CPU to main memory.",
+    "choices": [
+      "False, it should be execute instruction.",
+      "False, it should be main memory to CPU",
+      "This statement is really true.",
+      "False, it should be CPU to accumulator."
+    ],
+    "answer": "False, it should be main memory to CPU"
+  },
+  {
+    "question": "In Read/Fetch Cycle: , the CPU sends address of the desired location then the Main Memory reads the data stored at that address and sends it to the CPU.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "In the Write/Store Cycle the CPU sends address of the desired location to the MM, together with the data to be stored into that location then Data is written at desired location.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "a word consumes two consecutive memory addresses. Similarly, a double word consumes four consecutive memory locations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Accessing 32 bit quantities always takes at least one memory operations on the 16 bit processors.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It is the fourth operating steps between the  cpu and memory operations.",
+    "choices": [
+      "The contents of the PC are transferred to the MAR (which are automatically transmitted to the MM) and a Read signal is\tsent to the MM.",
+      "PC is set to point to the first instruction of \tthe program (the operating system loads the memory address of the first instruction).",
+      "The addressed word is read out of MM and loaded into the MDR.",
+      "The contents of MDR are transferred to the IR.  The instruction is ready to be decoded and executed."
+    ],
+    "answer": "The contents of MDR are transferred to the IR.  The instruction is ready to be decoded and executed."
+  },
+  {
+    "question": "It is the fifth operating steps between the  cpu and memory operations.",
+    "choices": [
+      "During execution, the contents of the PC are incremented or updated to point to the \tnext instruction.",
+      "The contents of MDR are transferred to the IR.  The instruction is ready to be decoded and executed.",
+      "The contents of the PC are transferred to the MAR (which are automatically transmitted to the MM) and a Read signal is\tsent to the MM.",
+      "The addressed word is read out of MM and loaded into the MDR."
+    ],
+    "answer": "During execution, the contents of the PC are incremented or updated to point to the \tnext instruction."
+  },
+  {
+    "question": "In one of the component of CPU, what does MDR means?",
+    "choices": [
+      "Main Data Register",
+      "Memory Data Register",
+      "Memory data Record",
+      "Main Data Record"
+    ],
+    "answer": "Memory Data Register"
+  },
+  {
+    "question": "In the von neumann architecture the data bus is unidirectional.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It is a special segment register that is used for the LIFO stack.",
+    "choices": [
+      "Code Segment",
+      "Stack Segment",
+      "Extra Segment",
+      "Data Segment"
+    ],
+    "answer": "Stack Segment"
+  },
+  {
+    "question": "Perform the operation of the given binary numbers.\n\n\n\n\n    0110 0010 1010 00002\n\n\n\n\n-   1001 1101 0110 00002\n\n\n\n\n    1100 0101 0100 00002\n\n\n\n\nWhat is the value of SF?",
+    "choices": [
+      "0",
+      "undefined",
+      "x",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "Perform the operation of the given binary numbers.\n\n\n\n\n    0110 0010 1010 00002\n\n\n\n\n-   1001 1101 0110 00002\n\n\n\n\n    1100 0101 0100 00002\n\n\n\n\nWhat is the value of AF?",
+    "choices": [
+      "0",
+      "1",
+      "x",
+      "undefined"
+    ],
+    "answer": "0"
+  },
+  {
+    "question": "Perform the operation of the given binary numbers.\n\n\n\n\n    0110 0010 1010 00002\n\n\n\n\n-   1001 1101 0110 00002\n\n\n\n\n    1100 0101 0100 00002\n\n\n\n\nWhat is the value of OF?",
+    "choices": [
+      "1",
+      "x",
+      "undefined",
+      "0"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "What is the data bus size of 8088 processor?",
+    "choices": [
+      "16",
+      "8",
+      "32",
+      "64"
+    ],
+    "answer": "8"
+  },
+  {
+    "question": "Read operation will transfers the contents of a specific MM location to the CPU. The word in the MM will be changed.",
+    "choices": [
+      "true",
+      "false"
+    ],
+    "answer": "false"
+  },
+  {
+    "question": "Write memory operation will transfer a word of information from the CPU to a specific MM location. This  will not overwrite the former contents of that location.",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "answer": "false"
+  },
+  {
+    "question": "How many bits are there in a one double word of data?",
+    "choices": [
+      "64",
+      "8",
+      "16",
+      "32"
+    ],
+    "answer": "32"
+  },
+  {
+    "question": "To load a word requires two memory operations; to load a double word requires four memory operations in 8088 and 80188 processor.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The 8088 and 80188 can manipulate word and double word values, even with their eight bit data bus.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The 8086, 80186, 80286, and 80386sx processors have a 16 bit data bus. This allows these processors to access twice as much memory in the same amount of time as their eight bit brethren.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is a special segment register that contains the program or code.",
+    "choices": [
+      "Code Segment",
+      "Stack Segment",
+      "Extra Segment",
+      "Data Segment"
+    ],
+    "answer": "Code Segment"
+  },
+  {
+    "question": "It is a special purpose register that is also the program counter, it contains the memory address of the instruction to be executed.",
+    "choices": [
+      "instruction pointer",
+      "Instruction Register",
+      "Program counter",
+      "flags register"
+    ],
+    "answer": "instruction pointer"
+  },
+  {
+    "question": "What is the data bus size of 80486 processor?",
+    "choices": [
+      "8",
+      "64",
+      "16",
+      "32"
+    ],
+    "answer": "32"
+  },
+  {
+    "question": "In the formula (2^n) to determine the  maximum addressable memory, what does n stands for?",
+    "choices": [
+      "number of bits of central bus",
+      "number of bits of address bus",
+      "number of bits of data bus",
+      "number of bits of control bus"
+    ],
+    "answer": "number of bits of address bus"
+  },
+  {
+    "question": "The control bus is an extensive collection of signals that control how the processor communicates with the rest of the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The read and write control lines control the direction of data on the data bus.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This the second sequence of  a read memory operation.",
+    "choices": [
+      "CPU sends address of the desired location to the MM, together with the data to be stored into that location.",
+      "Data is written at desired location.",
+      "CPU sends address of the desired location.",
+      "MM reads the data stored at that address and sends it to the CPU."
+    ],
+    "answer": "MM reads the data stored at that address and sends it to the CPU."
+  },
+  {
+    "question": "How many bits are there in a one byte of data?",
+    "choices": [
+      "16",
+      "32",
+      "8",
+      "64"
+    ],
+    "answer": "8"
+  },
+  {
+    "question": "In one of the component of CPU, what does IR means?",
+    "choices": [
+      "Instruction Register",
+      "Instructional Register",
+      "Instructional registration",
+      "Instruction Registration"
+    ],
+    "answer": "Instruction Register"
+  },
+  {
+    "question": "Von Neumann Architecture It is also known as the Stored Program Architecture or the Fetch-Decode-Execute Architecture.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is a special segment register that contains data referenced by almost all instructions and many addressing modes.",
+    "choices": [
+      "Stack Segment",
+      "Code Segment Data Segment",
+      "Data Segment",
+      "Code Segment"
+    ],
+    "answer": "Data Segment"
+  },
+  {
+    "question": "Perform the operation of the given binary numbers.\n\n\n\n\n\n          0010 0011 0100 0101\n\n\n\n\n    +  0011 0010 0001 1001\n\n\n\n\nWhat is the value ofCF?",
+    "choices": [
+      "1",
+      "undefined",
+      "x",
+      "0"
+    ],
+    "answer": "0"
+  },
+  {
+    "question": "For 8086 processor with address bus size of 20, what is the maximum addressable memory?",
+    "choices": [
+      "64GB",
+      "1 MB",
+      "16MB",
+      "4GB"
+    ],
+    "answer": "1 MB"
+  },
+  {
+    "question": "The 8088 and 80188 microprocessors have an eight bit data bus. This means that the CPU can transfer 16 bits of data at a time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "To access a word at an odd address requires two memory operations (just like the 8088/80188).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is a CPU component which  contains the memory address of the instruction to be executed.",
+    "choices": [
+      "IR",
+      "MAR",
+      "PC",
+      "MDR"
+    ],
+    "answer": "PC"
+  },
+  {
+    "question": "It is the number of address lines required to make 1024 memory addressable locations.",
+    "choices": [
+      "1024 bits",
+      "20 bits",
+      "24 bits",
+      "10 bits"
+    ],
+    "answer": "10 bits"
+  },
+  {
+    "question": "How many bits are there in a one word of data?",
+    "choices": [
+      "32",
+      "16",
+      "8",
+      "64"
+    ],
+    "answer": "16"
+  },
+  {
+    "question": "In one of the component of CPU, what does PC means?",
+    "choices": [
+      "Program Center",
+      "Programmable Counter",
+      "Program Control",
+      "Program Counter"
+    ],
+    "answer": "Program Counter"
+  },
+  {
+    "question": "The 8088 and 80188 cannot manipulate word and double word values, even with their eight bit data bus.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "In the von neumann architecture the control bus is bidirectional.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The IR (Instruction Register) contains the instruction that is being executed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The 80x86 family accesses a word and a double word by storing the low-order byte of a word at the address specified and the high-order byte at the next location.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is a CPU component which contains the data to be written or read out of the addressed location",
+    "choices": [
+      "IR",
+      "MDR",
+      "PC",
+      "MAR"
+    ],
+    "answer": "MDR"
+  },
+  {
+    "question": "It is a general purpose register  where most arithmetic and logical computations take place.",
+    "choices": [
+      "AX",
+      "CX",
+      "BX",
+      "DX"
+    ],
+    "answer": "AX"
+  },
+  {
+    "question": "The PC (Program Counter) contains the memory address of the instruction to be executed.  During execution, the contents of the PC are updated to point to the next instruction.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is a general purpose register that, as its name implies, counts things. It is often use it to count off the number of iterations in a loop or specify the number of characters in a string.",
+    "choices": [
+      "DX",
+      "AX",
+      "CX",
+      "BX"
+    ],
+    "answer": "CX"
+  }
+]

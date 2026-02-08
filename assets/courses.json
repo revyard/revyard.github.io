@@ -138,6 +138,13 @@
         "checkpoints": [
           "checkpoint3"
         ]
+      },
+      {
+        "id": 4,
+        "name": "F3",
+        "checkpoints": [
+          "checkpoint4"
+        ]
       }
     ]
   }
