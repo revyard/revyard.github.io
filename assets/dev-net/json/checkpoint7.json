@@ -1,0 +1,702 @@
+[
+    {
+        "question": "What is the primary purpose of a virtual machine (VM)?",
+        "choices": [
+            "Replace physical hardware",
+            "Run multiple operating systems on one machine",
+            "Increase internet speed",
+            "Secure user passwords"
+        ],
+        "answer": "Run multiple operating systems on one machine"
+    },
+    {
+        "question": "In a virtualization setup, the physical computer is called the:",
+        "choices": [
+            "Guest",
+            "Host",
+            "Node",
+            "Container"
+        ],
+        "answer": "Host"
+    },
+    {
+        "question": "Which operating system is used in all DEVASC coding labs?",
+        "choices": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Unix"
+        ],
+        "answer": "Linux"
+    },
+    {
+        "question": "What Linux command is commonly used to list files in a directory?",
+        "choices": [
+            "list",
+            "show",
+            "ls",
+            "dir"
+        ],
+        "answer": "ls"
+    },
+    {
+        "question": "Why is Python recommended for beginners?",
+        "choices": [
+            "It is hardware dependent",
+            "It has complex syntax",
+            "It is easy to learn and use",
+            "It only works on Linux"
+        ],
+        "answer": "It is easy to learn and use"
+    },
+    {
+        "question": "Which data type stores key-value pairs in Python?",
+        "choices": [
+            "List",
+            "Tuple",
+            "Dictionary",
+            "String"
+        ],
+        "answer": "Dictionary"
+    },
+    {
+        "question": "DevNet primarily provides access to:",
+        "choices": [
+            "End-user applications",
+            "Cisco APIs and development tools",
+            "Gaming environments",
+            "Hardware drivers"
+        ],
+        "answer": "Cisco APIs and development tools"
+    },
+    {
+        "question": "Which DevNet feature provides production-like testing environments?",
+        "choices": [
+            "Learning Labs",
+            "Code Exchange",
+            "Sandbox",
+            "Ecosystem Exchange"
+        ],
+        "answer": "Sandbox"
+    },
+    {
+        "question": "Which software development life cycle (SDLC) phase focuses on identifying requirements?",
+        "choices": [
+            "Design",
+            "Implementation",
+            "Testing",
+            "Requirements & Analysis"
+        ],
+        "answer": "Requirements & Analysis"
+    },
+    {
+        "question": "Agile development mainly emphasizes:",
+        "choices": [
+            "Heavy documentation",
+            "Fixed requirements",
+            "Customer collaboration and flexibility",
+            "One-time delivery"
+        ],
+        "answer": "Customer collaboration and flexibility"
+    },
+    {
+        "question": "Which Agile artifact contains prioritized features?",
+        "choices": [
+            "Sprint",
+            "Backlog",
+            "User story",
+            "Stand-up"
+        ],
+        "answer": "Backlog"
+    },
+    {
+        "question": "A user story typically follows which format?",
+        "choices": [
+            "If-then statement",
+            "Task checklist",
+            "As a user, I want..., so that...",
+            "Feature specification"
+        ],
+        "answer": "As a user, I want..., so that..."
+    },
+    {
+        "question": "Which design pattern focuses on real-time updates to subscribers?",
+        "choices": [
+            "MVC",
+            "Singleton",
+            "Observer",
+            "Factory"
+        ],
+        "answer": "Observer"
+    },
+    {
+        "question": "Which version control system type allows everyone to work simultaneously?",
+        "choices": [
+            "Local",
+            "Centralized",
+            "Distributed",
+            "Manual"
+        ],
+        "answer": "Distributed"
+    },
+    {
+        "question": "Git stores data primarily as:",
+        "choices": [
+            "Text logs",
+            "Deltas only",
+            "Snapshots",
+            "Binary copies"
+        ],
+        "answer": "Snapshots"
+    },
+    {
+        "question": "Which Git command initializes a repository?",
+        "choices": [
+            "git start",
+            "git init",
+            "git clone",
+            "git push"
+        ],
+        "answer": "git init"
+    },
+    {
+        "question": "Which HTTP method retrieves data?",
+        "choices": [
+            "POST",
+            "PUT",
+            "GET",
+            "DELETE"
+        ],
+        "answer": "GET"
+    },
+    {
+        "question": "Which HTTP status code means 'Success'?",
+        "choices": [
+            "1xx",
+            "2xx",
+            "3xx",
+            "4xx"
+        ],
+        "answer": "2xx"
+    },
+    {
+        "question": "REST APIs commonly use which protocol?",
+        "choices": [
+            "FTP",
+            "SMTP",
+            "HTTP/HTTPS",
+            "SNMP"
+        ],
+        "answer": "HTTP/HTTPS"
+    },
+    {
+        "question": "Which REST component identifies the resource?",
+        "choices": [
+            "Header",
+            "Body",
+            "URI",
+            "Cookie"
+        ],
+        "answer": "URI"
+    },
+    {
+        "question": "Which authentication mechanism encodes username and password on Base64?",
+        "choices": [
+            "OAuth",
+            "API Key",
+            "Basic Authentication",
+            "Bearer Token"
+        ],
+        "answer": "Basic Authentication"
+    },
+    {
+        "question": "Which REST principle states that the server should not store client state?",
+        "choices": [
+            "Cacheable",
+            "Layered",
+            "Stateless",
+            "Uniform Interface"
+        ],
+        "answer": "Stateless"
+    },
+    {
+        "question": "What does API stand for?",
+        "choices": [
+            "Application Programming Interface",
+            "Automated Programming Interface",
+            "Application Process Integration",
+            "Advanced Protocol Interface"
+        ],
+        "answer": "Application Programming Interface"
+    },
+    {
+        "question": "Which API style returns data immediately?",
+        "choices": [
+            "Asynchronous",
+            "Deferred",
+            "Synchronous",
+            "Layered"
+        ],
+        "answer": "Synchronous"
+    },
+    {
+        "question": "Which DevNet resource contains sample code from the community?",
+        "choices": [
+            "Sandbox",
+            "Learning Labs",
+            "Code Exchange",
+            "Developer Support"
+        ],
+        "answer": "Code Exchange"
+    },
+    {
+        "question": "A student cannot run DEVASC labs due to hardware limitations. What is the best solution?",
+        "choices": [
+            "Install dual boot",
+            "Use a VM",
+            "Upgrade BIOS",
+            "Use browser"
+        ],
+        "answer": "Use a VM"
+    },
+    {
+        "question": "Which Linux permission allows file modification?",
+        "choices": [
+            "Read",
+            "Execute",
+            "Write",
+            "View"
+        ],
+        "answer": "Write"
+    },
+    {
+        "question": "A Python program repeatedly asks for user input until a condition is met. Which Python structure is best?",
+        "choices": [
+            "for loop",
+            "while loop",
+            "if statement",
+            "function"
+        ],
+        "answer": "while loop"
+    },
+    {
+        "question": "A developer wants hands-on API testing without affecting production systems. Which DevNet tool should be used?",
+        "choices": [
+            "Code Exchange",
+            "Sandbox",
+            "Support Ticket",
+            "Video Course"
+        ],
+        "answer": "Sandbox"
+    },
+    {
+        "question": "Which SDLC phase produces HLD and LLD documents?",
+        "choices": [
+            "Requirements",
+            "Design",
+            "Testing",
+            "Maintenance"
+        ],
+        "answer": "Design"
+    },
+    {
+        "question": "Which Agile practice limits meetings to 15 minutes daily?",
+        "choices": [
+            "Sprint Review",
+            "Retrospective",
+            "Daily Stand-up",
+            "Backlog Grooming"
+        ],
+        "answer": "Daily Stand-up"
+    },
+    {
+        "question": "A team wants to reduce wasted effort and unnecessary features. Which methodology fits best?",
+        "choices": [
+            "Waterfall",
+            "Lean",
+            "Spiral",
+            "V-Model"
+        ],
+        "answer": "Lean"
+    },
+    {
+        "question": "Which Git stage contains files ready for commit?",
+        "choices": [
+            "Repository",
+            "Working Directory",
+            "Staging Area",
+            "Remote"
+        ],
+        "answer": "Staging Area"
+    },
+    {
+        "question": "A developer wants to compare changes before committing. Which command is used?",
+        "choices": [
+            "git status",
+            "git diff",
+            "git log",
+            "git pull"
+        ],
+        "answer": "git diff"
+    },
+    {
+        "question": "What is the main benefit of branching in Git?",
+        "choices": [
+            "Faster Internet",
+            "Code encryption",
+            "Independent development",
+            "Automatic testing"
+        ],
+        "answer": "Independent development"
+    },
+    {
+        "question": "A REST API client sends malformed data. Which status code is expected?",
+        "choices": [
+            "200",
+            "202",
+            "400",
+            "500"
+        ],
+        "answer": "400"
+    },
+    {
+        "question": "Which HTTP method is used to partially update a resource?",
+        "choices": [
+            "PUT",
+            "POST",
+            "PATCH",
+            "GET"
+        ],
+        "answer": "PATCH"
+    },
+    {
+        "question": "Which REST header specifies data format?",
+        "choices": [
+            "Authorization",
+            "Accept",
+            "Content-Type",
+            "Cache-Control"
+        ],
+        "answer": "Content-Type"
+    },
+    {
+        "question": "An API responds slowly but allows the client to continue processing. What API style is used?",
+        "choices": [
+            "Synchronous",
+            "Asynchronous",
+            "RESTful",
+            "Layered"
+        ],
+        "answer": "Asynchronous"
+    },
+    {
+        "question": "Which REST constraint improves scalability by using intermediaries?",
+        "choices": [
+            "Stateless",
+            "Cache",
+            "Layered System",
+            "Uniform Interface"
+        ],
+        "answer": "Layered System"
+    },
+    {
+        "question": "A developer uses pagination in API responses. Which component is commonly used?",
+        "choices": [
+            "Headers only",
+            "Query parameters",
+            "Cookies",
+            "Tokens"
+        ],
+        "answer": "Query parameters"
+    },
+    {
+        "question": "Which Git command uploads local changes to a remote repository?",
+        "choices": [
+            "git add",
+            "git commit",
+            "git push",
+            "git clone"
+        ],
+        "answer": "git push"
+    },
+    {
+        "question": "A system prioritizes accountability and audit features. What should they use?",
+        "choices": [
+            "Manual backups",
+            "Version control",
+            "File sharing",
+            "Session Cookie"
+        ],
+        "answer": "Version control"
+    },
+    {
+        "question": "Which authentication method uses tokens to verify identity?",
+        "choices": [
+            "Basic Auth",
+            "API Key",
+            "Bearer Token",
+            "Session Cookie"
+        ],
+        "answer": "Bearer Token"
+    },
+    {
+        "question": "An API returns 401 Unauthorized. What is the likely issue?",
+        "choices": [
+            "Server error",
+            "Invalid endpoint",
+            "Missing credentials",
+            "Rate limit exceeded"
+        ],
+        "answer": "Missing credentials"
+    },
+    {
+        "question": "Which protocol separates data, UI, and logic?",
+        "choices": [
+            "Observer",
+            "Factory",
+            "MVC",
+            "Singleton"
+        ],
+        "answer": "MVC"
+    },
+    {
+        "question": "A DevNet support option allows direct interaction with experts?",
+        "choices": [
+            "Knowledge Base",
+            "Ticket System",
+            "Community Forum",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "question": "A REST API must specify if responses can be cached. Which constraint applies?",
+        "choices": [
+            "Stateless",
+            "Cacheable",
+            "Layered",
+            "Uniform"
+        ],
+        "answer": "Cacheable"
+    },
+    {
+        "question": "Which Git command checks repository status?",
+        "choices": [
+            "git diff",
+            "git status",
+            "git init",
+            "git merge"
+        ],
+        "answer": "git status"
+    },
+    {
+        "question": "Why are REST APIs commonly preferred over SOAP today?",
+        "choices": [
+            "SOAP is faster",
+            "REST is lighter and simpler",
+            "SOAP uses JSON",
+            "REST requires no authentication"
+        ],
+        "answer": "REST is lighter and simpler"
+    },
+    {
+        "question": "A startup releases features every two weeks and frequently adjusts requirements based on customer feedback. Which development methodology BEST supports this scenario?",
+        "choices": [
+            "Waterfall – because requirements are fixed early",
+            "Agile – because it supports iterative development and change",
+            "Lean – because it eliminates documentation",
+            "V-Model – because testing happens late"
+        ],
+        "answer": "Agile – because it supports iterative development and change"
+    },
+    {
+        "question": "A developer accidentally commits API credentials into a public Git repository. Which combination of practices would BEST prevent this issue?",
+        "choices": [
+            "Use branches and frequent commits",
+            "Use .gitignore and environment variables",
+            "Push directly to the master branch",
+            "Store credentials in source code comments"
+        ],
+        "answer": "Use .gitignore and environment variables"
+    },
+    {
+        "question": "A REST API returns 503 Service Unavailable during peak hours. What is the MOST likely cause?",
+        "choices": [
+            "Invalid authentication token",
+            "Client-side syntax error",
+            "Server overload or temporary unavailability",
+            "Incorrect HTTP method"
+        ],
+        "answer": "Server overload or temporary unavailability"
+    },
+    {
+        "question": "A monitoring system must automatically notify multiple dashboards whenever network data changes. Which design pattern is MOST appropriate?",
+        "choices": [
+            "MVC",
+            "Singleton",
+            "Observer",
+            "Factory"
+        ],
+        "answer": "Observer"
+    },
+    {
+        "question": "A client successfully authenticates but receives a 403 Forbidden response when attempting to delete a resource. What is the BEST explanation?",
+        "choices": [
+            "Authentication failed",
+            "The resource does not exist",
+            "The user lacks authorization for the action",
+            "The server is offline"
+        ],
+        "answer": "The user lacks authorization for the action"
+    },
+    {
+        "question": "A payment API processes transactions that may take several seconds. The client must continue working without waiting for completion. Which API design style should be used?",
+        "choices": [
+            "Synchronous API",
+            "REST-only API",
+            "Asynchronous API",
+            "RPC API"
+        ],
+        "answer": "Asynchronous API"
+    },
+    {
+        "question": "During a sprint, the product owner introduces a new requirement. How does Agile BEST handle this situation?",
+        "choices": [
+            "Reject the change until the next release cycle",
+            "Restart the SDLC from the beginning",
+            "Reprioritize the backlog for future sprints",
+            "Ignore the change to maintain scope"
+        ],
+        "answer": "Reprioritize the backlog for future sprints"
+    },
+    {
+        "question": "Two developers modify the same file in a Git repository. What happens NEXT?",
+        "choices": [
+            "One change automatically overwrites the other",
+            "Git locks the repository",
+            "Git detects a merge conflict",
+            "Git deletes one branch"
+        ],
+        "answer": "Git detects a merge conflict"
+    },
+    {
+        "question": "Which REST constraint MOST directly improves scalability by preventing the server from storing client session data?",
+        "choices": [
+            "Cacheable",
+            "Stateless",
+            "Uniform Interface",
+            "Code-on-demand"
+        ],
+        "answer": "Stateless"
+    },
+    {
+        "question": "A client repeatedly requests the same API resource, causing slow performance. Which REST feature can BEST improve efficiency?",
+        "choices": [
+            "Authentication",
+            "Caching",
+            "Layered architecture",
+            "Pagination"
+        ],
+        "answer": "Caching"
+    },
+    {
+        "question": "A developer wants to experiment with Cisco APIs without risking production systems. Which DevNet feature should be used?",
+        "choices": [
+            "Code Exchange",
+            "Learning Labs",
+            "DevNet Sandbox",
+            "Developer Forums"
+        ],
+        "answer": "DevNet Sandbox"
+    },
+    {
+        "question": "A Python script fails when invalid user input is provided. Which practice would MOST likely detect this issue early?",
+        "choices": [
+            "Code refactoring",
+            "Unit testing",
+            "Version control",
+            "Branching"
+        ],
+        "answer": "Unit testing"
+    },
+    {
+        "question": "A DevOps engineer needs reusable automation scripts created by the community. Which DevNet Exchange is MOST suitable?",
+        "choices": [
+            "Ecosystem Exchange",
+            "Automation Exchange",
+            "Code Exchange",
+            "Developer Support"
+        ],
+        "answer": "Automation Exchange"
+    },
+    {
+        "question": "A REST API uses POST instead of PUT for updating an existing resource. What is a potential problem with this approach?",
+        "choices": [
+            "POST cannot send data",
+            "POST violates idempotency",
+            "POST cannot return a response",
+            "POST is only for authentication"
+        ],
+        "answer": "POST violates idempotency"
+    },
+    {
+        "question": "After merging a feature branch into the main branch, the team deletes the feature branch. Why is this considered good practice?",
+        "choices": [
+            "It improves application security",
+            "It reduces repository clutter",
+            "It increases commit speed",
+            "It prevents merge conflicts"
+        ],
+        "answer": "It reduces repository clutter"
+    },
+    {
+        "question": "An API returns compressed response data. Which HTTP header allows the client to request compressed content?",
+        "choices": [
+            "Content-Type",
+            "Accept-Encoding",
+            "Cache-Control",
+            "Authorization"
+        ],
+        "answer": "Accept-Encoding"
+    },
+    {
+        "question": "An organization wants to expose public read-only API endpoints while protecting sensitive operations. What is the BEST approach?",
+        "choices": [
+            "Disable authentication entirely",
+            "Use role-based authorization",
+            "Use only GET requests",
+            "Deploy multiple servers"
+        ],
+        "answer": "Use role-based authorization"
+    },
+    {
+        "question": "An API returns thousands of records in a single response, causing timeouts. Which solution BEST addresses this issue?",
+        "choices": [
+            "Increase server memory",
+            "Use asynchronous APIs",
+            "Implement pagination",
+            "Disable caching"
+        ],
+        "answer": "Implement pagination"
+    },
+    {
+        "question": "A developer integrates multiple third-party APIs into one application. Which challenge is MOST likely?",
+        "choices": [
+            "Too many programming languages",
+            "Inconsistent data formats and error handling",
+            "Hardware incompatibility",
+            "Virtual machine failures"
+        ],
+        "answer": "Inconsistent data formats and error handling"
+    },
+    {
+        "question": "A REST API stores session information on the server. What long-term issue may arise?",
+        "choices": [
+            "Improved response time",
+            "Reduced scalability",
+            "Better security",
+            "Lower memory usage"
+        ],
+        "answer": "Reduced scalability"
+    }
+]
