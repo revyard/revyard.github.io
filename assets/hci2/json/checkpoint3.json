@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is a major concern with using convenience samples in HCI research?",
+    "choices": [
+      "Technology limitations",
+      "Validity and generalizability",
+      "Cost",
+      "Time"
+    ],
+    "answer": "Validity and generalizability"
+  },
+  {
+    "question": "Which tool allows remote screen sharing and integrated audio for usability studies?",
+    "choices": [
+      "Email",
+      "Google Docs",
+      "Online forums",
+      "Web conferencing tools"
+    ],
+    "answer": "Web conferencing tools"
+  },
+  {
+    "question": "What is a key benefit of contextual inquiries in online research?",
+    "choices": [
+      "Participants can control the researcher’s computer",
+      "It eliminates the need for surveys",
+      "No need for participant consent",
+      "Researchers can observe real-time user behavior"
+    ],
+    "answer": "Researchers can observe real-time user behavior"
+  },
+  {
+    "question": "Which of the following is NOT a method of online data collection?",
+    "choices": [
+      "Web log analysis",
+      "Instrumented software",
+      "Online surveys",
+      "Face-to-face interviews"
+    ],
+    "answer": "Face-to-face interviews"
+  },
+  {
+    "question": "What is an API used for in online research?",
+    "choices": [
+      "Encrypting data",
+      "Designing surveys",
+      "Extracting data from platforms",
+      "Hosting websites"
+    ],
+    "answer": "Extracting data from platforms"
+  },
+  {
+    "question": "What does CAPTCHA stand for?",
+    "choices": [
+      "Captured Human Algorithm",
+      "Computerized Authentication Process",
+      "Completely Automated Public Turing test to tell Computers and Humans Apart",
+      "Computer Access Protocol"
+    ],
+    "answer": "Completely Automated Public Turing test to tell Computers and Humans Apart"
+  },
+  {
+    "question": "What was the goal of reCAPTCHA?",
+    "choices": [
+      "Encrypt passwords",
+      "Digitize difficult text for OCR",
+      "Prevent spam",
+      "Track user behavior"
+    ],
+    "answer": "Digitize difficult text for OCR"
+  },
+  {
+    "question": "What technology allows sensing of objects via radio frequencies?",
+    "choices": [
+      "GPS",
+      "RFID",
+      "Wi-Fi",
+      "Bluetooth"
+    ],
+    "answer": "RFID"
+  },
+  {
+    "question": "Who introduced the concept of “embodied virtuality”?",
+    "choices": [
+      "Marc Weiser",
+      "Bill Gates",
+      "Steve Jobs",
+      "Alan Turing"
+    ],
+    "answer": "Marc Weiser"
+  },
+  {
+    "question": "What is the flagship conference for ubiquitous computing?",
+    "choices": [
+      "SIGCHI",
+      "WWW",
+      "UbiComp",
+      "ICML"
+    ],
+    "answer": "UbiComp"
+  },
+  {
+    "question": "A researcher wants to understand why users abandon a checkout process. Which method is most appropriate?",
+    "choices": [
+      "Observation",
+      "Interview",
+      "Questionnaire",
+      "Sampling"
+    ],
+    "answer": "Interview"
+  },
+  {
+    "question": "A researcher wants to compare user satisfaction across different age groups. Which sampling method is best?",
+    "choices": [
+      "Quota",
+      "Convenience",
+      "Simple random",
+      "Stratified"
+    ],
+    "answer": "Stratified"
+  },
+  {
+    "question": "You want to understand how a team adopted a new project management tool. What method fits best?",
+    "choices": [
+      "Case study",
+      "Observation",
+      "Interview",
+      "Survey"
+    ],
+    "answer": "Case study"
+  },
+  {
+    "question": "You want to know how users feel about your app’s usability. Which method gives the deepest insight?",
+    "choices": [
+      "Survey",
+      "Questionnaire",
+      "Interview",
+      "Likert scale"
+    ],
+    "answer": "Interview"
+  },
+  {
+    "question": "You want to understand the challenges users face when using your app. Which method is best?",
+    "choices": [
+      "Open-ended survey",
+      "Random sampling",
+      "Likert scale",
+      "Closed-ended survey"
+    ],
+    "answer": "Open-ended survey"
+  },
+  {
+    "question": "You want to compare user satisfaction between two different app versions. What method is best?",
+    "choices": [
+      "Case study",
+      "Survey",
+      "Focus group",
+      "Observation"
+    ],
+    "answer": "Survey"
+  },
+  {
+    "question": "A researcher wants to understand cultural differences in app usage. What method is most appropriate?",
+    "choices": [
+      "Interview",
+      "Survey",
+      "Random sampling",
+      "Likert scale"
+    ],
+    "answer": "Interview"
+  },
+  {
+    "question": "You want to gather feedback from a group of users discussing a new feature. What method is this?",
+    "choices": [
+      "Interview",
+      "Case study",
+      "Focus group",
+      "Survey"
+    ],
+    "answer": "Focus group"
+  },
+  {
+    "question": "A researcher uses both surveys and interviews in a study. What is this approach called?",
+    "choices": [
+      "Experimental",
+      "Quantitative",
+      "Mixed methods",
+      "Qualitative"
+    ],
+    "answer": "Mixed methods"
+  },
+  {
+    "question": "A researcher wants to explore how users interact with a new interface in real time. What method is best?",
+    "choices": [
+      "Case study",
+      "Interview",
+      "Observation",
+      "Survey"
+    ],
+    "answer": "Observation"
+  },
+  {
+    "question": "What is “A/B testing” used for?",
+    "choices": [
+      "Comparing user demographics",
+      "Measuring bandwidth",
+      "Testing hardware",
+      "Comparing alternative website designs"
+    ],
+    "answer": "Comparing alternative website designs"
+  },
+  {
+    "question": "What type of content is best suited for automated analysis in online communities?",
+    "choices": [
+      "Video",
+      "Text",
+      "Images",
+      "Audio"
+    ],
+    "answer": "Text"
+  },
+  {
+    "question": "Which platform is commonly studied in social media research?",
+    "choices": [
+      "Zoom",
+      "Twitter",
+      "Excel",
+      "PowerPoint"
+    ],
+    "answer": "Twitter"
+  },
+  {
+    "question": "What is a benefit of crowdsourced studies?",
+    "choices": [
+      "Guaranteed accuracy",
+      "Real-time feedback",
+      "Reduced researcher bias",
+      "No need for software"
+    ],
+    "answer": "Reduced researcher bias"
+  },
+  {
+    "question": "Which element is NOT part of a human computation task design?",
+    "choices": [
+      "Hardware specifications",
+      "Success criteria",
+      "Introductory description",
+      "Incentives"
+    ],
+    "answer": "Hardware specifications"
+  },
+  {
+    "question": "What is a major challenge in sensor-based HCI research?",
+    "choices": [
+      "Recruiting participants",
+      "Software licensing",
+      "Survey design",
+      "Data transfer and processing"
+    ],
+    "answer": "Data transfer and processing"
+  },
+  {
+    "question": "You want to gather data from 10,000 users quickly and cheaply. What should you use?",
+    "choices": [
+      "Passive observation",
+      "Web-based questionnaire",
+      "Focus group",
+      "Case study"
+    ],
+    "answer": "Web-based questionnaire"
+  },
+  {
+    "question": "A UX designer wants to observe how users interact with a kiosk without influencing them. Which method is best?",
+    "choices": [
+      "Passive participation",
+      "Active participation",
+      "Total participation",
+      "Structured interview"
+    ],
+    "answer": "Passive participation"
+  },
+  {
+    "question": "A researcher uses a list of pre-written questions and asks them in the same order to all participants. What type of interview is this?",
+    "choices": [
+      "Unstructured",
+      "Structured",
+      "Semi-structured",
+      "Informal"
+    ],
+    "answer": "Structured"
+  },
+  {
+    "question": "You want to explore user behavior in a natural setting without interfering. What method should you use?",
+    "choices": [
+      "Interview",
+      "Focus group",
+      "Survey",
+      "Passive observation"
+    ],
+    "answer": "Passive observation"
+  },
+  {
+    "question": "A researcher wants to study a group of users over time to see how their behavior changes. What method is best?",
+    "choices": [
+      "Case study",
+      "Interview",
+      "Survey",
+      "Observation"
+    ],
+    "answer": "Case study"
+  },
+  {
+    "question": "A user is asked to choose their favorite app from a list. What type of question is this?",
+    "choices": [
+      "Ordered closed-ended",
+      "Likert scale",
+      "Open-ended",
+      "Unordered closed-ended"
+    ],
+    "answer": "Unordered closed-ended"
+  },
+  {
+    "question": "You want to know how users feel about a feature immediately after using it. What method avoids recall bias?",
+    "choices": [
+      "Observation during use",
+      "Focus group",
+      "Survey after one week",
+      "Interview after one month"
+    ],
+    "answer": "Observation during use"
+  },
+  {
+    "question": "What is a challenge in designing online research studies?",
+    "choices": [
+      "Lack of participants",
+      "Ethical concerns about privacy",
+      "Limited internet access",
+      "High cost"
+    ],
+    "answer": "Ethical concerns about privacy"
+  },
+  {
+    "question": "Which platform is popular for DIY sensor projects?",
+    "choices": [
+      "Slack",
+      "Arduino",
+      "Photoshop",
+      "Excel"
+    ],
+    "answer": "Arduino"
+  },
+  {
+    "question": "You are studying a rare user group. What sampling method is most effective?",
+    "choices": [
+      "Stratified sampling",
+      "Cluster sampling",
+      "Systematic sampling",
+      "Snowball sampling"
+    ],
+    "answer": "Snowball sampling"
+  },
+  {
+    "question": "You want to know how many users clicked a button last week. What kind of data is this?",
+    "choices": [
+      "Qualitative",
+      "Observational",
+      "Quantitative",
+      "Subjective"
+    ],
+    "answer": "Quantitative"
+  },
+  {
+    "question": "A researcher sends out a paper questionnaire but gets few responses. What is a likely drawback?",
+    "choices": [
+      "Inaccurate questions",
+      "Low response rate",
+      "Biased data",
+      "High cost"
+    ],
+    "answer": "Low response rate"
+  },
+  {
+    "question": "You want to ensure your sample represents different user types. What should you use?",
+    "choices": [
+      "Snowball sampling",
+      "Convenience sampling",
+      "Judgement sampling",
+      "Stratified sampling"
+    ],
+    "answer": "Stratified sampling"
+  },
+  {
+    "question": "Which type of study is easiest to conduct online?",
+    "choices": [
+      "Hardware usability",
+      "Ethnographic studies of support groups",
+      "Sensor calibration",
+      "Mobile app testing"
+    ],
+    "answer": "Ethnographic studies of support groups"
+  },
+  {
+    "question": "What is a drawback of crowdsourced studies?",
+    "choices": [
+      "Lack of direct observation",
+      "High cost",
+      "Limited participant pool",
+      "Complex infrastructure"
+    ],
+    "answer": "Lack of direct observation"
+  },
+  {
+    "question": "A team wants to test a new feature with users who are easy to reach. What sampling method are they using?",
+    "choices": [
+      "Stratified",
+      "Cluster",
+      "Convenience",
+      "Systematic"
+    ],
+    "answer": "Convenience"
+  },
+  {
+    "question": "A researcher asks users to describe their experience using a new app. What type of question is this?",
+    "choices": [
+      "Likert scale",
+      "Closed-ended",
+      "Open-ended",
+      "Binary"
+    ],
+    "answer": "Open-ended"
+  },
+  {
+    "question": "You want to know how many users completed a task in under 5 minutes. What type of data is this?",
+    "choices": [
+      "Descriptive",
+      "Quantitative",
+      "Qualitative",
+      "Subjective"
+    ],
+    "answer": "Quantitative"
+  },
+  {
+    "question": "You want to explore how users feel about a new feature. Which question type is best?",
+    "choices": [
+      "Multiple choice",
+      "Open-ended",
+      "Closed-ended",
+      "Likert scale"
+    ],
+    "answer": "Open-ended"
+  },
+  {
+    "question": "A company wants to test a new feature with a group that represents their entire user base. What sampling method should they use?",
+    "choices": [
+      "Simple random sampling",
+      "Snowball sampling",
+      "Judgement sampling",
+      "Convenience sampling"
+    ],
+    "answer": "Simple random sampling"
+  },
+  {
+    "question": "A user is asked to rate an app from 1 to 5. What type of question is this?",
+    "choices": [
+      "Open-ended",
+      "Unordered closed-ended",
+      "Ordered closed-ended",
+      "Descriptive"
+    ],
+    "answer": "Ordered closed-ended"
+  },
+  {
+    "question": "A researcher is already part of a development team and wants to study their workflow. What observation type is this?",
+    "choices": [
+      "External",
+      "Passive",
+      "Total participation",
+      "Balanced"
+    ],
+    "answer": "Total participation"
+  },
+  {
+    "question": "You are designing a mobile app and want to know how many users prefer dark mode. What method should you use?",
+    "choices": [
+      "Survey",
+      "Interview",
+      "Observation",
+      "Case Study"
+    ],
+    "answer": "Survey"
+  },
+  {
+    "question": "You want to know how many users prefer iOS over Android. What type of question should you ask?",
+    "choices": [
+      "Unordered closed-ended",
+      "Open-ended",
+      "Likert scale",
+      "Ordered closed-ended"
+    ],
+    "answer": "Unordered closed-ended"
+  }
+]

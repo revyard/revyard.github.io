@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the primary aim of research in HCI?",
+    "choices": [
+      "To contribute to general knowledge",
+      "To entertain users",
+      "To develop software faster",
+      "To solve specific problems"
+    ],
+    "answer": "To contribute to general knowledge"
+  },
+  {
+    "question": "What does qualitative research primarily focus on?",
+    "choices": [
+      "Lived experiences and meanings",
+      "Random sampling",
+      "Numerical data",
+      "Statistical analysis"
+    ],
+    "answer": "Lived experiences and meanings"
+  },
+  {
+    "question": "What is the main characteristic of experimental research?",
+    "choices": [
+      "Conducting interviews",
+      "Observing natural behavior",
+      "Measuring variables without control",
+      "Manipulating variables to test hypotheses"
+    ],
+    "answer": "Manipulating variables to test hypotheses"
+  },
+  {
+    "question": "What is the goal of correlational research?",
+    "choices": [
+      "To describe a phenomenon",
+      "To determine causality",
+      "To measure relationships between variables",
+      "To test a new product"
+    ],
+    "answer": "To measure relationships between variables"
+  },
+  {
+    "question": "Which type of HCI contribution involves creating new tools or systems?",
+    "choices": [
+      "Survey",
+      "Theoretical",
+      "Artifact",
+      "Methodological"
+    ],
+    "answer": "Artifact"
+  },
+  {
+    "question": "What is the focus of phenomenological research?",
+    "choices": [
+      "Cultural practices",
+      "Common lived experiences",
+      "Statistical relationships",
+      "Market trends"
+    ],
+    "answer": "Common lived experiences"
+  },
+  {
+    "question": "Which research design is most flexible and evolving?",
+    "choices": [
+      "Quantitative",
+      "Cross-sectional",
+      "Qualitative",
+      "Experimental"
+    ],
+    "answer": "Qualitative"
+  },
+  {
+    "question": "What is the purpose of a survey contribution in HCI?",
+    "choices": [
+      "To synthesize existing research",
+      "To observe user behavior",
+      "To collect user feedback",
+      "To test a new interface"
+    ],
+    "answer": "To synthesize existing research"
+  },
+  {
+    "question": "Which of the following is a theoretical contribution in HCI?",
+    "choices": [
+      "A new interface design",
+      "A usability test",
+      "A predictive model like Fitts’s Law",
+      "A new dataset"
+    ],
+    "answer": "A predictive model like Fitts’s Law"
+  },
+  {
+    "question": "What is the main goal of dataset contributions in HCI?",
+    "choices": [
+      "To develop new theories",
+      "To provide benchmarks and data for future research",
+      "To test user interfaces",
+      "To conduct interviews"
+    ],
+    "answer": "To provide benchmarks and data for future research"
+  },
+  {
+    "question": "Julius is analyzing survey responses from 100 users. He wants to find the most frequently selected interface design. What statistical measure should he use?",
+    "choices": [
+      "Mean",
+      "Range",
+      "Median",
+      "Mode"
+    ],
+    "answer": "Mode"
+  },
+  {
+    "question": "You collected data on age, gender, and device preference. What type of data analysis is appropriate?",
+    "choices": [
+      "Multivariate",
+      "Qualitative",
+      "Bivariate",
+      "Univariate"
+    ],
+    "answer": "Multivariate"
+  },
+  {
+    "question": "A student wants to know if there’s a relationship between time spent on a task and years of computer experience. What test should they use?",
+    "choices": [
+      "T-test",
+      "Pearson correlation",
+      "Chi-square",
+      "Mode"
+    ],
+    "answer": "Pearson correlation"
+  },
+  {
+    "question": "In a usability study, a participant’s age is recorded as 222. What should be done first?",
+    "choices": [
+      "Run analysis",
+      "Clean the data",
+      "Calculate variance",
+      "Code the data"
+    ],
+    "answer": "Clean the data"
+  },
+  {
+    "question": "A UX designer wants to know if older users prefer touchscreens more than younger users. What test should be used?",
+    "choices": [
+      "Regression",
+      "Correlation",
+      "T-test",
+      "Chi-square test"
+    ],
+    "answer": "Chi-square test"
+  },
+  {
+    "question": "A researcher wants to know if gender affects device preference. What test should be used?",
+    "choices": [
+      "Chi-square",
+      "Correlation",
+      "Regression",
+      "T-test"
+    ],
+    "answer": "Chi-square"
+  },
+  {
+    "question": "You want to analyze how three age groups prefer three different devices. What is the degree of freedom for the chi-square test?",
+    "choices": [
+      "4",
+      "2",
+      "6",
+      "9"
+    ],
+    "answer": "4"
+  },
+  {
+    "question": "A researcher finds r = 0.325 between two task times. What does this mean?",
+    "choices": [
+      "Perfect correlation",
+      "Negative correlation",
+      "Strong correlation",
+      "No significant correlation"
+    ],
+    "answer": "No significant correlation"
+  },
+  {
+    "question": "You want to find the midpoint of a class interval 10–12. What is it?",
+    "choices": [
+      "11",
+      "13",
+      "10",
+      "12"
+    ],
+    "answer": "11"
+  },
+  {
+    "question": "You want to test if device preference differs by age group. What kind of table do you create first?",
+    "choices": [
+      "Contingency table",
+      "Scatter plot",
+      "Line graph",
+      "Histogram"
+    ],
+    "answer": "Contingency table"
+  },
+  {
+    "question": "What distinguishes problem solving from research?",
+    "choices": [
+      "Problem solving contributes to theory",
+      "Research aims for generalization",
+      "Problem solving is broader",
+      "Research is less rigorous"
+    ],
+    "answer": "Research aims for generalization"
+  },
+  {
+    "question": "Which type of research is concerned with a specific problem and ends once it is solved?",
+    "choices": [
+      "Problem solving",
+      "Mixed-methods",
+      "Research",
+      "Longitudinal"
+    ],
+    "answer": "Problem solving"
+  },
+  {
+    "question": "Which of the following is a characteristic of quantitative research?",
+    "choices": [
+      "Small, theoretical samples",
+      "Flexible design",
+      "Deductive analysis",
+      "Natural settings"
+    ],
+    "answer": "Deductive analysis"
+  },
+  {
+    "question": "Which type of qualitative research involves studying people in their natural environment?",
+    "choices": [
+      "Ethnographic",
+      "Correlational",
+      "Narrative",
+      "Experimental"
+    ],
+    "answer": "Ethnographic"
+  },
+  {
+    "question": "A researcher wants to compare the average task completion time between users who used a mouse and those who used a touchscreen. What test should be used?",
+    "choices": [
+      "Chi-square test",
+      "Independent-samples t-test",
+      "Paired-samples t-test",
+      "Correlation test"
+    ],
+    "answer": "Independent-samples t-test"
+  },
+  {
+    "question": "You have a dataset with only one variable: screen brightness levels. What type of analysis applies?",
+    "choices": [
+      "Multivariate",
+      "Inferential",
+      "Bivariate",
+      "Univariate"
+    ],
+    "answer": "Univariate"
+  },
+  {
+    "question": "A researcher finds that as experience increases, task time decreases. What does a negative Pearson’s r indicate?",
+    "choices": [
+      "No relationship",
+      "Positive correlation",
+      "Error in data",
+      "Negative correlation"
+    ],
+    "answer": "Negative correlation"
+  },
+  {
+    "question": "A student wants to summarize how often each device was preferred. What should they create?",
+    "choices": [
+      "Histogram",
+      "Box plot",
+      "Scatter plot",
+      "Frequency distribution"
+    ],
+    "answer": "Frequency distribution"
+  },
+  {
+    "question": "A researcher wants to test if prediction software improves typing speed. What hypothesis is tested?",
+    "choices": [
+      "The mean is equal",
+      "There is no significant difference",
+      "There is a relationship",
+      "The data is normal"
+    ],
+    "answer": "There is no significant difference"
+  },
+  {
+    "question": "A UX team wants to compare satisfaction scores between two unrelated groups. What test should they use?",
+    "choices": [
+      "Correlation",
+      "Independent-samples t-test",
+      "Paired-samples t-test",
+      "Chi-square"
+    ],
+    "answer": "Independent-samples t-test"
+  },
+  {
+    "question": "A researcher uses SPSS to run a t-test. How should the data be arranged for independent samples?",
+    "choices": [
+      "Frequency table",
+      "Same row",
+      "Same column with group coding",
+      "Separate columns"
+    ],
+    "answer": "Same column with group coding"
+  },
+  {
+    "question": "You want to measure how two variables vary together. What do you calculate?",
+    "choices": [
+      "Mode",
+      "Variance",
+      "Mean",
+      "Covariance"
+    ],
+    "answer": "Covariance"
+  },
+  {
+    "question": "A student finds the variance of task times is 21704. What is the standard deviation?",
+    "choices": [
+      "76",
+      "147",
+      "394",
+      "21704"
+    ],
+    "answer": "147"
+  },
+  {
+    "question": "Which of the following is NOT a type of quantitative research?",
+    "choices": [
+      "Descriptive",
+      "Phenomenological",
+      "Experimental",
+      "Correlational"
+    ],
+    "answer": "Phenomenological"
+  },
+  {
+    "question": "Which research method combines both quantitative and qualitative approaches?",
+    "choices": [
+      "Ethnographic",
+      "Mixed-methods",
+      "Longitudinal",
+      "Experimental"
+    ],
+    "answer": "Mixed-methods"
+  },
+  {
+    "question": "Which type of research is best for studying changes over time?",
+    "choices": [
+      "Cross-sectional",
+      "Correlational",
+      "Longitudinal",
+      "Descriptive"
+    ],
+    "answer": "Longitudinal"
+  },
+  {
+    "question": "Which of the following is a common data collection method in qualitative research?",
+    "choices": [
+      "Surveys",
+      "Interviews",
+      "Rating scales",
+      "Questionnaires"
+    ],
+    "answer": "Interviews"
+  },
+  {
+    "question": "What does empirical contribution in HCI research involve?",
+    "choices": [
+      "Observing and analyzing user behavior",
+      "Designing new interfaces",
+      "Writing opinions",
+      "Creating new theories"
+    ],
+    "answer": "Observing and analyzing user behavior"
+  },
+  {
+    "question": "You want to find the average satisfaction score from a survey. What measure do you use?",
+    "choices": [
+      "Mean",
+      "Median",
+      "Range",
+      "Mode"
+    ],
+    "answer": "Mean"
+  },
+  {
+    "question": "A student codes gender as Male = 1, Female = 0. What is this process called?",
+    "choices": [
+      "Organizing",
+      "Tabulation",
+      "Coding",
+      "Cleaning"
+    ],
+    "answer": "Coding"
+  },
+  {
+    "question": "A team wants to compare typing speed before and after using a new predictive keyboard. What test is appropriate?",
+    "choices": [
+      "Independent-samples t-test",
+      "Paired-samples t-test",
+      "Chi-square",
+      "ANOVA"
+    ],
+    "answer": "Paired-samples t-test"
+  },
+  {
+    "question": "What is the purpose of methodological contributions in HCI?",
+    "choices": [
+      "To analyze cultural impact",
+      "To describe user behavior",
+      "To propose new research processes or tools",
+      "To create new datasets"
+    ],
+    "answer": "To propose new research processes or tools"
+  },
+  {
+    "question": "You want to know how spread out the task completion times are. What measure should you use?",
+    "choices": [
+      "Frequency",
+      "Mean",
+      "Standard deviation",
+      "Mode"
+    ],
+    "answer": "Standard deviation"
+  },
+  {
+    "question": "A developer wants to know which age group prefers stylus input. What kind of test should be used?",
+    "choices": [
+      "Correlation",
+      "T-test",
+      "Chi-square",
+      "Regression"
+    ],
+    "answer": "Chi-square"
+  },
+  {
+    "question": "You want to visualize how many users selected each device. What should you use?",
+    "choices": [
+      "Box plot",
+      "Line graph",
+      "Frequency table",
+      "Scatter plot"
+    ],
+    "answer": "Frequency table"
+  },
+  {
+    "question": "You want to know the difference between the highest and lowest satisfaction scores. What do you calculate?",
+    "choices": [
+      "Mode",
+      "Mean",
+      "Range",
+      "Median"
+    ],
+    "answer": "Range"
+  },
+  {
+    "question": "A participant’s task time is far from the average. What measure helps identify this?",
+    "choices": [
+      "Frequency",
+      "Mode",
+      "Mean",
+      "Standard deviation"
+    ],
+    "answer": "Standard deviation"
+  },
+  {
+    "question": "You want to know if task time differs between two software versions used by the same participants. What test applies?",
+    "choices": [
+      "Independent-samples t-test",
+      "Correlation",
+      "Chi-square",
+      "Paired-samples t-test"
+    ],
+    "answer": "Paired-samples t-test"
+  },
+  {
+    "question": "You’re analyzing data with three variables: age, device type, and satisfaction score. What analysis applies?",
+    "choices": [
+      "Bivariate",
+      "Multivariate",
+      "Descriptive",
+      "Univariate"
+    ],
+    "answer": "Multivariate"
+  },
+  {
+    "question": "You want to compare the popularity of four ads among men and women. What type of data is this?",
+    "choices": [
+      "Qualitative",
+      "Multivariate",
+      "Univariate",
+      "Bivariate"
+    ],
+    "answer": "Bivariate"
+  }
+]
