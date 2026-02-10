@@ -67,28 +67,28 @@
     "modules": [
       {
         "id": 1,
-        "name": "Module 1",
+        "name": "F1",
         "checkpoints": [
           "checkpoint1"
         ]
       },
       {
         "id": 2,
-        "name": "Module 2",
+        "name": "F2",
         "checkpoints": [
           "checkpoint2"
         ]
       },
       {
         "id": 3,
-        "name": "Module 3",
+        "name": "F3",
         "checkpoints": [
           "checkpoint3"
         ]
       },
       {
         "id": 4,
-        "name": "Module 4",
+        "name": "F4",
         "checkpoints": [
           "checkpoint4"
         ]
