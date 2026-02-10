@@ -638,5 +638,145 @@
       "Functionality extension"
     ],
     "answer": "Manual Data Entry"
+  },
+  {
+    "question": "Which keyword is used for decision-making?",
+    "choices": [
+      "if",
+      "for",
+      "while",
+      "else"
+    ],
+    "answer": "if"
+  },
+  {
+    "question": "Which HTTP status code means 'Bad Request'?",
+    "choices": [
+      "400",
+      "401",
+      "403",
+      "500"
+    ],
+    "answer": "400"
+  },
+  {
+    "question": "Which HTTP status code means 'Not Found'?",
+    "choices": [
+      "200",
+      "201",
+      "400",
+      "404"
+    ],
+    "answer": "404"
+  },
+  {
+    "question": "Which protocol is widely used for combining authentication and authorization?",
+    "choices": [
+      "Basic Authentication",
+      "Bearer Token",
+      "API Key",
+      "OAuth"
+    ],
+    "answer": "OAuth"
+  },
+  {
+    "question": "Which version of OAuth is not backward compatible?",
+    "choices": [
+      "OAuth 1.0",
+      "OAuth 2.0",
+      "OAuth 3.0",
+      "None"
+    ],
+    "answer": "OAuth 2.0"
+  },
+  {
+    "question": "In MVC, which part handles business logic?",
+    "choices": [
+      "Model",
+      "View",
+      "Controller",
+      "Database"
+    ],
+    "answer": "Model"
+  },
+  {
+    "question": "Which principle encourages short, focused functions?",
+    "choices": [
+      "DRY",
+      "Single Responsibility Principle",
+      "KISS",
+      "YAGNI"
+    ],
+    "answer": "Single Responsibility Principle"
+  },
+  {
+    "question": "Which testing checks small pieces of code in isolation?",
+    "choices": [
+      "Integration Testing",
+      "Unit Testing",
+      "System Testing",
+      "Load Testing"
+    ],
+    "answer": "Unit Testing"
+  },
+  {
+    "question": "Which practice improves readability?",
+    "choices": [
+      "Random variable names",
+      "Meaningful variable names",
+      "Long functions",
+      "Inline logic everywhere"
+    ],
+    "answer": "Meaningful variable names"
+  },
+  {
+    "question": "Which statement exits a loop early?",
+    "choices": [
+      "continue",
+      "break",
+      "stop",
+      "return"
+    ],
+    "answer": "break"
+  },
+  {
+    "question": "Which part of a URI represents the location of the resource?",
+    "choices": [
+      "Scheme",
+      "Authority",
+      "Path",
+      "Query"
+    ],
+    "answer": "Path"
+  },
+  {
+    "question": "Which error category represents server-side mistakes?",
+    "choices": [
+      "1xx",
+      "2xx",
+      "4xx",
+      "5xx"
+    ],
+    "answer": "5xx"
+  },
+  {
+    "question": "Which principle says \u201cKeep It Simple, Stupid\u201d?",
+    "choices": [
+      "DRY",
+      "KISS",
+      "SOLID",
+      "Agile"
+    ],
+    "answer": "KISS"
+  },
+  {
+    "question": "Which SDLC model uses short, iterative development cycles?",
+    "choices": [
+      "Waterfall",
+      "Agile",
+      "V-Model",
+      "Spiral"
+    ],
+    "answer": "Agile"
   }
 ]
