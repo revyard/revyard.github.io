@@ -47,9 +47,16 @@
       },
       {
         "id": 7,
-        "name": "Midterm Exam",
+        "name": "ME",
         "checkpoints": [
           "checkpoint7"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Seatwork (Reviewer ME)",
+        "checkpoints": [
+          "checkpoint8"
         ]
       }
     ]
