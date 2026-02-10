@@ -1,0 +1,465 @@
+SA2 - E-Commerce Quiz (Extracted from PDF Images)
+==================================================
+
+Legend:
+  ✅ = Correct answer (user selected correctly)
+  ❌ = Wrong answer (user selected incorrectly)
+  ➡️  = Correct answer (indicated by arrow, what should have been selected)
+
+---
+
+Question 1 — 1/1 pts ✅
+Which term refers to lending money between individuals online?
+  a) Social lending
+  b) Crowd lending
+  c) P2P lending ✅ (Correct)
+  d) Group lending
+
+---
+
+Question 2 — 0/1 pts ❌
+Which term refers to search engines that find lowest prices online?
+  a) Virtual bots
+  b) Shopping portals ➡️ (Correct answer)
+  c) Price agents
+  d) Shopping robots ❌ (User selected)
+
+---
+
+Question 3 — 0/1 pts ❌
+Which auction type involves many sellers competing for one buyer?
+  a) Penny auction
+  b) Dutch auction
+  c) Reverse auction ❌ (User selected)
+  d) Forward auction ➡️ (Correct answer)
+
+---
+
+Question 4 — 0/1 pts ❌
+Which term refers to online banking activities?
+  a) E-money
+  b) E-payment
+  c) E-finance ➡️ (Correct answer)
+  d) E-banking ❌ (User selected)
+
+---
+
+Question 5 — 0/1 pts ❌
+Which delivery option refers to immediate delivery after order placement?
+  a) Scheduled delivery
+  b) Standard delivery ➡️ (Correct answer)
+  c) On-demand delivery ❌ (User selected)
+  d) Express shipping
+
+---
+
+Question 6 — 0/1 pts ❌
+Which B2B model involves many buyers and many sellers?
+  a) Buy-side ❌ (User selected)
+  b) Collaborative commerce
+  c) Exchange
+  d) Sell-side ➡️ (Correct answer)
+
+---
+
+Question 7 — 1/1 pts ✅
+Which portal is used for training and company news?
+  a) Mobile portal
+  b) Customer portal
+  c) Corporate portal ✅ (Correct)
+  d) Employee portal
+
+---
+
+Question 8 — 0/1 pts ❌
+Which term refers to a combination of physical stores and online presence?
+  a) Click-and-mortar retailer ❌ (User selected)
+  b) Virtual retailer
+  c) Pure-play retailer ➡️ (Correct answer)
+  d) Brick-only retailer
+
+---
+
+Question 9 — 0/1 pts ❌
+Which B2C model offers heavily discounted products for a limited time?
+  a) Event shopping
+  b) Private shopping club
+  c) Group buying ➡️ (Correct answer)
+  d) Flash deals ❌ (User selected)
+
+---
+
+Question 10 — 0/1 pts ❌
+Which of the following is a major problem in B2C EC?
+  a) Increased customization ➡️ (Correct answer)
+  b) Improved delivery
+  c) Online fraud ❌ (User selected)
+  d) Lower search costs
+
+---
+
+Question 11 — 0/1 pts ❌
+Which marketplace serves one particular industry?
+  a) Vertical marketplace
+  b) Private marketplace ❌ (User selected)
+  c) Public exchange
+  d) Horizontal marketplace ➡️ (Correct answer)
+
+---
+
+Question 12 — 1/1 pts ✅
+Which of the following is NOT a B2C service mentioned in Module 3?
+  a) Virtual trade shows
+  b) Online dating ✅ (Correct)
+  c) Wedding planning
+  d) Online pharmacies
+
+---
+
+Question 13 — 1/1 pts ✅
+Which of the following is a pure-play e-tailer?
+  a) Target
+  b) Costco
+  c) Amazon ✅ (Correct)
+  d) Walmart
+
+---
+
+Question 14 — 0/1 pts ❌
+Which of the following is NOT a common online entertainment activity?
+  a) Virtual farmer's market ❌ (User selected)
+  b) Internet gaming
+  c) Social TV ➡️ (Correct answer)
+  d) Casino gaming
+
+---
+
+Question 15 — 1/1 pts ✅
+Which term refers to the purchase of goods and services by organizations?
+  a) Auctioning
+  b) Bartering
+  c) Procurement ✅ (Correct)
+  d) Tendering
+
+---
+
+Question 16 — 0/1 pts ❌
+Which of the following is NOT an advantage of e-tailing?
+  a) Lower supply chain costs ➡️ (Correct answer)
+  b) Customization of products
+  c) Increased physical store expenses ❌ (User selected)
+  d) Ability to reach global customers
+
+---
+
+Question 17 — 1/1 pts ✅
+Which term refers to purchasing without supervisor approval?
+  a) Group buying
+  b) Bartering
+  c) Maverick buying ✅ (Correct)
+  d) Desktop purchasing
+
+---
+
+Question 18 — 0/1 pts ❌
+Which B2B model involves one buyer and many sellers?
+  a) Supply chain
+  b) Buy-side ❌ (User selected)
+  c) Exchange
+  d) Sell-side ➡️ (Correct answer)
+
+---
+
+Question 19 — 1/1 pts ✅
+Which term refers to virtual games for B2B training?
+  a) Gamification ✅ (Correct)
+  b) Simulation
+  c) Social gaming
+  d) Virtual reality
+
+---
+
+Question 20 — 0/1 pts ❌
+Which term refers to exchanging goods without money?
+  a) Procurement
+  b) Auction ➡️ (Correct answer)
+  c) Bartering ❌ (User selected)
+  d) Tendering
+
+---
+
+Question 21 — 0/1 pts ❌
+Which term refers to company-centric EC?
+  a) Horizontal marketplace
+  b) Private e-marketplace ❌ (User selected)
+  c) Public exchange ➡️ (Correct answer)
+  d) Consortium
+
+---
+
+Question 22 — 1/1 pts ✅
+Which B2C model enables members to shop at a discount for short periods?
+  a) Flash deals ✅ (Correct)
+  b) Group gifting
+  c) Location-based commerce
+  d) Private shopping club
+
+---
+
+Question 23 — 0/1 pts ❌
+Which social network is commonly used for B2B networking?
+  a) Facebook ➡️ (Correct answer)
+  b) LinkedIn ❌ (User selected)
+  c) Instagram
+  d) Twitter
+
+---
+
+Question 24 — 1/1 pts ✅
+Which marketplace serves multiple industries?
+  a) Horizontal marketplace
+  b) Consortium
+  c) Private marketplace
+  d) Vertical marketplace ✅ (Correct)
+
+---
+
+Question 25 — 0/1 pts ❌
+Which of the following is NOT an advantage of online travel services?
+  a) Increased complexity for simple trips ❌ (User selected)
+  b) 24/7 availability
+  c) Reduced processing fees
+  d) Access to last-minute deals ➡️ (Correct answer)
+
+---
+
+Question 26 — 0/1 pts ❌
+Which term refers to a gateway hosting multiple online stores?
+  a) Microsite
+  b) Shopping portal ➡️ (Correct answer)
+  c) Virtual mall ❌ (User selected)
+  d) Shopping robot
+
+---
+
+Question 27 — 0/1 pts ❌
+Which term refers to removing intermediaries in online transactions?
+  a) Outsourcing
+  b) Disintermediation ❌ (User selected)
+  c) Channel conflict
+  d) Reintermediation ➡️ (Correct answer)
+
+---
+
+Question 28 — 0/1 pts ❌
+Which term refers to the strategy of managing relationships with partners?
+  a) ERP
+  b) SCM
+  c) PRM ❌ (User selected)
+  d) CRM ➡️ (Correct answer)
+
+---
+
+Question 29 — 0/1 pts ❌
+Which term refers to social shopping activities online?
+  a) Social commerce ❌ (User selected)
+  b) Mobile commerce
+  c) Collaborative commerce
+  d) Virtual commerce ➡️ (Correct answer)
+
+---
+
+Question 30 — 0/1 pts ❌
+Which term refers to an online version of a physical trade show?
+  a) Virtual trade show ❌ (User selected)
+  b) Virtual mall
+  c) Virtual fair ➡️ (Correct answer)
+  d) Virtual portal
+
+---
+
+Question 31 — 1/1 pts ✅
+Which of the following is an example of online decision aid?
+  a) Paper brochures
+  b) Shopping robots ✅ (Correct)
+  c) Store clerks
+  d) Physical catalogs
+
+---
+
+Question 32 — 0/1 pts ❌
+Which term refers to adding new intermediaries in EC?
+  a) Integration
+  b) Disintermediation ➡️ (Correct answer)
+  c) Reintermediation ❌ (User selected)
+  d) Channel conflict
+
+---
+
+Question 33 — 0/1 pts ❌
+What does B2B EC refer to?
+  a) Transactions between consumers only
+  b) Transactions between businesses conducted electronically ❌ (User selected)
+  c) Transactions between government and businesses
+  d) Transactions between businesses and consumers ➡️ (Correct answer)
+
+---
+
+Question 34 — 0/1 pts ❌
+Which term refers to online grocery delivery services?
+  a) E-banking
+  b) E-retailer
+  c) E-grocer ➡️ (Correct answer)
+  d) E-service ❌ (User selected)
+
+---
+
+Question 35 — 0/1 pts ❌
+Which term refers to an arrangement owned by a few large sellers or buyers?
+  a) Consortium ➡️ (Correct answer)
+  b) Private marketplace
+  c) Exchange
+  d) Public marketplace ❌ (User selected)
+
+---
+
+Question 36 — 1/1 pts ✅
+Which of the following is NOT a major function of B2B exchanges?
+  a) Matching buyers and sellers ✅ (Correct)
+  b) Facilitating transactions
+  c) Maintaining infrastructure
+  d) Providing physical store locations
+
+---
+
+Question 37 — 0/1 pts ❌
+Which term refers to rapid price changes over time?
+  a) Discount pricing
+  b) Negotiated pricing
+  c) Dynamic pricing ❌ (User selected)
+  d) Fixed pricing ➡️ (Correct answer)
+
+---
+
+Question 38 — 0/1 pts ❌
+Which procurement method aggregates participants' demands for discounts?
+  a) Tendering
+  b) Reverse auction ➡️ (Correct answer)
+  c) Bartering
+  d) Group purchasing ❌ (User selected)
+
+---
+
+Question 39 — 0/1 pts ❌
+Which technology sends ads relevant to a customer's location using GPS?
+  a) Virtual commerce ➡️ (Correct answer)
+  b) Social commerce
+  c) Location-based e-commerce ❌ (User selected)
+  d) Mobile commerce
+
+---
+
+Question 40 — 0/1 pts ❌
+Which of the following is NOT a characteristic of goods that sell well online?
+  a) Requires physical inspection ❌ (User selected)
+  b) Frequently purchased items
+  c) Brand name recognition ➡️ (Correct answer)
+  d) Digitized format
+
+---
+
+Question 41 — 0/1 pts ❌
+Which of the following is NOT a benefit of e-procurement?
+  a) Increased maverick buying ❌ (User selected)
+  b) Improved payment process
+  c) Better partner relations
+  d) Lower item prices ➡️ (Correct answer)
+
+---
+
+Question 42 — 0/1 pts ❌
+Which B2B model involves one seller and many buyers?
+  a) Buy-side ➡️ (Correct answer)
+  b) Collaborative commerce
+  c) Exchange
+  d) Sell-side ❌ (User selected)
+
+---
+
+Question 43 — 0/1 pts ❌
+Which term refers to marketing and sales along the sell-side of the supply chain?
+  a) B2C marketing ➡️ (Correct answer)
+  b) B2B marketing
+  c) Social marketing ❌ (User selected)
+  d) Affiliate marketing
+
+---
+
+Question 44 — 1/1 pts ✅
+Which term refers to unplanned purchases at non-negotiated prices?
+  a) Group buying
+  b) Bartering
+  c) Desktop purchasing
+  d) Maverick buying ✅ (Correct)
+
+---
+
+Question 45 — 1/1 pts ✅
+Which issue occurs when online sales harm existing channel partners?
+  a) Disintermediation
+  b) Channel conflict ✅ (Correct)
+  c) Reintermediation
+  d) Price war (partially visible)
+
+---
+
+Question 46 — 0/1 pts ❌
+Which of the following is a limitation of e-procurement?
+  a) Lower administrative costs ➡️ (Correct answer)
+  b) Reduced skill requirements
+  c) Hacker attacks ❌ (User selected)
+  d) Improved delivery
+
+---
+
+Question 47 — 0/1 pts ❌
+What is retailing conducted over the Internet called?
+  a) E-commerce
+  b) E-tailing ❌ (User selected)
+  c) E-business ➡️ (Correct answer)
+  d) E-marketing
+
+---
+
+Question 48 — 1/1 pts ✅
+Which of the following is a major factor influencing online retail competition?
+  a) Store layout
+  b) Salesperson pressure
+  c) Delivery time ✅ (Correct)
+  d) Physical inspection
+
+---
+
+Question 49 — 0/1 pts ❌
+Sellers who conduct retail business online are called:
+  a) E-shoppers
+  b) E-merchants
+  c) E-tailers ❌ (User selected)
+  d) E-retailers ➡️ (Correct answer)
+
+---
+
+Question 50 — 0/1 pts ❌
+Which portal facilitates collaboration with suppliers and customers?
+  a) Mobile portal
+  b) Employee portal
+  c) Customer portal ❌ (User selected)
+  d) Corporate portal ➡️ (Correct answer)
+
+---
+
+SUMMARY:
+Total Questions: 50
+Correct: 13
+Wrong: 37
+Score: 13/50 (26%)

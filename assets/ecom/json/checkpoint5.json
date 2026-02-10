@@ -1,0 +1,502 @@
+[
+    {
+        "question": "Which term refers to lending money between individuals online?",
+        "choices": [
+            "Social lending",
+            "Crowd lending",
+            "P2P lending",
+            "Group lending"
+        ],
+        "answer": "P2P lending"
+    },
+    {
+        "question": "Which term refers to search engines that find lowest prices online?",
+        "choices": [
+            "Virtual bots",
+            "Shopping portals",
+            "Price agents",
+            "Shopping robots"
+        ],
+        "answer": "Shopping robots"
+    },
+    {
+        "question": "Which auction type involves many sellers competing for one buyer?",
+        "choices": [
+            "Penny auction",
+            "Dutch auction",
+            "Reverse auction",
+            "Forward auction"
+        ],
+        "answer": "Reverse auction"
+    },
+    {
+        "question": "Which term refers to online banking activities?",
+        "choices": [
+            "E-money",
+            "E-payment",
+            "E-finance",
+            "E-banking"
+        ],
+        "answer": "E-banking"
+    },
+    {
+        "question": "Which delivery option refers to immediate delivery after order placement?",
+        "choices": [
+            "Scheduled delivery",
+            "Standard delivery",
+            "On-demand delivery",
+            "Express shipping"
+        ],
+        "answer": "On-demand delivery"
+    },
+    {
+        "question": "Which B2B model involves many buyers and many sellers?",
+        "choices": [
+            "Buy-side",
+            "Collaborative commerce",
+            "Exchange",
+            "Sell-side"
+        ],
+        "answer": "Exchange"
+    },
+    {
+        "question": "Which portal is used for training and company news?",
+        "choices": [
+            "Mobile portal",
+            "Customer portal",
+            "Corporate portal",
+            "Employee portal"
+        ],
+        "answer": "Corporate portal"
+    },
+    {
+        "question": "Which term refers to a combination of physical stores and online presence?",
+        "choices": [
+            "Click-and-mortar retailer",
+            "Virtual retailer",
+            "Pure-play retailer",
+            "Brick-only retailer"
+        ],
+        "answer": "Click-and-mortar retailer"
+    },
+    {
+        "question": "Which B2C model offers heavily discounted products for a limited time?",
+        "choices": [
+            "Event shopping",
+            "Private shopping club",
+            "Group buying",
+            "Flash deals"
+        ],
+        "answer": "Flash deals"
+    },
+    {
+        "question": "Which of the following is a major problem in B2C EC?",
+        "choices": [
+            "Increased customization",
+            "Improved delivery",
+            "Online fraud",
+            "Lower search costs"
+        ],
+        "answer": "Online fraud"
+    },
+    {
+        "question": "Which marketplace serves one particular industry?",
+        "choices": [
+            "Vertical marketplace",
+            "Private marketplace",
+            "Public exchange",
+            "Horizontal marketplace"
+        ],
+        "answer": "Vertical marketplace"
+    },
+    {
+        "question": "Which of the following is NOT a B2C service mentioned in Module 3?",
+        "choices": [
+            "Virtual trade shows",
+            "Online dating",
+            "Wedding planning",
+            "Online pharmacies"
+        ],
+        "answer": "Online dating"
+    },
+    {
+        "question": "Which of the following is a pure-play e-tailer?",
+        "choices": [
+            "Target",
+            "Costco",
+            "Amazon",
+            "Walmart"
+        ],
+        "answer": "Amazon"
+    },
+    {
+        "question": "Which of the following is NOT a common online entertainment activity?",
+        "choices": [
+            "Virtual farmer's market",
+            "Internet gaming",
+            "Social TV",
+            "Casino gaming"
+        ],
+        "answer": "Virtual farmer's market"
+    },
+    {
+        "question": "Which term refers to the purchase of goods and services by organizations?",
+        "choices": [
+            "Auctioning",
+            "Bartering",
+            "Procurement",
+            "Tendering"
+        ],
+        "answer": "Procurement"
+    },
+    {
+        "question": "Which of the following is NOT an advantage of e-tailing?",
+        "choices": [
+            "Lower supply chain costs",
+            "Customization of products",
+            "Increased physical store expenses",
+            "Ability to reach global customers"
+        ],
+        "answer": "Increased physical store expenses"
+    },
+    {
+        "question": "Which term refers to purchasing without supervisor approval?",
+        "choices": [
+            "Group buying",
+            "Bartering",
+            "Maverick buying",
+            "Desktop purchasing"
+        ],
+        "answer": "Maverick buying"
+    },
+    {
+        "question": "Which B2B model involves one buyer and many sellers?",
+        "choices": [
+            "Supply chain",
+            "Buy-side",
+            "Exchange",
+            "Sell-side"
+        ],
+        "answer": "Buy-side"
+    },
+    {
+        "question": "Which term refers to virtual games for B2B training?",
+        "choices": [
+            "Gamification",
+            "Simulation",
+            "Social gaming",
+            "Virtual reality"
+        ],
+        "answer": "Gamification"
+    },
+    {
+        "question": "Which term refers to exchanging goods without money?",
+        "choices": [
+            "Procurement",
+            "Auction",
+            "Bartering",
+            "Tendering"
+        ],
+        "answer": "Bartering"
+    },
+    {
+        "question": "Which term refers to company-centric EC?",
+        "choices": [
+            "Horizontal marketplace",
+            "Private e-marketplace",
+            "Public exchange",
+            "Consortium"
+        ],
+        "answer": "Private e-marketplace"
+    },
+    {
+        "question": "Which B2C model enables members to shop at a discount for short periods?",
+        "choices": [
+            "Flash deals",
+            "Group gifting",
+            "Location-based commerce",
+            "Private shopping club"
+        ],
+        "answer": "Flash deals"
+    },
+    {
+        "question": "Which social network is commonly used for B2B networking?",
+        "choices": [
+            "Facebook",
+            "LinkedIn",
+            "Instagram",
+            "Twitter"
+        ],
+        "answer": "LinkedIn"
+    },
+    {
+        "question": "Which marketplace serves multiple industries?",
+        "choices": [
+            "Horizontal marketplace",
+            "Consortium",
+            "Private marketplace",
+            "Vertical marketplace"
+        ],
+        "answer": "Horizontal marketplace"
+    },
+    {
+        "question": "Which of the following is NOT an advantage of online travel services?",
+        "choices": [
+            "Increased complexity for simple trips",
+            "24/7 availability",
+            "Reduced processing fees",
+            "Access to last-minute deals"
+        ],
+        "answer": "Increased complexity for simple trips"
+    },
+    {
+        "question": "Which term refers to a gateway hosting multiple online stores?",
+        "choices": [
+            "Microsite",
+            "Shopping portal",
+            "Virtual mall",
+            "Shopping robot"
+        ],
+        "answer": "Virtual mall"
+    },
+    {
+        "question": "Which term refers to removing intermediaries in online transactions?",
+        "choices": [
+            "Outsourcing",
+            "Disintermediation",
+            "Channel conflict",
+            "Reintermediation"
+        ],
+        "answer": "Disintermediation"
+    },
+    {
+        "question": "Which term refers to the strategy of managing relationships with partners?",
+        "choices": [
+            "ERP",
+            "SCM",
+            "PRM",
+            "CRM"
+        ],
+        "answer": "PRM"
+    },
+    {
+        "question": "Which term refers to social shopping activities online?",
+        "choices": [
+            "Social commerce",
+            "Mobile commerce",
+            "Collaborative commerce",
+            "Virtual commerce"
+        ],
+        "answer": "Social commerce"
+    },
+    {
+        "question": "Which term refers to an online version of a physical trade show?",
+        "choices": [
+            "Virtual trade show",
+            "Virtual mall",
+            "Virtual fair",
+            "Virtual portal"
+        ],
+        "answer": "Virtual trade show"
+    },
+    {
+        "question": "Which of the following is an example of online decision aid?",
+        "choices": [
+            "Paper brochures",
+            "Shopping robots",
+            "Store clerks",
+            "Physical catalogs"
+        ],
+        "answer": "Shopping robots"
+    },
+    {
+        "question": "Which term refers to adding new intermediaries in EC?",
+        "choices": [
+            "Integration",
+            "Disintermediation",
+            "Reintermediation",
+            "Channel conflict"
+        ],
+        "answer": "Reintermediation"
+    },
+    {
+        "question": "What does B2B EC refer to?",
+        "choices": [
+            "Transactions between consumers only",
+            "Transactions between businesses conducted electronically",
+            "Transactions between government and businesses",
+            "Transactions between businesses and consumers"
+        ],
+        "answer": "Transactions between businesses conducted electronically"
+    },
+    {
+        "question": "Which term refers to online grocery delivery services?",
+        "choices": [
+            "E-banking",
+            "E-retailer",
+            "E-grocer",
+            "E-service"
+        ],
+        "answer": "E-grocer"
+    },
+    {
+        "question": "Which term refers to an arrangement owned by a few large sellers or buyers?",
+        "choices": [
+            "Consortium",
+            "Private marketplace",
+            "Exchange",
+            "Public marketplace"
+        ],
+        "answer": "Consortium"
+    },
+    {
+        "question": "Which of the following is NOT a major function of B2B exchanges?",
+        "choices": [
+            "Matching buyers and sellers",
+            "Facilitating transactions",
+            "Maintaining infrastructure",
+            "Providing physical store locations"
+        ],
+        "answer": "Providing physical store locations"
+    },
+    {
+        "question": "Which term refers to rapid price changes over time?",
+        "choices": [
+            "Discount pricing",
+            "Negotiated pricing",
+            "Dynamic pricing",
+            "Fixed pricing"
+        ],
+        "answer": "Dynamic pricing"
+    },
+    {
+        "question": "Which procurement method aggregates participants' demands for discounts?",
+        "choices": [
+            "Tendering",
+            "Reverse auction",
+            "Bartering",
+            "Group purchasing"
+        ],
+        "answer": "Group purchasing"
+    },
+    {
+        "question": "Which technology sends ads relevant to a customer's location using GPS?",
+        "choices": [
+            "Virtual commerce",
+            "Social commerce",
+            "Location-based e-commerce",
+            "Mobile commerce"
+        ],
+        "answer": "Location-based e-commerce"
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of goods that sell well online?",
+        "choices": [
+            "Requires physical inspection",
+            "Frequently purchased items",
+            "Brand name recognition",
+            "Digitized format"
+        ],
+        "answer": "Requires physical inspection"
+    },
+    {
+        "question": "Which of the following is NOT a benefit of e-procurement?",
+        "choices": [
+            "Increased maverick buying",
+            "Improved payment process",
+            "Better partner relations",
+            "Lower item prices"
+        ],
+        "answer": "Increased maverick buying"
+    },
+    {
+        "question": "Which B2B model involves one seller and many buyers?",
+        "choices": [
+            "Buy-side",
+            "Collaborative commerce",
+            "Exchange",
+            "Sell-side"
+        ],
+        "answer": "Sell-side"
+    },
+    {
+        "question": "Which term refers to marketing and sales along the sell-side of the supply chain?",
+        "choices": [
+            "B2C marketing",
+            "B2B marketing",
+            "Social marketing",
+            "Affiliate marketing"
+        ],
+        "answer": "B2B marketing"
+    },
+    {
+        "question": "Which term refers to unplanned purchases at non-negotiated prices?",
+        "choices": [
+            "Group buying",
+            "Bartering",
+            "Desktop purchasing",
+            "Maverick buying"
+        ],
+        "answer": "Maverick buying"
+    },
+    {
+        "question": "Which issue occurs when online sales harm existing channel partners?",
+        "choices": [
+            "Disintermediation",
+            "Channel conflict",
+            "Reintermediation",
+            "Price war"
+        ],
+        "answer": "Channel conflict"
+    },
+    {
+        "question": "Which of the following is a limitation of e-procurement?",
+        "choices": [
+            "Lower administrative costs",
+            "Reduced skill requirements",
+            "Hacker attacks",
+            "Improved delivery"
+        ],
+        "answer": "Hacker attacks"
+    },
+    {
+        "question": "What is retailing conducted over the Internet called?",
+        "choices": [
+            "E-commerce",
+            "E-tailing",
+            "E-business",
+            "E-marketing"
+        ],
+        "answer": "E-tailing"
+    },
+    {
+        "question": "Which of the following is a major factor influencing online retail competition?",
+        "choices": [
+            "Store layout",
+            "Salesperson pressure",
+            "Delivery time",
+            "Physical inspection"
+        ],
+        "answer": "Delivery time"
+    },
+    {
+        "question": "Sellers who conduct retail business online are called:",
+        "choices": [
+            "E-shoppers",
+            "E-merchants",
+            "E-tailers",
+            "E-retailers"
+        ],
+        "answer": "E-tailers"
+    },
+    {
+        "question": "Which portal facilitates collaboration with suppliers and customers?",
+        "choices": [
+            "Mobile portal",
+            "Employee portal",
+            "Customer portal",
+            "Corporate portal"
+        ],
+        "answer": "Corporate portal"
+    }
+]

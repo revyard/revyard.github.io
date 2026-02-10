@@ -92,6 +92,13 @@
         "checkpoints": [
           "checkpoint4"
         ]
+      },
+      {
+        "id": 5,
+        "name": "S2 – (M3 M4)",
+        "checkpoints": [
+          "checkpoint5"
+        ]
       }
     ]
   },
