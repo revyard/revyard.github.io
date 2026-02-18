@@ -18,7 +18,10 @@
       "port redirection",
       "port scanning"
     ],
-    "answer": ""
+    "answer": [
+      "cross-site scripting",
+      "SQL injection"
+    ]
   },
   {
     "question": "A threat actor has used malicious commands to trick the database into returning unauthorized records and other data. Which web front-end vulnerability is the threat actor exploiting?",
@@ -28,7 +31,7 @@
       "cross-site scripting",
       "broken authentication"
     ],
-    "answer": ""
+    "answer": "SQL injections"
   },
   {
     "question": "What is a characteristic of the development environment in the four-tier deployment environment structure?",
@@ -48,7 +51,7 @@
       "reverse proxy",
       "jump box"
     ],
-    "answer": ""
+    "answer": "reverse proxy"
   },
   {
     "question": "What is a characteristic of the blue-green upgrade deployment strategy?",
@@ -72,7 +75,7 @@
       "where coding takes place",
       "structurally as close to the actual production environment as possible"
     ],
-    "answer": ""
+    "answer": "development → where coding takes place | testing → includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system | staging → structurally as close to the actual production environment as possible | production → contains code that has been tested multiple times and is error free"
   },
   {
     "question": "Which statement is a characteristic of the broken access control threat to web applications?",
@@ -82,7 +85,7 @@
       "It allows users to circumvent existing authentication requirements.",
       "It allows attackers to steal sensitive information such as passwords or personal information."
     ],
-    "answer": ""
+    "answer": "It allows users to circumvent existing authentication requirements."
   },
   {
     "question": "What is Bash?",
@@ -92,7 +95,7 @@
       "a Linux script engine that allows commands to be entered on the command line",
       "a code injection technique used to attack data-driven applications"
     ],
-    "answer": ""
+    "answer": "a Linux script engine that allows commands to be entered on the command line"
   },
   {
     "question": "Which web application attack involves an attacker accessing, and potentially changing, serialized versions of data and objects?",
@@ -102,7 +105,7 @@
       "security misconfiguration",
       "cross-site scripting"
     ],
-    "answer": ""
+    "answer": "insecure deserialization"
   },
   {
     "question": "What is CI/CD?",
@@ -144,7 +147,11 @@
       "It is a virtualized physical server.",
       "It includes a guest OS."
     ],
-    "answer": ""
+    "answer": [
+      "It requires a hypervisor.",
+      "It is an isolated environment for applications.",
+      "It includes a guest OS."
+    ]
   },
   {
     "question": "Which attack involves the insertion of malicious code into SQL statements?",
@@ -174,7 +181,7 @@
       "Bash",
       "Docker"
     ],
-    "answer": ""
+    "answer": "Docker"
   },
   {
     "question": "Which statement describes the term containers in virtualization technology?",
@@ -198,7 +205,7 @@
       "ModSecurity Core Rule Set",
       "Dependency Check"
     ],
-    "answer": ""
+    "answer": "Cheat Sheet Series → explains ways to mitigate command security issues in web applications | Dependency Check → looks for known vulnerabilities in code | DefectDojo → streamlines the code testing process | ModSecurity Core Rule Set → generic attack detection rules used with web application firewalls"
   },
   {
     "question": "What is used to isolate the different parts of a running container?",
@@ -221,7 +228,7 @@
       "public",
       "hybrid"
     ],
-    "answer": ""
+    "answer": "private → These are clouds that are intended for a specific organization or entity, such as the government. They can be set up using the private network of an organization. | hybrid → These clouds are made up of two or more clouds. However, each part remains a distinctive and separate object. Both of these are connected using a single architecture. | edge → These are clouds that locate computing as close as possible to the user."
   },
   {
     "question": "Which technology is used to containerize applications and allows them to run in a variety of environments?",
@@ -251,6 +258,6 @@
       "pound signs #",
       "parentheses ()"
     ],
-    "answer": ""
+    "answer": "semicolons ;"
   }
 ]
