@@ -1,0 +1,256 @@
+[
+  {
+    "question": "A company has remote employees who need to connect to the company network in order to participate in meetings and to share the data and progress of application development. Which data transportation security technique can be implemented to allow remote employees to securely connect to the company private network?",
+    "choices": [
+      "SSH",
+      "VPN",
+      "SSL",
+      "TLS"
+    ],
+    "answer": "VPN"
+  },
+  {
+    "question": "Which two attacks target web servers through exploiting possible vulnerabilities of input functions used by an application? (Choose two.)",
+    "choices": [
+      "trust exploitation",
+      "cross-site scripting",
+      "SQL injection",
+      "port redirection",
+      "port scanning"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "A threat actor has used malicious commands to trick the database into returning unauthorized records and other data. Which web front-end vulnerability is the threat actor exploiting?",
+    "choices": [
+      "SQL injections",
+      "security misconfiguration",
+      "cross-site scripting",
+      "broken authentication"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "What is a characteristic of the development environment in the four-tier deployment environment structure?",
+    "choices": [
+      "It is where coding takes place.",
+      "It is structurally similar to the final production environment.",
+      "It contains code that has been tested and is error free.",
+      "It is where users will interact with the code."
+    ],
+    "answer": "It is where coding takes place."
+  },
+  {
+    "question": "Which security device is used to make responses to client requests look like they all come from the same server?",
+    "choices": [
+      "forward proxy",
+      "stateful firewall",
+      "reverse proxy",
+      "jump box"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "What is a characteristic of the blue-green upgrade deployment strategy?",
+    "choices": [
+      "The new code version is first rolled out to a subset of users. Changes can then be rolled back if the users experience any problems.",
+      "A new environment is created with the new code in it, while the old environment is held in reserve in case users experience problems.",
+      "The code changes are periodically rolled out in such a way that they do not impact current users.",
+      "The new code is deployed all at once to the old environment. If users experience no issues, it is then moved to the new environment."
+    ],
+    "answer": "A new environment is created with the new code in it, while the old environment is held in reserve in case users experience problems."
+  },
+  {
+    "question": "Match the environments in the four-tier development environment structure to the description.",
+    "choices": [
+      "development",
+      "testing",
+      "staging",
+      "production",
+      "contains code that has been tested multiple times and is error free",
+      "includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system",
+      "where coding takes place",
+      "structurally as close to the actual production environment as possible"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Which statement is a characteristic of the broken access control threat to web applications?",
+    "choices": [
+      "It allows an attacker to use the dynamic functions of a site to inject malicious content into the page.",
+      "It allows attackers to access, and potentially change, serialized versions of data and objects.",
+      "It allows users to circumvent existing authentication requirements.",
+      "It allows attackers to steal sensitive information such as passwords or personal information."
+    ],
+    "answer": ""
+  },
+  {
+    "question": "What is Bash?",
+    "choices": [
+      "a web application framework written in Python",
+      "a philosophy for software deployment that figures prominently in the field of DevOps",
+      "a Linux script engine that allows commands to be entered on the command line",
+      "a code injection technique used to attack data-driven applications"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Which web application attack involves an attacker accessing, and potentially changing, serialized versions of data and objects?",
+    "choices": [
+      "broken authentication",
+      "insecure deserialization",
+      "security misconfiguration",
+      "cross-site scripting"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "What is CI/CD?",
+    "choices": [
+      "It is a web application development framework that is written in Python.",
+      "It is a malicious code injection technique which is used to attack data-driven applications.",
+      "It is a script engine that allows users to execute commands from the command line.",
+      "It is a philosophy for software deployment that is often used in the field of DevOps."
+    ],
+    "answer": "It is a philosophy for software deployment that is often used in the field of DevOps."
+  },
+  {
+    "question": "What is a philosophy for software deployment used in the field of DevOps?",
+    "choices": [
+      "SOAP",
+      "DevNet",
+      "OWASP",
+      "CI/CD"
+    ],
+    "answer": "CI/CD"
+  },
+  {
+    "question": "Which social engineering technique is carried out by someone attempting to gain access to a building by wearing a delivery service uniform?",
+    "choices": [
+      "phishing",
+      "smishing",
+      "impersonation",
+      "vishing"
+    ],
+    "answer": "impersonation"
+  },
+  {
+    "question": "What are three characteristics of a virtual machine? (Choose three.)",
+    "choices": [
+      "It shares the underlying resources of the host OS.",
+      "It requires a hypervisor.",
+      "It leverages the kernel of the host OS for quick starts.",
+      "It is an isolated environment for applications.",
+      "It is a virtualized physical server.",
+      "It includes a guest OS."
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Which attack involves the insertion of malicious code into SQL statements?",
+    "choices": [
+      "cross-site scripting",
+      "SQL injection",
+      "brute force",
+      "local file inclusion"
+    ],
+    "answer": "SQL injection"
+  },
+  {
+    "question": "In software development, what is the purpose of a jump box?",
+    "choices": [
+      "to receive incoming requests and forward them to multiple servers",
+      "to filter packets based on Layer 3 and Layer 4 addressing",
+      "to make all requests originating from within a network look like they come from the same source IP address",
+      "to act as a single trusted machine used to launch connections to sensitive systems"
+    ],
+    "answer": "to act as a single trusted machine used to launch connections to sensitive systems"
+  },
+  {
+    "question": "Which Linux-based platform is used to create, run, and manage containers in a virtual environment?",
+    "choices": [
+      "Hyper-V",
+      "KVM",
+      "Bash",
+      "Docker"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Which statement describes the term containers in virtualization technology?",
+    "choices": [
+      "a subsection of a virtualization environment that contains one or more VMs",
+      "a group of VMs with identical OS and applications",
+      "a virtual area with multiple independent applications sharing the host OS and hardware",
+      "isolated areas of a virtualization environment, where each area is administered by a customer"
+    ],
+    "answer": "a virtual area with multiple independent applications sharing the host OS and hardware"
+  },
+  {
+    "question": "Match the OWASP resource with a description.",
+    "choices": [
+      "explains ways to mitigate command security issues in web applications",
+      "looks for known vulnerabilities in code",
+      "streamlines the code testing process",
+      "generic attack detection rules used with web application firewalls",
+      "Cheat Sheet Series",
+      "DefectDojo",
+      "ModSecurity Core Rule Set",
+      "Dependency Check"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "What is used to isolate the different parts of a running container?",
+    "choices": [
+      "union file systems",
+      "control groups",
+      "namespaces",
+      "wrappers"
+    ],
+    "answer": "namespaces"
+  },
+  {
+    "question": "Match the cloud model to its description. (Not all options are used.)",
+    "choices": [
+      "These are clouds that are intended for a specific organization or entity, such as the government. They can be set up using the private network of an organization.",
+      "These clouds are made up of two or more clouds. However, each part remains a distinctive and separate object. Both of these are connected using a single architecture.",
+      "These are clouds that locate computing as close as possible to the user.",
+      "edge",
+      "private",
+      "public",
+      "hybrid"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "Which technology is used to containerize applications and allows them to run in a variety of environments?",
+    "choices": [
+      "GitHub",
+      "Cisco DNA",
+      "Docker",
+      "VirtualBox"
+    ],
+    "answer": "Docker"
+  },
+  {
+    "question": "Which load balancing technique will check the load status of multiple hosting servers and send the next incoming request to the server with the lowest load?",
+    "choices": [
+      "least connections",
+      "IP hash",
+      "blue-green",
+      "canary"
+    ],
+    "answer": "least connections"
+  },
+  {
+    "question": "Which characters are used to separate batched SQL statements?",
+    "choices": [
+      "semicolons ;",
+      "colons :",
+      "pound signs #",
+      "parentheses ()"
+    ],
+    "answer": ""
+  }
+]

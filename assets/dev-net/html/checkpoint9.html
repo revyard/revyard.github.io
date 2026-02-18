@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[F6-FORMATIVE] Formative Assessment 6 - QuizBank Export</title>
+    <style>
+        :root {
+            --ic-brand-primary: #667eea;
+            --ic-brand-font-color-dark: #2D3B45;
+        }
+        
+        body {
+            font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #2D3B45;
+            line-height: 1.5;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .quiz-header {
+            background: white;
+            color: #2D3B45;
+            padding: 24px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .quiz-header h1 {
+            margin: 0 0 8px 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .quiz-header .subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: #f7f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-label {
+            font-size: 10px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        
+        .course-section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .course-section-title {
+            margin: 0 0 16px 0;
+            font-size: 20px;
+            color: #9C27B0;
+            border-bottom: 2px solid #E1BEE7;
+            padding-bottom: 8px;
+        }
+        
+        .quiz-section {
+            margin-bottom: 20px;
+        }
+        
+        .quiz-section-title {
+            margin: 16px 0 12px 0;
+            font-size: 16px;
+            color: #667eea;
+        }
+        
+        .display_question {
+            background: white;
+            padding: 0;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid #c7cdd1;
+        }
+        
+        .display_question .header {
+            background: #f7f9fa;
+            padding: 12px 16px;
+            border-bottom: 1px solid #c7cdd1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .question_name { font-weight: 600; color: #2D3B45; font-size: 15px; }
+        .question_points_holder { font-size: 14px; color: #73818f; }
+        .display_question .text { padding: 20px 16px; }
+        .question_text { font-size: 15px; line-height: 1.6; margin-bottom: 16px; }
+        
+        .answer-source-badge, .correct-answer-badge, .wrong-answer-badge {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .knowledge_bank-source { background: linear-gradient(135deg, #4CAF50, #45a049); color: white; }
+        .canvas-source { background: linear-gradient(135deg, #2196F3, #1976D2); color: white; }
+        .new-source { background: linear-gradient(135deg, #FF9800, #F57C00); color: white; }
+        .correct-answer-badge { background: #4CAF50 !important; color: white !important; }
+        .wrong-answer-badge { background: #ff5722 !important; color: white !important; }
+        
+        .answers { margin-top: 12px; }
+        fieldset { border: none; padding: 0; margin: 0; }
+        .answer { border-bottom: 1px solid #f0f0f0; }
+        .answer:last-child { border-bottom: none; }
+        .answer_row { display: flex; align-items: flex-start; padding: 10px 12px; }
+        .answer_input { margin-right: 10px; }
+        .answer_label { flex: 1; font-size: 14px; }
+        
+        .move, .links, .original_question_text, .screenreader-only { display: none !important; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #73818f;
+            font-size: 13px;
+            background: white;
+            border-radius: 8px;
+        }
+        
+        @media print {
+            body { background: white; }
+            .display_question { page-break-inside: avoid; box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-header">
+        <h1>📚 [F6-FORMATIVE] Formative Assessment 6</h1>
+        <div class="subtitle">[F6-FORMATIVE] Formative Assessment 6: 2TSY2526_IT0123_TW34-4</div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Total Questions</div>
+                <div class="stat-value">24</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">✅ Correct</div>
+                <div class="stat-value">12</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">🚫 Wrong</div>
+                <div class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">✨ New</div>
+                <div class="stat-value">12</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="questions-container">
+        <div class="display_question question multiple_choice_question" id="question_22331785">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331785" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016092</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;A company has remote employees who need to connect to the company network in order to participate in meetings and to share the data and progress of application development. Which data transportation security technique can be implemented to allow remote employees to securely connect to the company private network?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331785_question_text" class="question_text user_content enhanced">
+          <strong>A company has remote employees who need to connect to the company network in order to participate in meetings and to share the data and progress of application development. Which data transportation security technique can be implemented to allow remote employees to securely connect to the company private network?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331785" value="7910" id="question_22331785_answer_7910" aria-labelledby="question_22331785_answer_7910_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331785_answer_7910_label">
+        SSH
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331785" value="1123" id="question_22331785_answer_1123" aria-labelledby="question_22331785_answer_1123_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331785_answer_1123_label">
+        VPN
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331785" value="9982" id="question_22331785_answer_9982" aria-labelledby="question_22331785_answer_9982_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331785_answer_9982_label">
+        SSL
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331785" value="9760" id="question_22331785_answer_9760" aria-labelledby="question_22331785_answer_9760_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331785_answer_9760_label">
+        TLS
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_answers_question" id="question_22331786">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_answers_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331786" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016095</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which two attacks target web servers through exploiting possible vulnerabilities of input functions used by an application? (Choose two.)&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331786_question_text" class="question_text user_content enhanced">
+          <strong>Which two attacks target web servers through exploiting possible vulnerabilities of input functions used by an application? (Choose two.)</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22331786_answer_9520" value="0">
+          <input type="checkbox" class="question_input" name="question_22331786_answer_9520" value="1" id="question_22331786_answer_9520" aria-labelledby="question_22331786_answer_9520_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331786_answer_9520_label">
+        trust exploitation
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22331786_answer_7744" value="0">
+          <input type="checkbox" class="question_input" name="question_22331786_answer_7744" value="1" id="question_22331786_answer_7744" aria-labelledby="question_22331786_answer_7744_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331786_answer_7744_label">
+        cross-site scripting
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22331786_answer_2944" value="0">
+          <input type="checkbox" class="question_input" name="question_22331786_answer_2944" value="1" id="question_22331786_answer_2944" aria-labelledby="question_22331786_answer_2944_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331786_answer_2944_label">
+        SQL injection
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22331786_answer_4663" value="0">
+          <input type="checkbox" class="question_input" name="question_22331786_answer_4663" value="1" id="question_22331786_answer_4663" aria-labelledby="question_22331786_answer_4663_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331786_answer_4663_label">
+        port redirection
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22331786_answer_4944" value="0">
+          <input type="checkbox" class="question_input" name="question_22331786_answer_4944" value="1" id="question_22331786_answer_4944" aria-labelledby="question_22331786_answer_4944_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331786_answer_4944_label">
+        port scanning
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question answered" id="question_22331787">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331787" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016100</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;A threat actor has used malicious commands to trick the database into returning unauthorized records and other data. Which web front-end vulnerability is the threat actor exploiting?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331787_question_text" class="question_text user_content enhanced">
+          <strong>A threat actor has used malicious commands to trick the database into returning unauthorized records and other data. Which web front-end vulnerability is the threat actor exploiting?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331787" value="1135" id="question_22331787_answer_1135" aria-labelledby="question_22331787_answer_1135_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331787_answer_1135_label">
+        SQL injections
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331787" value="1998" id="question_22331787_answer_1998" aria-labelledby="question_22331787_answer_1998_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331787_answer_1998_label">
+        security misconfiguration
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331787" value="8812" id="question_22331787_answer_8812" aria-labelledby="question_22331787_answer_8812_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331787_answer_8812_label">
+        cross-site scripting
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331787" value="1167" id="question_22331787_answer_1167" aria-labelledby="question_22331787_answer_1167_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331787_answer_1167_label">
+        broken authentication
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22331788">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331788" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016106</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is a characteristic of the development environment in the four-tier deployment environment structure?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331788_question_text" class="question_text user_content enhanced">
+          <strong>What is a characteristic of the development environment in the four-tier deployment environment structure?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331788" value="5358" id="question_22331788_answer_5358" aria-labelledby="question_22331788_answer_5358_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331788_answer_5358_label">
+        It is where coding takes place.
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331788" value="1747" id="question_22331788_answer_1747" aria-labelledby="question_22331788_answer_1747_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331788_answer_1747_label">
+        It is structurally similar to the final production environment.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331788" value="1584" id="question_22331788_answer_1584" aria-labelledby="question_22331788_answer_1584_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331788_answer_1584_label">
+        It contains code that has been tested and is error free.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331788" value="6796" id="question_22331788_answer_6796" aria-labelledby="question_22331788_answer_6796_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331788_answer_6796_label">
+        It is where users will interact with the code.
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22331790">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331790" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016113</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which security device is used to make responses to client requests look like they all come from the same server?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331790_question_text" class="question_text user_content enhanced">
+          <strong>Which security device is used to make responses to client requests look like they all come from the same server?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331790" value="6408" id="question_22331790_answer_6408" aria-labelledby="question_22331790_answer_6408_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331790_answer_6408_label">
+        forward proxy
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331790" value="2775" id="question_22331790_answer_2775" aria-labelledby="question_22331790_answer_2775_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331790_answer_2775_label">
+        stateful firewall
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331790" value="815" id="question_22331790_answer_815" aria-labelledby="question_22331790_answer_815_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331790_answer_815_label">
+        reverse proxy
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331790" value="1307" id="question_22331790_answer_1307" aria-labelledby="question_22331790_answer_1307_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331790_answer_1307_label">
+        jump box
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22331792">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331792" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016115</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is a characteristic of the blue-green upgrade deployment strategy?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331792_question_text" class="question_text user_content enhanced">
+          <strong>What is a characteristic of the blue-green upgrade deployment strategy?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331792" value="8942" id="question_22331792_answer_8942" aria-labelledby="question_22331792_answer_8942_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331792_answer_8942_label">
+        The new code version is first rolled out to a subset of users. Changes can then be rolled back if the users experience any problems.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331792" value="7873" id="question_22331792_answer_7873" aria-labelledby="question_22331792_answer_7873_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331792_answer_7873_label">
+        A new environment is created with the new code in it, while the old environment is held in reserve in case users experience problems.
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331792" value="6162" id="question_22331792_answer_6162" aria-labelledby="question_22331792_answer_6162_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331792_answer_6162_label">
+        The code changes are periodically rolled out in such a way that they do not impact current users.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331792" value="6252" id="question_22331792_answer_6252" aria-labelledby="question_22331792_answer_6252_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331792_answer_6252_label">
+        The new code is deployed all at once to the old environment. If users experience no issues, it is then moved to the new environment.
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question matching_question" id="question_22331793">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">matching_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331793" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016124</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Match the environments in the four-tier development environment structure to the description.&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331793_question_text" class="question_text user_content enhanced">
+          <strong>Match the environments in the four-tier development environment structure to the description.</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22331793_answer_2601">development</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22331793_answer_2601" id="question_22331793_answer_2601" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="4568">contains code that has been tested multiple times and is error free</option>
+            <option value="1969">includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system</option>
+            <option value="3503">where coding takes place</option>
+            <option value="1090">structurally as close to the actual production environment as possible</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22331793_answer_752">testing</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22331793_answer_752" id="question_22331793_answer_752" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="4568">contains code that has been tested multiple times and is error free</option>
+            <option value="1969">includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system</option>
+            <option value="3503">where coding takes place</option>
+            <option value="1090">structurally as close to the actual production environment as possible</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22331793_answer_5797">staging</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22331793_answer_5797" id="question_22331793_answer_5797" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="4568">contains code that has been tested multiple times and is error free</option>
+            <option value="1969">includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system</option>
+            <option value="3503">where coding takes place</option>
+            <option value="1090">structurally as close to the actual production environment as possible</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22331793_answer_3965">production</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22331793_answer_3965" id="question_22331793_answer_3965" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="4568">contains code that has been tested multiple times and is error free</option>
+            <option value="1969">includes automated tools such as Jenkins, CircleCI, or Travis CI, and is often integrated with a version control system</option>
+            <option value="3503">where coding takes place</option>
+            <option value="1090">structurally as close to the actual production environment as possible</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22331794">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22331794" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016138</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which statement is a characteristic of the broken access control threat to web applications?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22331794_question_text" class="question_text user_content enhanced">
+          <strong>Which statement is a characteristic of the broken access control threat to web applications?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331794" value="4662" id="question_22331794_answer_4662" aria-labelledby="question_22331794_answer_4662_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331794_answer_4662_label">
+        It allows an attacker to use the dynamic functions of a site to inject malicious content into the page.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331794" value="3516" id="question_22331794_answer_3516" aria-labelledby="question_22331794_answer_3516_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331794_answer_3516_label">
+        It allows attackers to access, and potentially change, serialized versions of data and objects.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331794" value="7954" id="question_22331794_answer_7954" aria-labelledby="question_22331794_answer_7954_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331794_answer_7954_label">
+        It allows users to circumvent existing authentication requirements.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22331794" value="7838" id="question_22331794_answer_7838" aria-labelledby="question_22331794_answer_7838_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22331794_answer_7838_label">
+        It allows attackers to steal sensitive information such as passwords or personal information.
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332102">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332102" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016080</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is Bash?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332102_question_text" class="question_text user_content enhanced">
+          <strong>What is Bash?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332102" value="5964" id="question_22332102_answer_5964" aria-labelledby="question_22332102_answer_5964_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332102_answer_5964_label">
+        a web application framework written in Python
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332102" value="9055" id="question_22332102_answer_9055" aria-labelledby="question_22332102_answer_9055_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332102_answer_9055_label">
+        a philosophy for software deployment that figures prominently in the field of DevOps
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332102" value="3359" id="question_22332102_answer_3359" aria-labelledby="question_22332102_answer_3359_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332102_answer_3359_label">
+        a Linux script engine that allows commands to be entered on the command line
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332102" value="226" id="question_22332102_answer_226" aria-labelledby="question_22332102_answer_226_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332102_answer_226_label">
+        a code injection technique used to attack data-driven applications
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332103">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332103" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016085</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which web application attack involves an attacker accessing, and potentially changing, serialized versions of data and objects?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332103_question_text" class="question_text user_content enhanced">
+          <strong>Which web application attack involves an attacker accessing, and potentially changing, serialized versions of data and objects?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332103" value="2796" id="question_22332103_answer_2796" aria-labelledby="question_22332103_answer_2796_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332103_answer_2796_label">
+        broken authentication
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332103" value="1111" id="question_22332103_answer_1111" aria-labelledby="question_22332103_answer_1111_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332103_answer_1111_label">
+        insecure deserialization
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332103" value="2297" id="question_22332103_answer_2297" aria-labelledby="question_22332103_answer_2297_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332103_answer_2297_label">
+        security misconfiguration
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332103" value="8458" id="question_22332103_answer_8458" aria-labelledby="question_22332103_answer_8458_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332103_answer_8458_label">
+        cross-site scripting
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question answered" id="question_22332104">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332104" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016108</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is CI/CD?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332104_question_text" class="question_text user_content enhanced">
+          <strong>What is CI/CD?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332104" value="2240" id="question_22332104_answer_2240" aria-labelledby="question_22332104_answer_2240_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332104_answer_2240_label">
+        It is a web application development framework that is written in Python.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332104" value="6738" id="question_22332104_answer_6738" aria-labelledby="question_22332104_answer_6738_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332104_answer_6738_label">
+        It is a malicious code injection technique which is used to attack data-driven applications.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332104" value="7302" id="question_22332104_answer_7302" aria-labelledby="question_22332104_answer_7302_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332104_answer_7302_label">
+        It is a script engine that allows users to execute commands from the command line.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332104" value="9585" id="question_22332104_answer_9585" aria-labelledby="question_22332104_answer_9585_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332104_answer_9585_label">
+        It is a philosophy for software deployment that is often used in the field of DevOps.
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332106">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332106" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016135</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is a philosophy for software deployment used in the field of DevOps?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332106_question_text" class="question_text user_content enhanced">
+          <strong>What is a philosophy for software deployment used in the field of DevOps?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332106" value="5619" id="question_22332106_answer_5619" aria-labelledby="question_22332106_answer_5619_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332106_answer_5619_label">
+        SOAP
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332106" value="9767" id="question_22332106_answer_9767" aria-labelledby="question_22332106_answer_9767_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332106_answer_9767_label">
+        DevNet
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332106" value="4190" id="question_22332106_answer_4190" aria-labelledby="question_22332106_answer_4190_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332106_answer_4190_label">
+        OWASP
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332106" value="4550" id="question_22332106_answer_4550" aria-labelledby="question_22332106_answer_4550_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332106_answer_4550_label">
+        CI/CD
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332138">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332138" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016088</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which social engineering technique is carried out by someone attempting to gain access to a building by wearing a delivery service uniform?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332138_question_text" class="question_text user_content enhanced">
+          <strong>Which social engineering technique is carried out by someone attempting to gain access to a building by wearing a delivery service uniform?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332138" value="8985" id="question_22332138_answer_8985" aria-labelledby="question_22332138_answer_8985_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332138_answer_8985_label">
+        phishing
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332138" value="5682" id="question_22332138_answer_5682" aria-labelledby="question_22332138_answer_5682_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332138_answer_5682_label">
+        smishing
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332138" value="5899" id="question_22332138_answer_5899" aria-labelledby="question_22332138_answer_5899_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332138_answer_5899_label">
+        impersonation
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332138" value="1280" id="question_22332138_answer_1280" aria-labelledby="question_22332138_answer_1280_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332138_answer_1280_label">
+        vishing
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_answers_question" id="question_22332139">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder canvas-answer" style="" data-original-points="1 pts"><span class="answer-source">[CANVAS]</span> 0.33 pts (50% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_answers_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332139" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016103</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What are three characteristics of a virtual machine? (Choose three.)&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332139_question_text" class="question_text user_content enhanced">
+          <strong>What are three characteristics of a virtual machine? (Choose three.)</strong>
+      <div class="answer-source-badge canvas-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(33, 150, 243); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🎯</span><span class="badge-text">Your History</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_3062" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_3062" value="1" id="question_22332139_answer_3062" aria-labelledby="question_22332139_answer_3062_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_3062_label">
+        It shares the underlying resources of the host OS.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_9421" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_9421" value="1" id="question_22332139_answer_9421" aria-labelledby="question_22332139_answer_9421_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_9421_label">
+        It requires a hypervisor.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_345" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_345" value="1" id="question_22332139_answer_345" aria-labelledby="question_22332139_answer_345_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_345_label">
+        It leverages the kernel of the host OS for quick starts.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_3850" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_3850" value="1" id="question_22332139_answer_3850" aria-labelledby="question_22332139_answer_3850_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_3850_label">
+        It is an isolated environment for applications.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_1307" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_1307" value="1" id="question_22332139_answer_1307" aria-labelledby="question_22332139_answer_1307_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_1307_label">
+        It is a virtualized physical server.
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="hidden" name="question_22332139_answer_8112" value="0">
+          <input type="checkbox" class="question_input" name="question_22332139_answer_8112" value="1" id="question_22332139_answer_8112" aria-labelledby="question_22332139_answer_8112_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332139_answer_8112_label">
+        It includes a guest OS.
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question answered" id="question_22332140">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332140" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016127</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which attack involves the insertion of malicious code into SQL statements?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332140_question_text" class="question_text user_content enhanced">
+          <strong>Which attack involves the insertion of malicious code into SQL statements?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332140" value="4769" id="question_22332140_answer_4769" aria-labelledby="question_22332140_answer_4769_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332140_answer_4769_label">
+        cross-site scripting
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332140" value="9802" id="question_22332140_answer_9802" aria-labelledby="question_22332140_answer_9802_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332140_answer_9802_label">
+        SQL injection
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332140" value="4724" id="question_22332140_answer_4724" aria-labelledby="question_22332140_answer_4724_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332140_answer_4724_label">
+        brute force
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332140" value="9154" id="question_22332140_answer_9154" aria-labelledby="question_22332140_answer_9154_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332140_answer_9154_label">
+        local file inclusion
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332141">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332141" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016129</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;In software development, what is the purpose of a jump box?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332141_question_text" class="question_text user_content enhanced">
+          <strong>In software development, what is the purpose of a jump box?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332141" value="2560" id="question_22332141_answer_2560" aria-labelledby="question_22332141_answer_2560_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332141_answer_2560_label">
+        to receive incoming requests and forward them to multiple servers
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332141" value="1349" id="question_22332141_answer_1349" aria-labelledby="question_22332141_answer_1349_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332141_answer_1349_label">
+        to filter packets based on Layer 3 and Layer 4 addressing
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332141" value="4796" id="question_22332141_answer_4796" aria-labelledby="question_22332141_answer_4796_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332141_answer_4796_label">
+        to make all requests originating from within a network look like they come from the same source IP address
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332141" value="7705" id="question_22332141_answer_7705" aria-labelledby="question_22332141_answer_7705_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332141_answer_7705_label">
+        to act as a single trusted machine used to launch connections to sensitive systems
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332201">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332201" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016077</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which Linux-based platform is used to create, run, and manage containers in a virtual environment?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332201_question_text" class="question_text user_content enhanced">
+          <strong>Which Linux-based platform is used to create, run, and manage containers in a virtual environment?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332201" value="2867" id="question_22332201_answer_2867" aria-labelledby="question_22332201_answer_2867_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332201_answer_2867_label">
+        Hyper-V
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332201" value="1020" id="question_22332201_answer_1020" aria-labelledby="question_22332201_answer_1020_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332201_answer_1020_label">
+        KVM
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332201" value="5623" id="question_22332201_answer_5623" aria-labelledby="question_22332201_answer_5623_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332201_answer_5623_label">
+        Bash
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332201" value="2385" id="question_22332201_answer_2385" aria-labelledby="question_22332201_answer_2385_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332201_answer_2385_label">
+        Docker
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332202">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332202" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016099</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which statement describes the term containers in virtualization technology?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332202_question_text" class="question_text user_content enhanced">
+          <strong>Which statement describes the term containers in virtualization technology?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332202" value="9053" id="question_22332202_answer_9053" aria-labelledby="question_22332202_answer_9053_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332202_answer_9053_label">
+        a subsection of a virtualization environment that contains one or more VMs
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332202" value="4271" id="question_22332202_answer_4271" aria-labelledby="question_22332202_answer_4271_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332202_answer_4271_label">
+        a group of VMs with identical OS and applications
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332202" value="2725" id="question_22332202_answer_2725" aria-labelledby="question_22332202_answer_2725_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332202_answer_2725_label">
+        a virtual area with multiple independent applications sharing the host OS and hardware
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332202" value="7232" id="question_22332202_answer_7232" aria-labelledby="question_22332202_answer_7232_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332202_answer_7232_label">
+        isolated areas of a virtualization environment, where each area is administered by a customer
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question matching_question" id="question_22332203">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">matching_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332203" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016144</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Match the OWASP resource with a description.&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332203_question_text" class="question_text user_content enhanced">
+          <strong>Match the OWASP resource with a description.</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22332203_answer_285">explains ways to mitigate command security issues in web applications</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22332203_answer_285" id="question_22332203_answer_285" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="5006">Cheat Sheet Series</option>
+            <option value="2045">DefectDojo</option>
+            <option value="4555">ModSecurity Core Rule Set</option>
+            <option value="4138">Dependency Check</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22332203_answer_8919">looks for known vulnerabilities in code</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22332203_answer_8919" id="question_22332203_answer_8919" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="5006">Cheat Sheet Series</option>
+            <option value="2045">DefectDojo</option>
+            <option value="4555">ModSecurity Core Rule Set</option>
+            <option value="4138">Dependency Check</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22332203_answer_9985">streamlines the code testing process</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22332203_answer_9985" id="question_22332203_answer_9985" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="5006">Cheat Sheet Series</option>
+            <option value="2045">DefectDojo</option>
+            <option value="4555">ModSecurity Core Rule Set</option>
+            <option value="4138">Dependency Check</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22332203_answer_78">generic attack detection rules used with web application firewalls</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22332203_answer_78" id="question_22332203_answer_78" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="5006">Cheat Sheet Series</option>
+            <option value="2045">DefectDojo</option>
+            <option value="4555">ModSecurity Core Rule Set</option>
+            <option value="4138">Dependency Check</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22332204">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22332204" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016146</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;What is used to isolate the different parts of a running container?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22332204_question_text" class="question_text user_content enhanced">
+          <strong>What is used to isolate the different parts of a running container?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332204" value="1251" id="question_22332204_answer_1251" aria-labelledby="question_22332204_answer_1251_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332204_answer_1251_label">
+        union file systems
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332204" value="2776" id="question_22332204_answer_2776" aria-labelledby="question_22332204_answer_2776_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332204_answer_2776_label">
+        control groups
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332204" value="1281" id="question_22332204_answer_1281" aria-labelledby="question_22332204_answer_1281_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332204_answer_1281_label">
+        namespaces
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22332204" value="5886" id="question_22332204_answer_5886" aria-labelledby="question_22332204_answer_5886_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22332204_answer_5886_label">
+        wrappers
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question matching_question" id="question_22343357">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">matching_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22343357" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016118</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Match the cloud model to its description. (Not all options are used.)&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22343357_question_text" class="question_text user_content enhanced">
+          <strong>Match the cloud model to its description. (Not all options are used.)</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22343357_answer_8887">These are clouds that are intended for a specific organization or entity, such as the government. They can be set up using the private network of an organization.</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22343357_answer_8887" id="question_22343357_answer_8887" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="6850">edge</option>
+            <option value="2674">private</option>
+            <option value="5611">public</option>
+            <option value="3815">hybrid</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22343357_answer_5162">These clouds are made up of two or more clouds. However, each part remains a distinctive and separate object. Both of these are connected using a single architecture.</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22343357_answer_5162" id="question_22343357_answer_5162" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="6850">edge</option>
+            <option value="2674">private</option>
+            <option value="5611">public</option>
+            <option value="3815">hybrid</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="answer">
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <label for="question_22343357_answer_5153">These are clouds that locate computing as close as possible to the user.</label>
+          <br>
+          <div style="margin-left: 20px;">
+          </div>
+    </div>
+    <div class="pull-left" style="width: 40%; margin-top: 10px;">
+        <select name="question_22343357_answer_5153" id="question_22343357_answer_5153" class="question_input mathjax_ignore" style="max-width: 90%;">
+          <option value="" selected="">[ Choose ]</option>
+            <option value="6850">edge</option>
+            <option value="2674">private</option>
+            <option value="5611">public</option>
+            <option value="3815">hybrid</option>
+        </select>
+    </div>
+    <div class="clear"></div>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22343358">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22343358" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016141</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;p&gt;&lt;strong&gt;Which technology is used to containerize applications and allows them to run in a variety of environments?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</textarea>
+      </div>
+      <div id="question_22343358_question_text" class="question_text user_content enhanced">
+          <p><strong>Which technology is used to containerize applications and allows them to run in a variety of environments?</strong></p>
+<p>&nbsp;</p>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343358" value="5191" id="question_22343358_answer_5191" aria-labelledby="question_22343358_answer_5191_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343358_answer_5191_label">
+        GitHub
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343358" value="9607" id="question_22343358_answer_9607" aria-labelledby="question_22343358_answer_9607_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343358_answer_9607_label">
+        Cisco DNA
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343358" value="181" id="question_22343358_answer_181" aria-labelledby="question_22343358_answer_181_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343358_answer_181_label">
+        Docker
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343358" value="7241" id="question_22343358_answer_7241" aria-labelledby="question_22343358_answer_7241_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343358_answer_7241_label">
+        VirtualBox
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22343361">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder knowledge-bank-answer" style="" data-original-points="1 pts"><span class="answer-source">[KNOWLEDGE_BANK]</span> 1 pts (100% confidence)</span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22343361" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016081</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which load balancing technique will check the load status of multiple hosting servers and send the next incoming request to the server with the lowest load?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22343361_question_text" class="question_text user_content enhanced">
+          <strong>Which load balancing technique will check the load status of multiple hosting servers and send the next incoming request to the server with the lowest load?</strong>
+      <div class="answer-source-badge knowledge_bank-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">🏦</span><span class="badge-text">Knowledge Bank</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343361" value="6556" id="question_22343361_answer_6556" aria-labelledby="question_22343361_answer_6556_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343361_answer_6556_label">
+        least connections
+      </div>
+    <span class="correct-answer-badge" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(76, 175, 80); color: white; padding: 2px 6px; border-radius: 8px; font-size: 10px; font-weight: bold; margin-left: 6px; opacity: 0.9;"><span class="badge-icon">✅</span><span class="badge-text">Correct</span></span></label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343361" value="1976" id="question_22343361_answer_1976" aria-labelledby="question_22343361_answer_1976_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343361_answer_1976_label">
+        IP hash
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343361" value="9356" id="question_22343361_answer_9356" aria-labelledby="question_22343361_answer_9356_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343361_answer_9356_label">
+        blue-green
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343361" value="3511" id="question_22343361_answer_3511" aria-labelledby="question_22343361_answer_3511_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343361_answer_3511_label">
+        canary
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<div class="display_question question multiple_choice_question" id="question_22343371">
+    
+<div class="move">
+  <a tabindex="0" class="draggable-handle" role="button">
+    <i class="icon-drag-handle">
+      <span class="screenreader-only">Move To...</span>
+      <span class="accessibility-warning screenreader-only">
+        This element is a more accessible alternative to drag &amp; drop reordering. Press Enter or Space to move this question.
+      </span>
+    </i>
+  </a>
+</div>
+
+
+    <div class="header">
+      <span class="name question_name" role="heading" aria-level="2">Question</span>
+      <span class="question_points_holder" style="" data-original-points="1 pts">
+        <span class="points question_points">1</span> pts
+    </span>
+    </div>
+      <div class="links" style="display: none;">
+        <a href="#" class="edit_question_link no-hover" title="Edit this Question"><i class="icon-edit standalone-icon"><span class="screenreader-only">Edit this Question</span></i></a>
+          <a href="#" class="delete_question_link no-hover" title="Delete this Question"><i class="icon-end standalone-icon"><span class="screenreader-only">Delete this Question</span></i></a>
+      </div>
+    <div style="display: none;">
+      <span class="regrade_option"></span>
+      <span class="regrade_disabled">0</span>
+      <span class="question_type">multiple_choice_question</span>
+      <span class="answer_selection_type"></span>
+        <a href="/courses/107569/quizzes/1545637/questions/22343371" class="update_question_url">&nbsp;</a>
+      <span class="assessment_question_id">35016132</span>
+    </div>
+    <div class="text">
+      <div class="original_question_text" style="display: none;">
+        <textarea disabled="" style="display: none;" name="text_after_answers" class="textarea_text_after_answers"></textarea>
+        <textarea disabled="" style="display: none;" name="question_text" class="textarea_question_text">&lt;strong&gt;Which characters are used to separate batched SQL statements?&lt;/strong&gt;</textarea>
+      </div>
+      <div id="question_22343371_question_text" class="question_text user_content enhanced">
+          <strong>Which characters are used to separate batched SQL statements?</strong>
+      <div class="answer-source-badge new-source" style="display: inline-flex; align-items: center; gap: 4px; background: rgb(255, 152, 0); color: white; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle;"><span class="badge-icon">✨</span><span class="badge-text">New Question</span></div></div>
+      <div class="answers">
+              <fieldset>
+                <legend class="screenreader-only">
+                  Group of answer choices
+                </legend>
+                
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343371" value="3845" id="question_22343371_answer_3845" aria-labelledby="question_22343371_answer_3845_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343371_answer_3845_label">
+        semicolons ;
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343371" value="9010" id="question_22343371_answer_9010" aria-labelledby="question_22343371_answer_9010_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343371_answer_9010_label">
+        colons :
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343371" value="3693" id="question_22343371_answer_3693" aria-labelledby="question_22343371_answer_3693_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343371_answer_3693_label">
+        pound signs #
+      </div>
+    </label>
+</div>
+
+<div class="answer">
+    <label class="answer_row user_content enhanced">
+      <span class="answer_input">
+          <input type="radio" class="question_input" name="question_22343371" value="4583" id="question_22343371_answer_4583" aria-labelledby="question_22343371_answer_4583_label" aria-label="">
+      </span>
+      <div class="answer_label" id="question_22343371_answer_4583_label">
+        parentheses ()
+      </div>
+    </label>
+</div>
+
+              </fieldset>
+      </div>
+      <div class="after_answers">
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+
+    </div>
+    
+    <div class="footer">
+        <strong>Generated by QuizBank</strong><br>
+        2/18/2026, 8:18:47 PM
+    </div>
+</body>
+</html>

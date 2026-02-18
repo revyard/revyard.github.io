@@ -183,26 +183,44 @@ questionElements.forEach((questionEl) => {
     const choices = [];
     const correctAnswers = [];
 
-    answerLabels.forEach((answerLabel) => {
-      // Get the choice text
-      const choiceTextNode = answerLabel.cloneNode(true);
-      // Remove any badges from the choice text
-      const badges = choiceTextNode.querySelectorAll('.correct-answer-badge, .wrong-answer-badge');
-      badges.forEach(badge => badge.remove());
-      const choiceText = choiceTextNode.textContent.trim();
+    if (answerLabels.length > 0) {
+      answerLabels.forEach((answerLabel) => {
+        // Get the choice text
+        const choiceTextNode = answerLabel.cloneNode(true);
+        // Remove any badges from the choice text
+        const badges = choiceTextNode.querySelectorAll('.correct-answer-badge, .wrong-answer-badge');
+        badges.forEach(badge => badge.remove());
+        const choiceText = choiceTextNode.textContent.trim();
 
-      if (choiceText) {
-        choices.push(choiceText);
+        if (choiceText) {
+          choices.push(choiceText);
 
-        // Check if this is a correct answer (only if not a new/wrong question)
-        if (!isNewQuestion && !isWrongAnswer) {
-          const correctBadge = answerLabel.parentElement.querySelector('.correct-answer-badge');
-          if (correctBadge) {
-            correctAnswers.push(choiceText);
+          // Check if this is a correct answer (only if not a new/wrong question)
+          if (!isNewQuestion && !isWrongAnswer) {
+            const correctBadge = answerLabel.parentElement.querySelector('.correct-answer-badge');
+            if (correctBadge) {
+              correctAnswers.push(choiceText);
+            }
           }
         }
-      }
-    });
+      });
+    } else {
+      // Handle matching questions or other formats
+      const matchingLabels = questionEl.querySelectorAll('.pull-left label');
+      const selectOptions = questionEl.querySelectorAll('select option');
+
+      matchingLabels.forEach(label => {
+        const text = label.textContent.trim();
+        if (text) choices.push(text);
+      });
+
+      selectOptions.forEach(opt => {
+        const text = opt.textContent.trim();
+        if (text && text !== '[ Choose ]' && !choices.includes(text)) {
+          choices.push(text);
+        }
+      });
+    }
 
     // Add all questions that have choices
     if (choices.length > 0) {
