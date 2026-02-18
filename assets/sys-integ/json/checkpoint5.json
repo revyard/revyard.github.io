@@ -1,0 +1,521 @@
+[
+  {
+    "question": "An interaction model is a dynamic model that shows how the system interacts with its environment as it\n            is used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "An interaction application is a dynamic model that not shows how the system interacts with its environment as\n          it is used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The weather forecast system is not establishing a satellite communication link with the weather station and\n          requests transmission of the data.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The weather station sends a summary of the weather data that has been collected from the instruments in\n            the collection period to the weather information system",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The weather station is composed of independent subsystems that not communicate by\n            broadcasting messages on a system architecture.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Application domain objects that are ‘_____’ objects related to the instruments in the system.",
+    "choices": [
+      "Hardware",
+      "Object",
+      "System",
+      "Software"
+    ],
+    "answer": "Hardware"
+  },
+  {
+    "question": "Encapsulates the summarized data from the instruments.",
+    "choices": [
+      "Forecast Data",
+      "System Data",
+      "Weather Data",
+      "Application Data"
+    ],
+    "answer": "Weather Data"
+  },
+  {
+    "question": "_______ show the objects and object classes and relationships between these entities.",
+    "choices": [
+      "Sample Model",
+      "Design Model",
+      "Grand Model",
+      "Class Model"
+    ],
+    "answer": "Design Model"
+  },
+  {
+    "question": "_______ describe the dynamic interactions between objects.",
+    "choices": [
+      "Design Model",
+      "Dynamic Model",
+      "System Model",
+      "Class Model"
+    ],
+    "answer": "Dynamic Model"
+  },
+  {
+    "question": "____ is the most modern software is constructed by reusing existing components or systems.",
+    "choices": [
+      "Configuration Management",
+      "Host-Target Development",
+      "Reuse",
+      "Management Development"
+    ],
+    "answer": "Reuse"
+  },
+  {
+    "question": "It is where you call the object or method to be tested.",
+    "choices": [
+      "Assertion Part",
+      "Call Part",
+      "Setup Part"
+    ],
+    "answer": "Call Part"
+  },
+  {
+    "question": "This means that there should be at least one test for every requirement in the requirements\n            document.",
+    "choices": [
+      "Program Testing",
+      "Test Software",
+      "Custom software"
+    ],
+    "answer": "Custom software"
+  },
+  {
+    "question": "Guideline-based testing, where you use testing guidelines to choose test cases.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Test software with sequences which have two value.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Force computation results to be too large or too small.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "TDD was not introduced as part of agile methods such as Extreme Programming.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Every code segment that you write has at least two associated test so all code written has\n            at least one test.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The level of confidence depends on how critical the software is to an organisation.",
+    "choices": [
+      "Marketing environment",
+      "Software purpose",
+      "User expectations"
+    ],
+    "answer": "Software purpose"
+  },
+  {
+    "question": "Users may have low expectations of certain kinds of software.",
+    "choices": [
+      "User expectations",
+      "Software purpose",
+      "Marketing environment"
+    ],
+    "answer": "User expectations"
+  },
+  {
+    "question": "Concerned with analysis of the static system representation to discover problems  (static verification)",
+    "choices": [
+      "Software Testing",
+      "User expectations",
+      "Software Inspections"
+    ],
+    "answer": "Software Inspections"
+  },
+  {
+    "question": "System configure model is a not structural model that demonstrates the other subsystems in the environment of\n          the system being developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The weather station is composed of independent subsystems that communicate by broadcasting messages on a\n            common infrastructure",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Object identification is an iterative process. You are unlikely to get it right first time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A _____ is a package of software controlled instruments which collects data,\n            performs some data processing and transmits this data for further processing.",
+    "choices": [
+      "Weather Station",
+      "Forecast Station",
+      "Object Station",
+      "Class Station"
+    ],
+    "answer": "Weather Station"
+  },
+  {
+    "question": "One of pattern elements is the results and trade-offs of applying the pattern.",
+    "choices": [
+      "Consequences",
+      "Problem Description",
+      "Solution Description",
+      "Name"
+    ],
+    "answer": "Consequences"
+  },
+  {
+    "question": "At this level, you directly reuse objects from a library rather than writing the code yourself.",
+    "choices": [
+      "The object level",
+      "The system level",
+      "The component level",
+      "The abstraction level"
+    ],
+    "answer": "The object level"
+  },
+  {
+    "question": "_________ is the name given to the general process of managing a changing software system.",
+    "choices": [
+      "Management Development",
+      "Host-Target Development",
+      "Configuration Management",
+      "Reuse"
+    ],
+    "answer": "Configuration Management"
+  },
+  {
+    "question": "The most software is developed on one computer (the host), but runs on a separate machine (the target).",
+    "choices": [
+      "Reuse",
+      "Configuration Management",
+      "Host-Target Development",
+      "Management Development"
+    ],
+    "answer": "Host-Target Development"
+  },
+  {
+    "question": "Structured object-oriented design processes involve developing a number of different system models.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "What is Program Testing?",
+    "choices": [
+      "intended to show that a program does what it is intended to do and to discover program defects before\n                  it is put into use.",
+      "defect testing can be deliberately obscure and need not reflect how the system is normally used.",
+      "the system to perform correctly using a given set of test cases that reflect the system’s expected\n                  use."
+    ],
+    "answer": "intended to show that a program does what it is intended to do and to discover program defects before\n                  it is put into use."
+  },
+  {
+    "question": "Concerned with exercising and observing product behaviour (dynamic verification)",
+    "choices": [
+      "User expectations",
+      "Software Inspections",
+      "Software Testing"
+    ],
+    "answer": "Software Testing"
+  },
+  {
+    "question": "It is where a separate testing team test a complete version of the system before it is\n            released to users.",
+    "choices": [
+      "Release Testing",
+      "Development testing",
+      "User Testing"
+    ],
+    "answer": "Release Testing"
+  },
+  {
+    "question": "It is where some or all of the components in a system are integrated and the system is\n            tested as a whole.",
+    "choices": [
+      "Component Testing",
+      "Unit testing",
+      "System Testing"
+    ],
+    "answer": "System Testing"
+  },
+  {
+    "question": "It is where you initialize the system with the test case, namely the inputs and expected\n            outputs.",
+    "choices": [
+      "Call Part",
+      "Setup Part",
+      "Assertion Part"
+    ],
+    "answer": "Setup Part"
+  },
+  {
+    "question": "Input data and output results often fall into different classes where all members of a\n            class are related.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Force invalid inputs to be generated",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Parameter interfaces Data passed from two method or procedure to another.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "User testing is essential, even when comprehensive system and release testing have been\n            carried out.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Getting a product to market early may be more important than finding defects in the\n            program.",
+    "choices": [
+      "User expectations",
+      "Marketing environment",
+      "Software purpose"
+    ],
+    "answer": "Marketing environment"
+  },
+  {
+    "question": "Software design and implementation activities are invariably outerwear-leaved.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Object identification is an looping process. You are unlikely to get it right second time.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Use a scenario based approach and identify objects based on what participates in what behaviour.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This is the basic interface of the weather station to its environment.",
+    "choices": [
+      "Weather Station",
+      "Subsystem Station",
+      "Forecast Station",
+      "System Station"
+    ],
+    "answer": "Weather Station"
+  },
+  {
+    "question": "_____ are used to show how objects respond to different service requests and the state transitions\n            triggered by these requests.",
+    "choices": [
+      "File Diagram",
+      "State Diagram",
+      "System Diagram",
+      "Subsystem Diagram"
+    ],
+    "answer": "State Diagram"
+  },
+  {
+    "question": "At this level, you don’t reuse software directly but use knowledge of successful abstractions in the\n            design of your software.",
+    "choices": [
+      "The abstraction level",
+      "The system level",
+      "The object level",
+      "The component level"
+    ],
+    "answer": "The abstraction level"
+  },
+  {
+    "question": "At this level, you reuse entire application systems.",
+    "choices": [
+      "The abstraction level",
+      "The system level",
+      "The object level",
+      "The component level"
+    ],
+    "answer": "The system level"
+  },
+  {
+    "question": "It is where individual program units or object classes are tested.",
+    "choices": [
+      "System Testing",
+      "Component Testing",
+      "Unit testing"
+    ],
+    "answer": "Unit testing"
+  },
+  {
+    "question": "The test expect the system to perform correctly using a given set of test cases that reflect the\n              system’s expected use.",
+    "choices": [
+      "Validating Testing",
+      "Defect testing",
+      "Custom testing"
+    ],
+    "answer": "Validating Testing"
+  },
+  {
+    "question": "Every code segment that you write has at least one associated test so all code written has at least one\n            test.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The test cases in defect testing can be deliberately obscure and need not reflect how the\n            system is normally used.",
+    "choices": [
+      "Custom Testing",
+      "Validating Testing",
+      "Defect Testing"
+    ],
+    "answer": "Defect Testing"
+  },
+  {
+    "question": "Software design and implementation activities are invariably inter-leaved.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The weather substation sends a summary of the system data that has been not collected\n            from the instruments in the collection period to the weather information system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It Provides a standard way of accessing the elements in a collection, irrespective of how that\n            collection is implemented (Iterator pattern).",
+    "choices": [
+      "Design Problems",
+      "Class Problems",
+      "System Problems",
+      "Object Problems"
+    ],
+    "answer": "Design Problems"
+  },
+  {
+    "question": "They require a lot of effort for development and maintenance of these models and, for small systems,\n            this may not be cost-effective.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is where the system is tested during development to discover bugs and defects.",
+    "choices": [
+      "Development testing",
+      "User Testing",
+      "Release Testing"
+    ],
+    "answer": "Development testing"
+  },
+  {
+    "question": "It is where you identify groups of inputs that have common characteristics and should be\n              processed in the same way.",
+    "choices": [
+      "Unit testing",
+      "Partition Testing",
+      "System Testing"
+    ],
+    "answer": "Partition Testing"
+  },
+  {
+    "question": "Input data and output results often fall into similar classes where all members of a class\n            are related.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It concern with rooting out undesirable system behavior such as system crashes, unwanted interactions\n            with other systems, incorrect computations and data corruption.",
+    "choices": [
+      "Defect testing",
+      "Test software",
+      "Custom software"
+    ],
+    "answer": "Defect testing"
+  },
+  {
+    "question": "Regression test suite is not developed incrementally as a program is developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  }
+]
