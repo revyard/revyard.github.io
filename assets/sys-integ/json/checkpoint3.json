@@ -1,0 +1,797 @@
+[
+  {
+    "question": "System Requirement is a not structured document setting out detailed descriptions of the system’s functions, services and operational constraints",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Domain Requirements is constraints on the system from the dominant operation of the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Non-Functional Requirements often apply to the system as a whole rather than individual features or services.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Functional Requirements is a statements of services the system should provide, how the system should react to particular inputs and how the system should behave in particular situations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Structured specifications this works well for some types of requirements e.g. requirements for embedded control system but is sometimes too rigid for writing business system requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This might include graphical system models showing the relationships between the system components and the system and its environment.",
+    "choices": [
+      "System models",
+      "System evolution",
+      "System Index"
+    ],
+    "answer": "System models"
+  },
+  {
+    "question": "External Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, et.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "User Requirement is a statements in natural language plus diagrams of the services the system provides and its operational constraints.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Organisational and political factors may not influence the system requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Organisational and political factors may influence the system requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Formal or informal interviews with stakeholders are not part of most RE processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Scene in the system are real-life examples of how a system can be used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Requirements management planning establishes the level of requirements management detail that is required.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements Engineering is an iterative activity in which these processes are interleaved.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Checking there any requirements conflicts.",
+    "choices": [
+      "Consistency",
+      "Validity",
+      "Completeness"
+    ],
+    "answer": "Consistency"
+  },
+  {
+    "question": "The requirements be implemented given available budget and technology.",
+    "choices": [
+      "Completeness",
+      "Validity",
+      "Realism"
+    ],
+    "answer": "Realism"
+  },
+  {
+    "question": "The requirements can be checked.",
+    "choices": [
+      "Validity",
+      "Realism",
+      "Verifiability"
+    ],
+    "answer": "Verifiability"
+  },
+  {
+    "question": "Problems of requirements analysis stakeholders doesn’t know what they really want.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements engineering is the process of establishing the services that the customer requires from a system and the constraints under which it operates and is developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Natural Language is a requirements written using numbered sentences and each sentence should express two requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Design description languages is an approach that use for interface and hardware and software specifications.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Structured specifications is not works well for some types of requirements e.g. requirements for embedded control system but is sometimes too rigid for writing business system requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Domain specialists understand the area so well that they do not think of making the domain requirements explicit.",
+    "choices": [
+      "Product requirements",
+      "Implicitness",
+      "Understandability"
+    ],
+    "answer": "Implicitness"
+  },
+  {
+    "question": "Requirement is a range from a low-level abstract statement of a service or of a system constraint to a detailed mathematical functional specification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "System Requirements Specification should not describe the functional and nonfunctional requirements in more detail.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Different stakeholders and customers may have conflicting requirements",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements management is the process of managing changing views and plans during the requirements engineering process and system development.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "These interviews are based on pre-determined list of questions",
+    "choices": [
+      "Effective interview",
+      "Open interviews",
+      "Closed interviews"
+    ],
+    "answer": "Closed interviews"
+  },
+  {
+    "question": "These interviews where various issues are explored with stakeholders.",
+    "choices": [
+      "Effective interview",
+      "Closed interviews",
+      "Open interviews"
+    ],
+    "answer": "Open interviews"
+  },
+  {
+    "question": "What is Scenarios?",
+    "choices": [
+      "Prompt the interviewee to get discussions going using a springboard question, a requirements proposal, or by working together on a prototype system.",
+      "Interaction is with system stakeholders from managers to external regulators.",
+      "are real-life examples of how a system can be used."
+    ],
+    "answer": "are real-life examples of how a system can be used."
+  },
+  {
+    "question": "What is Scope of Ethnography?",
+    "choices": [
+      "Requirements that are derived from the way that people actually work rather than the way I which process definitions suggest that they ought to work.",
+      "The problem with ethnography is that it studies existing practices which may have some historical basis which is no longer relevant.",
+      "Social and organisational factors of importance may be observed"
+    ],
+    "answer": "Requirements that are derived from the way that people actually work rather than the way I which process definitions suggest that they ought to work."
+  },
+  {
+    "question": "Requirements Engineering is an optional activity in which these processes are interleaved.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Using an executable model of the system to check requirements.",
+    "choices": [
+      "Test-case generation",
+      "Requirements review",
+      "Prototyping"
+    ],
+    "answer": "Prototyping"
+  },
+  {
+    "question": "Requirements elicitation and analysis sometimes called requirements elicitation or requirements discovery.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Functional Requirements is a statements of services the system should provide, what the system should not react to particular inputs and what the system should not behave in particular situations.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "In practice, requirements and design are inseparable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "What is Software Requirements document?",
+    "choices": [
+      "Is the official statement of what is required of the system developers",
+      "Applies to the system as a whole rather than individual features or services.",
+      "Defines what should be implemented so may be part of a contract between client and contractor."
+    ],
+    "answer": "Is the official statement of what is required of the system developers"
+  },
+  {
+    "question": "Systems normally have a range of customers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Scenarios are real-life examples of how a system can be used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Groups related requirements and organises them into coherent clusters.",
+    "choices": [
+      "Requirements discovery",
+      "Requirements classification and organisation",
+      "Prioritisation and negotiation"
+    ],
+    "answer": "Requirements classification and organisation"
+  },
+  {
+    "question": "All functions required by the customer included.",
+    "choices": [
+      "Completeness",
+      "Consistency",
+      "Validity"
+    ],
+    "answer": "Completeness"
+  },
+  {
+    "question": "During this stage, the problem or the change proposal is analyzed to check that it is valid.",
+    "choices": [
+      "Problem analysis and change specification",
+      "Change analysis and costing",
+      "Change implementation"
+    ],
+    "answer": "Problem analysis and change specification"
+  },
+  {
+    "question": "Non-Functional Requirements often apply to the system as one rather than dual features or services.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Functional Requirements may state what the system should not do.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements engineering is the process of establishing the customer service but not requiring from the system and constraints.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Requirements are expressed in the language of the application domain",
+    "choices": [
+      "Understandability",
+      "Implicitness",
+      "Product requirements"
+    ],
+    "answer": "Understandability"
+  },
+  {
+    "question": "External Requirements which not arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, et.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Requirements Confusion Functional and non-functional requirements tend to be mixed-up.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "User Requirement is a statements in programming language plus diagrams of the services the system provides and its operational constraints.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Tabular specification used to supplement unnatural language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Requirements discovery the process of gathering information from customer and existing systems.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Formal or informal interviews with stakeholders are part of most RE processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The requirements document and, where necessary, the system design and implementation, are modified.",
+    "choices": [
+      "Problem analysis and change specification",
+      "Change implementation",
+      "Change analysis and costing"
+    ],
+    "answer": "Change implementation"
+  },
+  {
+    "question": "Problems of requirements analysis stakeholders know what they really want.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "System Requirement is structured document setting out detailed descriptions of the system’s functions, services and operational constraints.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Natural language specification requirements are written as natural language sentences supplemented by diagrams and tables.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements which arise from factors which are external to the system and its development process e.g. interoperability requirements, legislative requirements, etc",
+    "choices": [
+      "Organisational requirements",
+      "External requirements",
+      "Product requirements"
+    ],
+    "answer": "External requirements"
+  },
+  {
+    "question": "A statement using some measure that can be objectively tested.",
+    "choices": [
+      "Verifiable non-functional requirement",
+      "Functional Requirement",
+      "Non-Functional Requirement"
+    ],
+    "answer": "Verifiable non-functional requirement"
+  },
+  {
+    "question": "Requirements Confusion Functional and non-functional is not requirements tend to be mixed-up.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Tabular specification used to supplement natural language.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The process of gathering information about the required and existing systems and distilling the user and system requirements from this information.",
+    "choices": [
+      "Requirements Specification",
+      "Requirements discovery",
+      "Requirements Elicitation"
+    ],
+    "answer": "Requirements discovery"
+  },
+  {
+    "question": "The system provides the functions which best support the customer’s needs.",
+    "choices": [
+      "Completeness",
+      "Validity",
+      "Consistency"
+    ],
+    "answer": "Validity"
+  },
+  {
+    "question": "The effect of the proposed change is assessed using traceability information and general knowledge of the system requirements.",
+    "choices": [
+      "Change analysis and costing",
+      "Change implementation",
+      "Problem analysis and change specification"
+    ],
+    "answer": "Change analysis and costing"
+  },
+  {
+    "question": "Effective Interview Be open-minded, avoid pre-conceived ideas about the requirements and not willing to listen to stakeholders.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Functional Requirements may state what the system should do in overall systematic view.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Precision is difficult without making the document difficult to read.",
+    "choices": [
+      "Requirements confusion",
+      "Requirements amalgamation",
+      "Lack of clarity"
+    ],
+    "answer": "Lack of clarity"
+  },
+  {
+    "question": "Prioritising requirements and resolving requirements conflicts.",
+    "choices": [
+      "Requirements classification and organisation",
+      "Prioritisation and negotiation",
+      "Requirements discovery"
+    ],
+    "answer": "Prioritisation and negotiation"
+  },
+  {
+    "question": "Requirements elicitation and analytics sometimes called requirements elicitation or requirements discovery.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Different stakeholders may have conflicting requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements which specify that the delivered product must behave in a particular way e.g. execution speed, reliability, etc.",
+    "choices": [
+      "Organisational requirements",
+      "External requirements",
+      "Product requirements"
+    ],
+    "answer": "Product requirements"
+  },
+  {
+    "question": "Requirement is a range from a high-level abstract statement of a service or of a system constraint to a detailed mathematical functional specification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements discovery the process of gathering information about the required and existing systems and distilling the user and system requirements from this information.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Requirements management is the process of managing changing requirements during the requirements engineering process and system development.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Developing tests for requirements to check testability.",
+    "choices": [
+      "Test-case generation",
+      "Prototyping",
+      "Requirements review"
+    ],
+    "answer": "Test-case generation"
+  },
+  {
+    "question": "The requirements themselves are the descriptions of the system services and constraints that are non-generated during the requirements engineering process.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "What is Functional Requirements?",
+    "choices": [
+      "Defines what should be implemented so may be part of a contract between client and contractor.",
+      "Describe functionality or system services.",
+      "Often apply to the system as a whole rather than individual features or services."
+    ],
+    "answer": "Describe functionality or system services."
+  },
+  {
+    "question": "Requirements reviews systematic manual analysis of the requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Natural language specification requirements are written as old language sentences supplemented by diagrams and tables.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Requirements which are a consequence of organisational policies and procedures e.g. process standards used, implementation requirements, etc.",
+    "choices": [
+      "Organisational requirements",
+      "Product requirements",
+      "External requirements"
+    ],
+    "answer": "Organisational requirements"
+  },
+  {
+    "question": "Functional and non-functional requirements tend to be mixed-up.",
+    "choices": [
+      "Requirements confusion",
+      "Lack of clarity",
+      "Requirements amalgamation"
+    ],
+    "answer": "Requirements confusion"
+  },
+  {
+    "question": "System Requirements Specification should describe the functional and nonfunctional requirements in more detail.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Change implementation the requirements document and, where necessary, the system design and implementation, are modified.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Ambiguous requirements may be interpreted in different ways by developers and users.",
+    "choices": [
+      "Requirements imprecision",
+      "Requirements engineering",
+      "System Requirement"
+    ],
+    "answer": "Requirements imprecision"
+  },
+  {
+    "question": "Design description languages this approach is now rarely used although it can be useful for interface specifications.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "These define system properties and constraints e.g. reliability, response time and storage requirements. Constraints are I/O device capability, system representations, etc.",
+    "choices": [
+      "Non-Functional Requirements",
+      "Functional Requirements",
+      "System Requirements"
+    ],
+    "answer": "Non-Functional Requirements"
+  },
+  {
+    "question": "Effective Interview Be open-minded, avoid pre-conceived ideas about the requirements and are willing to listen to stakeholders.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Several different requirements may be expressed together.",
+    "choices": [
+      "Requirements confusion",
+      "Lack of clarity",
+      "Requirements amalgamation"
+    ],
+    "answer": "Requirements amalgamation"
+  },
+  {
+    "question": "Systematic manual analysis of the requirements.",
+    "choices": [
+      "Requirements review",
+      "Test-case generation",
+      "Prototyping"
+    ],
+    "answer": "Requirements review"
+  },
+  {
+    "question": "Domain Requirements is constraints on the system from the domain of operation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "What is Ethnography?",
+    "choices": [
+      "A social scientist spends a considerable time observing and analysing how people actually work.",
+      "Sequence diagrams may be used to add detail to use-cases by showing the sequence of event processing in the system.",
+      "A set of use cases should describe all possible interactions with the system"
+    ],
+    "answer": "A social scientist spends a considerable time observing and analysing how people actually work."
+  },
+  {
+    "question": "In practice, requirements and design are separable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This is inevitable as requirements may serve a dual function.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Systems normally have a range of stakeholders.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "This should describe the functional and nonfunctional requirements in more detail.",
+    "choices": [
+      "System requirements specification",
+      "Introduction",
+      "User requirements definition"
+    ],
+    "answer": "System requirements specification"
+  },
+  {
+    "question": "Be open-minded, avoid pre-conceived ideas about the requirements and are willing to listen to stakeholders.",
+    "choices": [
+      "Closed interviews",
+      "Effective interview",
+      "Open interviews"
+    ],
+    "answer": "Effective interview"
+  }
+]
