@@ -169,6 +169,13 @@
         ]
       },
       {
+        "id": 4,
+        "name": "F4",
+        "checkpoints": [
+          "checkpoint4"
+        ]
+      },
+      {
         "id": 5,
         "name": "F5",
         "checkpoints": [

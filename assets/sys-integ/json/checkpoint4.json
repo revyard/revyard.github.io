@@ -1,0 +1,726 @@
+[
+  {
+    "question": "What is Context Models?",
+    "choices": [
+      "Models have to be both correct and complete.",
+      "they show what lies outside the system boundaries.",
+      "Models should be an accurate representation of the system but need not be complete."
+    ],
+    "answer": "they show what lies outside the system boundaries."
+  },
+  {
+    "question": "It highlights the communication problems that may arise.",
+    "choices": [
+      "Modeling component interaction",
+      "Modeling system-to-system interaction",
+      "Modeling user interaction"
+    ],
+    "answer": "Modeling system-to-system interaction"
+  },
+  {
+    "question": "What is Sequence diagrams?",
+    "choices": [
+      "is part of the UML and are used to model the interactions between the actors and the objects within a system.",
+      "Use cases were developed originally to support requirements elicitation and now incorporated into the UML.",
+      "use case may be people or other systems."
+    ],
+    "answer": "is part of the UML and are used to model the interactions between the actors and the objects within a system."
+  },
+  {
+    "question": "System modeling is not the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Sequence diagrams which not show interactions between actors and the system and between system components.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "State diagrams it shows how the system reacts to internal and external events.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Process models these reveal how not the system being developed is used in broader business processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "A model the organization of a system or the structure of the data that is processed by the system.",
+    "choices": [
+      "external perspective",
+      "structural perspective",
+      "interaction perspective"
+    ],
+    "answer": "structural perspective"
+  },
+  {
+    "question": "This show the activities involved in a process or in data processing.",
+    "choices": [
+      "Sequence diagrams",
+      "Case diagrams",
+      "Activity diagrams"
+    ],
+    "answer": "Activity diagrams"
+  },
+  {
+    "question": "It show the object classes in the system and the associations between these classes.",
+    "choices": [
+      "Class Diagrams",
+      "Activity diagrams",
+      "State diagrams"
+    ],
+    "answer": "Class Diagrams"
+  },
+  {
+    "question": "It shows the key abstractions in the system as objects or object classes.",
+    "choices": [
+      "process view",
+      "logical view",
+      "physical view"
+    ],
+    "answer": "logical view"
+  },
+  {
+    "question": "It shows how, at run-time, the system is composed of interacting processes.",
+    "choices": [
+      "physical view",
+      "process view",
+      "logical view"
+    ],
+    "answer": "process view"
+  },
+  {
+    "question": "What is Architectural Patterns?",
+    "choices": [
+      "Distributed system model which shows how data and processing is distributed across a range of components.",
+      "Used to model the interfacing of sub-systems.",
+      "is a stylized description of good design practice, which has been tried and tested in different environments."
+    ],
+    "answer": "is a stylized description of good design practice, which has been tried and tested in different environments."
+  },
+  {
+    "question": "Language processing systems applications where system actions depend on interpreting events from the system’s environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Language Processing System applications where the users’ intentions are specified in a formal language that is processed and interpreted by the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Event processing systems applications where the users’ intentions are specified in a formal language that is processed and interpreted by the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The web server is responsible for all user communications, with the user interface implemented using a web browser.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A syntax analyzer, which checks the syntax of the language being translated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A syntax tree, which is an internal structure representing the program being compiled.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Large-scale reuse the architecture may be reusable across a range of systems.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "These reveal how the system being developed is used in broader business processes.",
+    "choices": [
+      "Context Models",
+      "UML activity diagrams",
+      "Process models"
+    ],
+    "answer": "Process models"
+  },
+  {
+    "question": "Context Models they show what lies outside the system boundaries.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Context Models simply show the other systems in the environment, not how the system being developed is used in that environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Context Models simply not show the other systems in the environment, not how the system being developed is used in that environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Modeling user interaction this is not important as it helps to identify user requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Include redundant components and mechanisms for fault tolerance.",
+    "choices": [
+      "Maintainability",
+      "Safety",
+      "Availability"
+    ],
+    "answer": "Availability"
+  },
+  {
+    "question": "It shows the system hardware and how software components are distributed across the processors in the system.",
+    "choices": [
+      "logical view",
+      "physical view",
+      "process view"
+    ],
+    "answer": "physical view"
+  },
+  {
+    "question": "What is Layered architecture?",
+    "choices": [
+      "Organises the system into a set of layers (or abstract machines) each of which provide a set of services.",
+      "is a stylized description of good design practice, which has been tried and tested in different environments.",
+      "Distributed system model which shows how data and processing is distributed across a range of components."
+    ],
+    "answer": "Organises the system into a set of layers (or abstract machines) each of which provide a set of services."
+  },
+  {
+    "question": "Information systems have a generic architecture that cannot be organised as a layered architecture.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "A symbol table, which holds information about the names of entities (variables, class names, object names, etc.) used in the text that is being translated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A code generator that ‘runs’ the syntax tree and generates abstract machine code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Use a layered architecture with critical assets in the inner layers.",
+    "choices": [
+      "Performance",
+      "Safety",
+      "Security"
+    ],
+    "answer": "Security"
+  },
+  {
+    "question": "These are established to define what is inside and what is outside the system.",
+    "choices": [
+      "Process perspective",
+      "Interaction models",
+      "System boundaries"
+    ],
+    "answer": "System boundaries"
+  },
+  {
+    "question": "It simply show the other systems in the environment, not how the system being developed is used in that environment.",
+    "choices": [
+      "Context Models",
+      "UML activity diagrams",
+      "Process models"
+    ],
+    "answer": "Context Models"
+  },
+  {
+    "question": "Interaction perspective where you model the context or environment of the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Structural perspective where you model the organization of a system or the structure of the data that is processed by the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Sequence diagrams which show interactions between actors and the system and between system components.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Process models these reveal how the system being developed is used in broader business processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Event processing systems applications where system actions depend on interpreting events from the system’s environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A lexical analyzer, which takes input language tokens and converts them to an internal form.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Process view which shows how, at walk-time, the system is composed of interacting processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The architecture may be reusable across a range of systems.",
+    "choices": [
+      "System analysis",
+      "Stakeholder communication",
+      "Large-scale reuse"
+    ],
+    "answer": "Large-scale reuse"
+  },
+  {
+    "question": "It may be used to define business process models.",
+    "choices": [
+      "UML activity diagrams",
+      "Context Models",
+      "Process models"
+    ],
+    "answer": "UML activity diagrams"
+  },
+  {
+    "question": "This software display the organization of a system in terms of the components that make up that system and their relationships",
+    "choices": [
+      "System Structure",
+      "Structural models",
+      "Sequence diagrams"
+    ],
+    "answer": "Structural models"
+  },
+  {
+    "question": "System modeling is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Case diagrams which shows the interactions between a system and its environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Case diagrams which not shows the interactions between a system and its environment.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Class Diagrams it show the object classes in the system and the associations between these classes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "System boundaries are not established to define what is inside and what is outside the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "UML activity diagrams it may be used to define business process models.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "What is Architectural Design?",
+    "choices": [
+      "An early stage of the system design process.",
+      "is concerned with the way that an individual program is decomposed into components.",
+      "The design process for identifying the sub-systems making up a system and the framework for sub-system control and communication"
+    ],
+    "answer": "The design process for identifying the sub-systems making up a system and the framework for sub-system control and communication"
+  },
+  {
+    "question": "Use fine-grain, replaceable components.",
+    "choices": [
+      "Availability",
+      "Safety",
+      "Maintainability"
+    ],
+    "answer": "Maintainability"
+  },
+  {
+    "question": "That process data in batches without explicit user intervention during the processing.",
+    "choices": [
+      "Data processing applications",
+      "Event processing systems",
+      "Transaction processing applications"
+    ],
+    "answer": "Data processing applications"
+  },
+  {
+    "question": "A syntax analyzer, which checks the syntax of the language not translated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Semantic analyzer that uses information from the syntax tree and the symbol table to check the semantic correctness of the output language text.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "External perspective where you model the context or environment of the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "A model the interactions between a system and its environment, or between the components of a system.",
+    "choices": [
+      "external perspective",
+      "structural perspective",
+      "interaction perspective"
+    ],
+    "answer": "interaction perspective"
+  },
+  {
+    "question": "UML activity diagrams it may not use to define business process models.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Data-centred applications that process user requests and update information in a system database.",
+    "choices": [
+      "Event processing systems",
+      "Data processing applications",
+      "Transaction processing applications"
+    ],
+    "answer": "Transaction processing applications"
+  },
+  {
+    "question": "Information systems have a generic architecture that can be organised as a layered architecture.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The web server is irresponsible for all user communications, with the user interface implemented using a web browser.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The database server doesn’t move information to and from the database and handles transaction management.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "A symbol table, which not holds information about the names of entities (variables, class names, object names, etc.) used in the text that is being translated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Means that analysis of whether the system can meet its non-functional requirements is possible.",
+    "choices": [
+      "System analysis",
+      "Large-scale reuse",
+      "Stakeholder communication"
+    ],
+    "answer": "System analysis"
+  },
+  {
+    "question": "What is System modeling?",
+    "choices": [
+      "a model the dynamic behavior of the system and how it responds to events.",
+      "a model the context or environment of the system",
+      "is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system."
+    ],
+    "answer": "is the process of developing abstract models of a system, with each model presenting a different view or perspective of that system."
+  },
+  {
+    "question": "This is important as it helps to identify user requirements.",
+    "choices": [
+      "Modeling component interaction",
+      "Modeling system-to-system interaction",
+      "Modeling user interaction"
+    ],
+    "answer": "Modeling user interaction"
+  },
+  {
+    "question": "System boundaries are established to define what is inside and what is outside the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Modeling user interaction this is important as it helps to identify user requirements.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "External perspective where you model the interactions between a system and its environment, or between the components of a system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Activity diagrams shows the activities are not involved in a process or in data processing.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Class Diagrams it show the object classes in the system and the associations between system component.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It show the interactions between a system and its environment.",
+    "choices": [
+      "Sequence diagrams",
+      "Activity diagrams",
+      "Case diagrams"
+    ],
+    "answer": "Case diagrams"
+  },
+  {
+    "question": "Localise safety-critical features in a small number of sub-systems.",
+    "choices": [
+      "Security",
+      "Safety",
+      "Performance"
+    ],
+    "answer": "Safety"
+  },
+  {
+    "question": "Localize critical operations and minimize communications. Use large rather than fine-grain components.",
+    "choices": [
+      "Security",
+      "Safety",
+      "Performance"
+    ],
+    "answer": "Performance"
+  },
+  {
+    "question": "It shows interactions between actors and the system and between system components.",
+    "choices": [
+      "Sequence Diagrams",
+      "State diagrams",
+      "Activity diagrams"
+    ],
+    "answer": "Sequence Diagrams"
+  },
+  {
+    "question": "It helps the analyst to understand the functionality of the system and models are used to communicate with customers.",
+    "choices": [
+      "Graphical models",
+      "System modeling",
+      "System perspectives"
+    ],
+    "answer": "System modeling"
+  },
+  {
+    "question": "Structural perspective where you model the organization of a system or the structure of the data that is not processed by the system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The database server moves information to and from the database and handles transaction management.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Is concerned with the architecture of complex enterprise systems that include other systems, programs, and program components.",
+    "choices": [
+      "Architecture in the small",
+      "Architecture in the medium",
+      "Architecture in the large"
+    ],
+    "answer": "Architecture in the large"
+  },
+  {
+    "question": "Process view which shows how, at run-time, the system is composed of interacting processes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Architecture may be used as a focus of discussion by system stakeholders.",
+    "choices": [
+      "Stakeholder communication",
+      "Large-scale reuse",
+      "System analysis"
+    ],
+    "answer": "Stakeholder communication"
+  },
+  {
+    "question": "State diagrams it shows how the system not reacts to internal and external events.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It shows how the software is decomposed for development.",
+    "choices": [
+      "physical view",
+      "logical view",
+      "development view"
+    ],
+    "answer": "development view"
+  },
+  {
+    "question": "Context Models they show what lies inside the system boundaries.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "These are transaction-based systems as interaction with these systems generally not involves database transactions.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "At this level, we are concerned with the way that an individual program is decomposed into components",
+    "choices": [
+      "Architecture in the medium",
+      "Architecture in the large",
+      "Architecture in the small"
+    ],
+    "answer": "Architecture in the small"
+  }
+]
