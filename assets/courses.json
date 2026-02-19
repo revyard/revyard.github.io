@@ -188,6 +188,13 @@
         "checkpoints": [
           "checkpoint6"
         ]
+      },
+      {
+        "id": 7,
+        "name": "F7",
+        "checkpoints": [
+          "checkpoint7"
+        ]
       }
     ]
   },

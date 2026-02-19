@@ -1,0 +1,483 @@
+[
+  {
+    "question": "This is associated with a specific business function e.g., in a university, student registration.",
+    "choices": [
+      "Business Services",
+      "Coordination Services",
+      "Utility Services"
+    ],
+    "answer": "Business Services"
+  },
+  {
+    "question": "It support composite processes such as ordering.",
+    "choices": [
+      "Business Services",
+      "Coordination Services",
+      "Utility Services"
+    ],
+    "answer": "Coordination Services"
+  },
+  {
+    "question": "Those associated with some activity.",
+    "choices": [
+      "Task-oriented Services",
+      "Utility or business Services",
+      "Entity-oriented Services"
+    ],
+    "answer": "Task-oriented Services"
+  },
+  {
+    "question": "In inter-organisational systems, not separate workflows are created for each organisation and linked through message exchange.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Graphical workflow notations, such as BPMN, are more readable and WS-BPEL cannot be generated from them.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The non-functional behavior of the service is predictable because it depends on load.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "If services have to be paid for as used, testing a service may be expensive.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It may be easy to invoke compensating actions in external services as these may rely on the failure of other services which cannot be simulated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Coordination Services that not support composite processes such as ordering.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "That implement general functionality used by different business processes.",
+    "choices": [
+      "Coordination Services",
+      "Utility Services",
+      "Business Services"
+    ],
+    "answer": "Utility Services"
+  },
+  {
+    "question": "What is Project Planning?",
+    "choices": [
+      "has to plan who will work on the project, how the project will be broken down into increments, how resources will be allocated across your company, etc.",
+      "involves breaking down the work into parts and assign these to project team members, anticipate problems that might arise and prepare tentative solutions to those problems.",
+      "when you modify your plan in the light of experience gained and information from monitoring the progress of the work."
+    ],
+    "answer": "involves breaking down the work into parts and assign these to project team members, anticipate problems that might arise and prepare tentative solutions to those problems."
+  },
+  {
+    "question": "It looks ahead for several months and decides on the features that should be included in a release of a system.",
+    "choices": [
+      "Validation Planning",
+      "Release Planning",
+      "Iteration Planning"
+    ],
+    "answer": "Release Planning"
+  },
+  {
+    "question": "In this approach, a formulaic approach is used to compute the project effort based on estimates of product attributes, such as size, and process characteristics, such as experience of staff involved.",
+    "choices": [
+      "Experience-based techniques",
+      "Story-based planning",
+      "Algorithmic cost modeling"
+    ],
+    "answer": "Algorithmic cost modeling"
+  },
+  {
+    "question": "AT is the percentage of code automatically generated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "ET is the percentage of code automatically generated.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "ATPROD is the productivity of engineers in integrating this code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "ETPROD is the productivity of engineers in integrating this code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "EAM is the adaptation adjustment multiplier computed from the costs of changing the reused code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Estimate of equivalent number of lines of new code computed using the reuse model.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "There are points in the schedule against which you can assess progress.",
+    "choices": [
+      "Milestones",
+      "Quality plan",
+      "Deliverables"
+    ],
+    "answer": "Milestones"
+  },
+  {
+    "question": "This services may be entity- or task-oriented, coordination services are always task-oriented.",
+    "choices": [
+      "Utility or business Services",
+      "Task-oriented Services",
+      "Entity-oriented Services"
+    ],
+    "answer": "Utility or business Services"
+  },
+  {
+    "question": "Starts with the service requirements and defines the operation names and parameters associated with the service.",
+    "choices": [
+      "Logical interface design",
+      "WSDL description",
+      "Message design"
+    ],
+    "answer": "Logical interface design"
+  },
+  {
+    "question": "The logical specification is converted to a WSDL description",
+    "choices": [
+      "Logical interface design",
+      "WSDL description",
+      "Message design"
+    ],
+    "answer": "WSDL description"
+  },
+  {
+    "question": "During this stage of the process, you search service registries or catalogs to discover what services exist, who provides these services and the details of the service provision.",
+    "choices": [
+      "Select possible services",
+      "Discover services",
+      "Formulate outline workflow"
+    ],
+    "answer": "Discover services"
+  },
+  {
+    "question": "A standard for workflow languages used to define service composition",
+    "choices": [
+      "WS-BPEL",
+      "WSDL (Web Service Definition Language)",
+      "SOAP"
+    ],
+    "answer": "WS-BPEL"
+  },
+  {
+    "question": "If services have to be paid for as used, testing a service may be not expensive.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It is where you design the logical and WSDL service interfaces.",
+    "choices": [
+      "Service implementation and deployment",
+      "Service candidate identification",
+      "Service design"
+    ],
+    "answer": "Service design"
+  },
+  {
+    "question": "The most commonly used representation for project schedules.",
+    "choices": [
+      "validation plan",
+      "graphical Notation",
+      "bar chart"
+    ],
+    "answer": "bar chart"
+  },
+  {
+    "question": "ASLOC is the number of lines of generated code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Do not estimate of equivalent number of lines of new code computed using the reuse model.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "A company takes on a project in a new domain. The client has not defined the process to be used and has not allowed time for risk analysis. The company has a CMM level 2 rating.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Personnel attributes Multipliers that take the experience and capabilities of the people working on the project into account.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Project attributes Concerned with the particular characteristics of the hardware development project.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The time required is not independent of the number of people working on the project.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "What is Web Services?",
+    "choices": [
+      "Standard protocols have been developed to support service communication and information exchange",
+      "an instance of a more general notion of a service",
+      "may execute on different computers from different service providers"
+    ],
+    "answer": "an instance of a more general notion of a service"
+  },
+  {
+    "question": "In this initial stage of service design, you use the requirements for the composite service as a basis for creating an ‘ideal’ service design.",
+    "choices": [
+      "Formulate outline workflow",
+      "Discover services",
+      "Select possible services"
+    ],
+    "answer": "Formulate outline workflow"
+  },
+  {
+    "question": "This standard allows a service interface and its bindings to be defined",
+    "choices": [
+      "WS-BPEL",
+      "SOAP",
+      "This standard allows a service interface and its bindings to be defined"
+    ],
+    "answer": "This standard allows a service interface and its bindings to be defined"
+  },
+  {
+    "question": "WS-BPEL is an XML-standard for over workflow specification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "External services may not have modified by the service provider thus invalidating tests which have been completed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "WSDL description The logical specification is not converted to a WSDL description.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It is where you identify possible services that might be implemented and define the service requirements.",
+    "choices": [
+      "Service implementation and deployment",
+      "Service candidate identification",
+      "Service design"
+    ],
+    "answer": "Service candidate identification"
+  },
+  {
+    "question": "PM = (ASLOC * AT/100)/ATPROD.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "ASLOC is the not number of lines of generated code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "ESLOC = ASLOC * (1-AT/100) * AAM.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "AAM is the adaptation adjustment multiplier computed from the costs of changing the reused code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Product attributes Concerned with required characteristics of the software product being developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Describes the quality procedures and standards that will be used in a project.",
+    "choices": [
+      "Quality plan",
+      "Configuration management plan",
+      "Validation plan"
+    ],
+    "answer": "Quality plan"
+  },
+  {
+    "question": "Project attributes Concerned with the particular characteristics of the software development project.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Your selection criteria will obviously include the functionality of the services offered. They may also include the cost of the services and the quality of service (responsiveness, availability, etc.) offered.",
+    "choices": [
+      "Discover services",
+      "Select possible services",
+      "Formulate outline workflow"
+    ],
+    "answer": "Select possible services"
+  },
+  {
+    "question": "Test completed service or application the process of testing the completed, composite service is more complex than component testing in situations where internal services are used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "WS-BPEL is an XML-standard for workflow specification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is where you implement and test the service and make it available for use.",
+    "choices": [
+      "Service candidate identification",
+      "Service implementation and deployment",
+      "Service design"
+    ],
+    "answer": "Service implementation and deployment"
+  },
+  {
+    "question": "Used when software is composed from existing parts.",
+    "choices": [
+      "Application composition model",
+      "Reuse model",
+      "Early design model"
+    ],
+    "answer": "Application composition model"
+  },
+  {
+    "question": "It is where code is modified a size estimate equivalent to the number of lines of new source code is computed.",
+    "choices": [
+      "White-box",
+      "Green-box",
+      "Black-box"
+    ],
+    "answer": "White-box"
+  },
+  {
+    "question": "Estimates are made to discover the cost, to the developer, of producing a software system.",
+    "choices": [
+      "Project Planning",
+      "Software Pricing",
+      "project startup"
+    ],
+    "answer": "Software Pricing"
+  },
+  {
+    "question": "Product attributes Concerned with required characteristics of the software product being not developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The time required is independent of the number of people working on the project.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  }
+]
