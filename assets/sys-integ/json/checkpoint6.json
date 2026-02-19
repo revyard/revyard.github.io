@@ -1,0 +1,590 @@
+[
+  {
+    "question": "Do trade-off analysis between the features of one component and another",
+    "choices": [
+      "Councill and Heinmann",
+      "Component Certification",
+      "Szyperski"
+    ],
+    "answer": "Councill and Heinmann"
+  },
+  {
+    "question": "Components developed for a specific application usually have to be generalised to make them usable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The operation of the component may not depend on local exception handling, and changing this may have serious implications for the functionality of the component.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "This is to facilitate component integration.",
+    "choices": [
+      "Component standards",
+      "Independent components",
+      "Middleware"
+    ],
+    "answer": "Middleware"
+  },
+  {
+    "question": "Certification means that someone apart from the developer checks the quality of the component.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "In 1996, the 1st test flight of the Ariane 5 rocket ended in disaster when the launcher went out of control 37 seconds after take off.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The functionality that failed in this component was not required in Ariane 5.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The functionality that failed in this component was required in Ariane 5.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Different types of adaptor are required depending on the type of composition.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Components developed for a specific application usually have to be generalised to make them reusable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Where communications between parts of the system are intercepted by an attacker so that there is a loss of confidentiality",
+    "choices": [
+      "Interception",
+      "Modification",
+      "Interruption"
+    ],
+    "answer": "Interception"
+  },
+  {
+    "question": "It is where an attacker generates information that should not exist and then uses this to gain some privileges.",
+    "choices": [
+      "Modification",
+      "Fabrication",
+      "Interception"
+    ],
+    "answer": "Fabrication"
+  },
+  {
+    "question": "What is Quality of Service?",
+    "choices": [
+      "should include mechanisms for discovering if a component of the system has failed.",
+      "offered by a distributed system reflects the system’s ability to deliver its services dependably and with a response time and throughput that is acceptable to its users.",
+      "it is inevitable that failures will occur, so the system has to be designed to be resilient to these failures."
+    ],
+    "answer": "offered by a distributed system reflects the system’s ability to deliver its services dependably and with a response time and throughput that is acceptable to its users."
+  },
+  {
+    "question": "It is where one computer calls on a known service offered by another computer and waits for a response.",
+    "choices": [
+      "Message-based interaction",
+      "Failure management",
+      "Procedural interaction"
+    ],
+    "answer": "Procedural interaction"
+  },
+  {
+    "question": "A major advantage is that it places a heavy processing load on both the server and the network.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "This avoids problems with scalability and performance if a thin-client two-tier model is chosen, or problems of system management if a fat-client model is used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The overall system is designed to take advantage of the computational power and storage of a large number of networked computers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The overall system is not designed to take advantage of the computational power and storage of a large number of networked computers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The server no maintains the user’s data and state during an interaction session.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Can usable security policies be defined and implemented",
+    "choices": [
+      "Security",
+      "Scalability",
+      "Transparency"
+    ],
+    "answer": "Security"
+  },
+  {
+    "question": "Defines the services that specifies what services must be made available for the component to execute as specified.",
+    "choices": [
+      "Emergent Property Prediction",
+      "Provides interface",
+      "Requires interface"
+    ],
+    "answer": "Requires interface"
+  },
+  {
+    "question": "The component model includes a specification of how components should be packaged for deployment as independent, executable entities.",
+    "choices": [
+      "Usage",
+      "Deployment",
+      "Interface"
+    ],
+    "answer": "Deployment"
+  },
+  {
+    "question": "This involves writing a wrapper component that implements provide and not requires interfaces then accesses the legacy system.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "When using components, it is essential to make trade-offs between ideal requirements and the services actually provided by available components.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "The component specification maybe detailed enough to allow comprehensive tests to be developed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "It can a component with no available source code be trusted.",
+    "choices": [
+      "Component standards",
+      "Component trustworthiness",
+      "Component Certification"
+    ],
+    "answer": "Component trustworthiness"
+  },
+  {
+    "question": "This is will certify the quality of components",
+    "choices": [
+      "Component trustworthiness",
+      "Component standards",
+      "Component Certification"
+    ],
+    "answer": "Component Certification"
+  },
+  {
+    "question": "Sharing of hardware and software resources.",
+    "choices": [
+      "Resource sharing",
+      "Openness",
+      "Concurrency"
+    ],
+    "answer": "Resource sharing"
+  },
+  {
+    "question": "Where data or services in the system are changed by an attacker.",
+    "choices": [
+      "Modification",
+      "Interruption",
+      "Interception"
+    ],
+    "answer": "Modification"
+  },
+  {
+    "question": "Involves the sending computer sending information about what is required to another computer.",
+    "choices": [
+      "Message-based interaction",
+      "Failure management",
+      "Procedural interaction"
+    ],
+    "answer": "Message-based interaction"
+  },
+  {
+    "question": "There is no distinction in a distributed component architecture between clients and servers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Concurrent processing to enhance performance.",
+    "choices": [
+      "Concurrency",
+      "Openness",
+      "Resource sharing"
+    ],
+    "answer": "Concurrency"
+  },
+  {
+    "question": "Software as a service is a way of providing functionality on a remote server with client no access through a web browser.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Service-oriented architecture is not an approach to structuring a software system as a set of separate, stateless services.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Branding, where users from each organization, are not presented with an interface that reflects their own organization.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The process of acquiring components for reuse or development into a reusable component.",
+    "choices": [
+      "Component management",
+      "Component certification",
+      "Component acquisition"
+    ],
+    "answer": "Component acquisition"
+  },
+  {
+    "question": "The process of checking a component and certifying that it meets its specification.",
+    "choices": [
+      "Component certification",
+      "Component acquisition",
+      "Component management"
+    ],
+    "answer": "Component certification"
+  },
+  {
+    "question": "The development cost of usable components may be higher than the cost of specific equivalents.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Generic components may be less space-efficient and may have longer execution times than their specific equivalents.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "When reusing components, it is essential to make trade-offs between ideal requirements and the services actually provided by available components.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It should be possible to manage a system as it increases in size, even if parts of the system are located in independent organizations.",
+    "choices": [
+      "Size",
+      "Manageability",
+      "Distribution"
+    ],
+    "answer": "Manageability"
+  },
+  {
+    "question": "It is where system services are attacked and cannot be delivered as expected.",
+    "choices": [
+      "Modification",
+      "Interception",
+      "Interruption"
+    ],
+    "answer": "Interruption"
+  },
+  {
+    "question": "This avoids problems with scalability and performance if a fat-client two-tier model is chosen, or problems of system management if a fat-client model is used.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Software is deployed on a server (or more commonly a number of servers) and is accessed through a web browser.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Increased throughput by adding new resources.",
+    "choices": [
+      "Scalability",
+      "Openness",
+      "Resource sharing"
+    ],
+    "answer": "Scalability"
+  },
+  {
+    "question": "Service-oriented architecture is an approach to structuring a software system as a set of separate, stateless services.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Specifies how interfaces should be defined and the elements that should be included in an interface definition.",
+    "choices": [
+      "service model",
+      "distributed model",
+      "component model"
+    ],
+    "answer": "component model"
+  },
+  {
+    "question": "It concern with managing a company’s reusable components, ensuring that they are properly catalogued, stored and made available for reuse.",
+    "choices": [
+      "Component acquisition",
+      "Component certification",
+      "Component management"
+    ],
+    "answer": "Component management"
+  },
+  {
+    "question": "The development cost of reusable components may be higher than the cost of specific equivalents.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Composition involves integrating components with each other and with the component infrastructure.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Composition involves integrating components with each other and with the component infrastructure.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Different types of adaptor are not required depending on the type of composition.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "The Object Constraint Language (OCL) has been designed to define constraints that are associated with UML models.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "It is where some or all of the application processing is carried out on the client.",
+    "choices": [
+      "Failure management",
+      "Fat-client model",
+      "Thin-client model"
+    ],
+    "answer": "Fat-client model"
+  },
+  {
+    "question": "Users may not pay for the software according to the amount of use they make of it or through an annual or monthly subscription.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Database extensions, where each organization defines how the generic service data model is extended to meet its specific needs.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Business rules and workflows, where each organization is not defining its own rules that govern the use of the service and its data.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Components for reuse may be specially constructed by generalising existing components.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "That provides support for component inter-operability.",
+    "choices": [
+      "Component standards",
+      "Middleware",
+      "Independent components"
+    ],
+    "answer": "Middleware"
+  },
+  {
+    "question": "Use of equipment and software from different vendors.",
+    "choices": [
+      "Openness",
+      "Resource sharing",
+      "Concurrency"
+    ],
+    "answer": "Openness"
+  },
+  {
+    "question": "A major disadvantage is that it places a heavy processing load on both the server and the network.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "More processing is delegated to the client as the application processing is locally not executed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Access control, where service customers create individual accounts for their staff and define the resources and functions that are not accessible to each of their users.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Defines the services that are provided by the component to other components.",
+    "choices": [
+      "Provides interface",
+      "Emergent Property Prediction",
+      "Requires interface"
+    ],
+    "answer": "Provides interface"
+  },
+  {
+    "question": "It specified by their interfaces.",
+    "choices": [
+      "Middleware",
+      "Component standards",
+      "Independent components"
+    ],
+    "answer": "Independent components"
+  },
+  {
+    "question": "Components developed for a specific application usually have to be generalised to make them reusable.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "Generic components may be less space-efficient and may have no longer execution times than their specific equivalents.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "There is distinction in a distributed component architecture between clients and servers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Access control, where service customers create individual accounts for their staff and define the resources and functions that are accessible to each of their users.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": "True"
+  },
+  {
+    "question": "To what extent should the distributed system appear to the user as a single system?",
+    "choices": [
+      "Scalability",
+      "Openness",
+      "Transparency"
+    ],
+    "answer": "Transparency"
+  }
+]

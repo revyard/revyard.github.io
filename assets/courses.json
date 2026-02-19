@@ -181,6 +181,13 @@
         "checkpoints": [
           "checkpoint5"
         ]
+      },
+      {
+        "id": 6,
+        "name": "F6",
+        "checkpoints": [
+          "checkpoint6"
+        ]
       }
     ]
   },
