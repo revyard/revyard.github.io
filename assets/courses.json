@@ -65,6 +65,13 @@
         "checkpoints": [
           "checkpoint9"
         ]
+      },
+      {
+        "id": 10,
+        "name": "Seatwork 2 (M5 & M6)",
+        "checkpoints": [
+          "checkpoint10"
+        ]
       }
     ]
   },

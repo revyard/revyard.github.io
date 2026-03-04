@@ -1,0 +1,852 @@
+[
+  {
+    "question": "Which encoding format is mandatory in NETCONF messages?",
+    "choices": [
+      "JSON",
+      "YAML",
+      "XML",
+      "CSV"
+    ],
+    "answer": "XML"
+  },
+  {
+    "question": "Which NETCONF operation is used to change configuration data?",
+    "choices": [
+      "edit-config",
+      "get",
+      "get-config",
+      "unlock"
+    ],
+    "answer": "edit-config"
+  },
+  {
+    "question": "Which NETCONF operation can lock a configuration database?",
+    "choices": [
+      "get",
+      "delete-config",
+      "edit-config",
+      "lock"
+    ],
+    "answer": "lock"
+  },
+  {
+    "question": "RESTCONF uses which transport protocol?",
+    "choices": [
+      "HTTP/HTTPS",
+      "SSH",
+      "FTP",
+      "Telnet"
+    ],
+    "answer": "HTTP/HTTPS"
+  },
+  {
+    "question": "Which HTTP method retrieves resource data in RESTCONF?",
+    "choices": [
+      "GET",
+      "DELETE",
+      "POST",
+      "PUT"
+    ],
+    "answer": "GET"
+  },
+  {
+    "question": "In YANG, a ‘container’ is used to?",
+    "choices": [
+      "Group related nodes",
+      "Store executable code",
+      "Define user authentication",
+      "Transport data"
+    ],
+    "answer": "Group related nodes"
+  },
+  {
+    "question": "In NETCONF, which datastore is used for staging configuration changes?",
+    "choices": [
+      "running",
+      "lock",
+      "candidate",
+      "startup"
+    ],
+    "answer": "candidate"
+  },
+  {
+    "question": "Which datastore persists across device reloads?",
+    "choices": [
+      "running",
+      "startup",
+      "candidate",
+      "edit"
+    ],
+    "answer": "startup"
+  },
+  {
+    "question": "In RESTCONF, what does ‘/restconf/operations/’ access?",
+    "choices": [
+      "Schemas",
+      "Data resources",
+      "RPC operations",
+      "Notifications"
+    ],
+    "answer": "RPC operations"
+  },
+  {
+    "question": "Which HTTP response code indicates no content returned?",
+    "choices": [
+      "204",
+      "200",
+      "201",
+      "500"
+    ],
+    "answer": "204"
+  },
+  {
+    "question": "Which HTTP response code means ‘Forbidden’?",
+    "choices": [
+      "500",
+      "400",
+      "401",
+      "403"
+    ],
+    "answer": "403"
+  },
+  {
+    "question": "Which HTTP response code means ‘Not Found’?",
+    "choices": [
+      "400",
+      "201",
+      "404",
+      "200"
+    ],
+    "answer": "404"
+  },
+  {
+    "question": "Which YANG type represents a string of text?",
+    "choices": [
+      "bool",
+      "int",
+      "decimal64",
+      "string"
+    ],
+    "answer": "string"
+  },
+  {
+    "question": "Which YANG type is used for true/false values?",
+    "choices": [
+      "int",
+      "boolean",
+      "decimal64",
+      "string"
+    ],
+    "answer": "boolean"
+  },
+  {
+    "question": "Which YANG type represents an integer?",
+    "choices": [
+      "string",
+      "int32",
+      "boolean",
+      "decimal64"
+    ],
+    "answer": "int32"
+  },
+  {
+    "question": "Which NETCONF operation confirms applying changes after testing?",
+    "choices": [
+      "validate",
+      "delete-config",
+      "confirmed-commit",
+      "lock"
+    ],
+    "answer": "confirmed-commit"
+  },
+  {
+    "question": "What software manages virtual machines?",
+    "choices": [
+      "Kernel",
+      "Hypervisor",
+      "Docker",
+      "Jenkins"
+    ],
+    "answer": "Hypervisor"
+  },
+  {
+    "question": "Which deployment model starts faster and shares the host operating system?",
+    "choices": [
+      "Virtual Machines",
+      "Containers",
+      "Edge Cloud",
+      "Bare Metal"
+    ],
+    "answer": "Containers"
+  },
+  {
+    "question": "What type of infrastructure is physically located inside the building?",
+    "choices": [
+      "Edge Cloud",
+      "Serverless",
+      "Public Cloud",
+      "On-Premises"
+    ],
+    "answer": "On-Premises"
+  },
+  {
+    "question": "Which command starts a Docker container in detached mode?",
+    "choices": [
+      "docker pull",
+      "docker commit",
+      "docker run -d",
+      "docker exec -it"
+    ],
+    "answer": "docker run -d"
+  },
+  {
+    "question": "Which parameter maps internal container ports to host ports automatically?",
+    "choices": [
+      "–name",
+      "-it",
+      "-P",
+      "-v"
+    ],
+    "answer": "-P"
+  },
+  {
+    "question": "What does Continuous Integration (CI) involve?",
+    "choices": [
+      "Merging developer changes frequently into a main branch",
+      "Encrypting source code",
+      "Using only Docker",
+      "Deploying to production automatically"
+    ],
+    "answer": "Merging developer changes frequently into a main branch"
+  },
+  {
+    "question": "What is Continuous Deployment?",
+    "choices": [
+      "Using only staging environments",
+      "Always writing new features",
+      "Building Docker images locally",
+      "Automatically deploying every version marked production-ready"
+    ],
+    "answer": "Automatically deploying every version marked production-ready"
+  },
+  {
+    "question": "What is the main purpose of Jenkins?",
+    "choices": [
+      "Running Docker Hub",
+      "Encrypting data",
+      "Automating build and deployment pipelines",
+      "Replacing cloud infrastructure"
+    ],
+    "answer": "Automating build and deployment pipelines"
+  },
+  {
+    "question": "In Jenkins, what is a “job”?",
+    "choices": [
+      "A VM image",
+      "A project that automates tasks like building code",
+      "A password hash",
+      "A Docker container"
+    ],
+    "answer": "A project that automates tasks like building code"
+  },
+  {
+    "question": "Which option in Jenkins triggers a second job after the first completes?",
+    "choices": [
+      "Build Trigger",
+      "Canary deployment",
+      "Docker commit",
+      "Dockerfile chaining"
+    ],
+    "answer": "Build Trigger"
+  },
+  {
+    "question": "Which device spreads requests across multiple servers?",
+    "choices": [
+      "Load balancer",
+      "Firewall",
+      "Reverse proxy",
+      "DNS server"
+    ],
+    "answer": "Load balancer"
+  },
+  {
+    "question": "Which load balancing method sends requests in order?",
+    "choices": [
+      "Persistent session",
+      "IP hash",
+      "Least connections",
+      "Round robin"
+    ],
+    "answer": "Round robin"
+  },
+  {
+    "question": "Which project provides education and tools for web security?",
+    "choices": [
+      "OWASP",
+      "DNS",
+      "Hypervisor",
+      "Docker"
+    ],
+    "answer": "OWASP"
+  },
+  {
+    "question": "What does XSS stand for?",
+    "choices": [
+      "XML Secure Service",
+      "Cross-System Security",
+      "Cross-Site Scripting",
+      "Cross-Site Security"
+    ],
+    "answer": "Cross-Site Scripting"
+  },
+  {
+    "question": "Which social engineering attack uses SMS messages?",
+    "choices": [
+      "Impersonation",
+      "Vishing",
+      "Smishing",
+      "Phishing"
+    ],
+    "answer": "Smishing"
+  },
+  {
+    "question": "RESTCONF is defined in which RFC?",
+    "choices": [
+      "RFC 8040",
+      "RFC 6241",
+      "RFC 6242",
+      "RFC 4741"
+    ],
+    "answer": "RFC 8040"
+  },
+  {
+    "question": "Which HTTP method modifies an existing RESTCONF resource?",
+    "choices": [
+      "POST",
+      "HEAD",
+      "PUT",
+      "GET"
+    ],
+    "answer": "PUT"
+  },
+  {
+    "question": "Which HTTP method deletes a RESTCONF resource?",
+    "choices": [
+      "GET",
+      "DELETE",
+      "POST",
+      "PUT"
+    ],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which YANG construct defines mandatory fields?",
+    "choices": [
+      "must",
+      "type",
+      "namespace",
+      "list"
+    ],
+    "answer": "must"
+  },
+  {
+    "question": "Which YANG statement defines a key for list uniqueness?",
+    "choices": [
+      "type",
+      "key",
+      "must",
+      "leaf"
+    ],
+    "answer": "key"
+  },
+  {
+    "question": "In YANG, namespaces are declared using?",
+    "choices": [
+      "namespace",
+      "rpc",
+      "schema",
+      "prefix"
+    ],
+    "answer": "namespace"
+  },
+  {
+    "question": "Which YANG keyword defines a new module?",
+    "choices": [
+      "module",
+      "import",
+      "namespace",
+      "prefix"
+    ],
+    "answer": "module"
+  },
+  {
+    "question": "Which YANG keyword is used to include another module?",
+    "choices": [
+      "use",
+      "prefix",
+      "load",
+      "import"
+    ],
+    "answer": "import"
+  },
+  {
+    "question": "Which YANG type is used for floating-point numbers?",
+    "choices": [
+      "string",
+      "decimal64",
+      "boolean",
+      "int32"
+    ],
+    "answer": "decimal64"
+  },
+  {
+    "question": "In serverless computing, when are costs typically incurred?",
+    "choices": [
+      "Only when functions are executed",
+      "Only during deployment",
+      "When building the application",
+      "Always running"
+    ],
+    "answer": "Only when functions are executed"
+  },
+  {
+    "question": "Which cloud model is managed completely by an organization itself?",
+    "choices": [
+      "Hybrid Cloud",
+      "Private Cloud",
+      "Public Cloud",
+      "Edge Cloud"
+    ],
+    "answer": "Private Cloud"
+  },
+  {
+    "question": "What problem can occur when multiple customers share public cloud resources?",
+    "choices": [
+      "Noisy neighbor",
+      "Salt mismatch",
+      "Rainbow attack",
+      "Hash collision"
+    ],
+    "answer": "Noisy neighbor"
+  },
+  {
+    "question": "Which structure is commonly used by large organizations for code quality?",
+    "choices": [
+      "Continuous Delivery only",
+      "Serverless only",
+      "Development, testing, staging, production tiers",
+      "Single production environment"
+    ],
+    "answer": "Development, testing, staging, production tiers"
+  },
+  {
+    "question": "What does the FROM command in a Dockerfile specify?",
+    "choices": [
+      "Port number",
+      "Registry URL",
+      "Container name",
+      "Base image to install"
+    ],
+    "answer": "Base image to install"
+  },
+  {
+    "question": "Which command in a Dockerfile specifies the container’s working directory?",
+    "choices": [
+      "WORKDIR",
+      "EXPOSE",
+      "COPY",
+      "CMD"
+    ],
+    "answer": "WORKDIR"
+  },
+  {
+    "question": "Which deployment strategy tests new code on a small subset of users first?",
+    "choices": [
+      "Rolling upgrade",
+      "Manual deployment",
+      "Canary pipeline",
+      "Container orchestration"
+    ],
+    "answer": "Canary pipeline"
+  },
+  {
+    "question": "What is the main function of a firewall?",
+    "choices": [
+      "Encrypting user passwords",
+      "Storing Docker images",
+      "Balancing server traffic",
+      "Allowing or blocking network packets based on rules"
+    ],
+    "answer": "Allowing or blocking network packets based on rules"
+  },
+  {
+    "question": "Which service translates hostnames into IP addresses?",
+    "choices": [
+      "Reverse proxy",
+      "Jenkins",
+      "DNS",
+      "Firewall"
+    ],
+    "answer": "DNS"
+  },
+  {
+    "question": "Which network tool can also act like a firewall or load balancer by inspecting traffic?",
+    "choices": [
+      "VM hypervisor",
+      "Jenkins pipeline",
+      "Reverse proxy",
+      "DNS"
+    ],
+    "answer": "Reverse proxy"
+  },
+  {
+    "question": "What is a parameterized query used for?",
+    "choices": [
+      "Encrypting cloud storage",
+      "Preventing SQL injection attacks",
+      "Generating Dockerfiles",
+      "Managing Jenkins jobs"
+    ],
+    "answer": "Preventing SQL injection attacks"
+  },
+  {
+    "question": "What prevents CSRF attacks by validating a hidden token?",
+    "choices": [
+      "Hash salting",
+      "Jump box",
+      "DNS server",
+      "CSRFToken"
+    ],
+    "answer": "CSRFToken"
+  },
+  {
+    "question": "What does NETCONF stand for?",
+    "choices": [
+      "Network Central Function",
+      "Network Control Framework",
+      "Network Connectivity Format",
+      "Network Configuration Protocol"
+    ],
+    "answer": "Network Configuration Protocol"
+  },
+  {
+    "question": "Which transport protocol does NETCONF typically run over?",
+    "choices": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "SSH"
+    ],
+    "answer": "SSH"
+  },
+  {
+    "question": "Which NETCONF operation retrieves configuration and state data?",
+    "choices": [
+      "lock",
+      "edit-config",
+      "get",
+      "copy-config"
+    ],
+    "answer": "get"
+  },
+  {
+    "question": "In NETCONF, what does the  element represent?",
+    "choices": [
+      "A remote procedure call message",
+      "A Python function",
+      "A REST API request",
+      "A device schema"
+    ],
+    "answer": "A remote procedure call message"
+  },
+  {
+    "question": "Which YANG statement defines a list of items?",
+    "choices": [
+      "key",
+      "leaf",
+      "list",
+      "container"
+    ],
+    "answer": "list"
+  },
+  {
+    "question": "Which YANG node holds a single data element?",
+    "choices": [
+      "list",
+      "leaf",
+      "key",
+      "container"
+    ],
+    "answer": "leaf"
+  },
+  {
+    "question": "In RESTCONF, what does the URI ‘/restconf/data/’ access?",
+    "choices": [
+      "Schema resources",
+      "Data resources",
+      "Notifications",
+      "RPC operations"
+    ],
+    "answer": "Data resources"
+  },
+  {
+    "question": "Which HTTP response code indicates successful creation in RESTCONF?",
+    "choices": [
+      "404",
+      "201",
+      "400",
+      "200"
+    ],
+    "answer": "201"
+  },
+  {
+    "question": "Which RESTCONF feature supports event notifications?",
+    "choices": [
+      "data",
+      "operations",
+      "schema",
+      "event-stream"
+    ],
+    "answer": "event-stream"
+  },
+  {
+    "question": "Which Python module parses XML to dictionary format?",
+    "choices": [
+      "requests",
+      "xmltodict",
+      "yangson",
+      "ncclient"
+    ],
+    "answer": "xmltodict"
+  },
+  {
+    "question": "Which deployment model gives direct access to specialized hardware?",
+    "choices": [
+      "Virtual Machines",
+      "Containers",
+      "Serverless Computing",
+      "Bare Metal"
+    ],
+    "answer": "Bare Metal"
+  },
+  {
+    "question": "What is a Docker image?",
+    "choices": [
+      "An IDE for developers",
+      "A running container instance",
+      "A VM hypervisor",
+      "A read-only template containing app code and dependencies"
+    ],
+    "answer": "A read-only template containing app code and dependencies"
+  },
+  {
+    "question": "Which Dockerfile command copies files into the image?",
+    "choices": [
+      "COPY",
+      "WORKDIR",
+      "RUN",
+      "CMD"
+    ],
+    "answer": "COPY"
+  },
+  {
+    "question": "Which application ensures login requests are handled by the same server?",
+    "choices": [
+      "IP hash",
+      "DNS",
+      "Persistent session load balancing",
+      "Reverse proxy"
+    ],
+    "answer": "Persistent session load balancing"
+  },
+  {
+    "question": "Which tool detects SQL injection flaws by analyzing source code?",
+    "choices": [
+      "Docker Hub",
+      "SAST tools",
+      "Hypervisor",
+      "DNS"
+    ],
+    "answer": "SAST tools"
+  },
+  {
+    "question": "Which of the following operations is NOT a NETCONF base operation?",
+    "choices": [
+      "edit-config",
+      "run-script",
+      "get",
+      "delete-config"
+    ],
+    "answer": "run-script"
+  },
+  {
+    "question": "Which RESTCONF data encoding format is human-friendly?",
+    "choices": [
+      "XML",
+      "JSON",
+      "CSV",
+      "Binary"
+    ],
+    "answer": "JSON"
+  },
+  {
+    "question": "Which Python library is often used for NETCONF communication?",
+    "choices": [
+      "xmltodict",
+      "ncclient",
+      "requests",
+      "paramiko"
+    ],
+    "answer": "ncclient"
+  },
+  {
+    "question": "Which NETCONF feature locks configuration to prevent conflicts?",
+    "choices": [
+      "lock",
+      "get",
+      "edit-config",
+      "commit"
+    ],
+    "answer": "lock"
+  },
+  {
+    "question": "What command does Jenkins use in a build step to execute shell scripts?",
+    "choices": [
+      "docker run",
+      "Build pipeline",
+      "Execute shell",
+      "Hypervisor start"
+    ],
+    "answer": "Execute shell"
+  },
+  {
+    "question": "What is a “jump box”?",
+    "choices": [
+      "A secure machine through which logins must pass first",
+      "A firewall tool",
+      "A password manager",
+      "A Docker registry"
+    ],
+    "answer": "A secure machine through which logins must pass first"
+  },
+  {
+    "question": "What is the key role of a load balancer?",
+    "choices": [
+      "Encrypt files at rest",
+      "Run CI/CD pipelines",
+      "Distribute traffic evenly to prevent overload",
+      "Provide multi-factor authentication"
+    ],
+    "answer": "Distribute traffic evenly to prevent overload"
+  },
+  {
+    "question": "What does encrypting data at rest ensure?",
+    "choices": [
+      "Unauthorized access won’t reveal readable data",
+      "It cannot be stored in the cloud",
+      "It is deleted automatically",
+      "No one can transmit it"
+    ],
+    "answer": "Unauthorized access won't reveal readable data"
+  },
+  {
+    "question": "Which password storage method cannot be reversed?",
+    "choices": [
+      "Docker commit",
+      "Hashed password",
+      "Encrypted text",
+      "Plaintext"
+    ],
+    "answer": "Hashed password"
+  },
+  {
+    "question": "Which NETCONF capability allows partial locking?",
+    "choices": [
+      "validate",
+      "confirmed-commit",
+      "candidate",
+      "partial-lock"
+    ],
+    "answer": "partial-lock"
+  },
+  {
+    "question": "Which Python library is used to interact with REST APIs?",
+    "choices": [
+      "yangson",
+      "requests",
+      "sshlib",
+      "ncclient"
+    ],
+    "answer": "requests"
+  },
+  {
+    "question": "Which HTTP response code means ‘Unauthorized’?",
+    "choices": [
+      "401",
+      "404",
+      "400",
+      "403"
+    ],
+    "answer": "401"
+  },
+  {
+    "question": "Which type of cloud brings computing resources closer to IoT devices?",
+    "choices": [
+      "Edge Cloud",
+      "Public Cloud",
+      "Hybrid Cloud",
+      "Private Cloud"
+    ],
+    "answer": "Edge Cloud"
+  },
+  {
+    "question": "What does the EXPOSE command in a Dockerfile do?",
+    "choices": [
+      "Informs which port should be published",
+      "Runs the container",
+      "Uploads image to registry",
+      "Logs into container"
+    ],
+    "answer": "Informs which port should be published"
+  },
+  {
+    "question": "What is the main purpose of saving a Docker image to a registry?",
+    "choices": [
+      "To monitor logs",
+      "To encrypt code",
+      "To share images for deployment or reuse",
+      "To delete containers"
+    ],
+    "answer": "To share images for deployment or reuse"
+  },
+  {
+    "question": "Which cloud model combines private and public clouds?",
+    "choices": [
+      "On-Premises",
+      "Bare Metal",
+      "Hybrid Cloud",
+      "Edge Cloud"
+    ],
+    "answer": "Hybrid Cloud"
+  },
+  {
+    "question": "Which benefit is NOT associated with CI/CD?",
+    "choices": [
+      "Automated deployment",
+      "Improved quality",
+      "Shorter Mean Time To Resolution (MTTR)",
+      "Manual testing only"
+    ],
+    "answer": "Manual testing only"
+  },
+  {
+    "question": "Which deployment strategy gradually rolls out new code to avoid disruption?",
+    "choices": [
+      "Blue-Green deployment",
+      "Manual testing",
+      "Rolling upgrade",
+      "Canary pipeline"
+    ],
+    "answer": "Rolling upgrade"
+  }
+]
