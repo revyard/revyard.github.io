@@ -231,5 +231,18 @@
         ]
       }
     ]
+  },
+  {
+    "id": "proman",
+    "name": "Project Management",
+    "modules": [
+      {
+        "id": 1,
+        "name": "Certification Reviewer",
+        "checkpoints": [
+          "checkpoint1"
+        ]
+      }
+    ]
   }
 ]
