@@ -1,0 +1,809 @@
+[
+  {
+    "question": "1. A user is developing an application to remotely manage a network device through the API. The features of the API should support the client-server model, JSON or XML data format, and stateless operation. What is an API architecture style that the developer could use?",
+    "choices": [
+      "webhook",
+      "RPC",
+      "SOAP",
+      "REST"
+    ],
+    "answer": "REST"
+  },
+  {
+    "question": "2. A user sends a request to add a loopback interface on a Cisco router through the REST API. Which response status code will the user expect to receive that indicates the request is fulfilled?",
+    "choices": [
+      "200",
+      "201",
+      "202",
+      "203"
+    ],
+    "answer": "201"
+  },
+  {
+    "question": "3. Refer to the exhibit. Match the items needed in the Python script. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_164907.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "4. Refer to the exhibit. A student is learning Python in the interpret mode. The student enters Python statements and after a while, an error message returns. What is a possible cause for the error?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/01/2021-09-15_165032.jpg",
+    "choices": [
+      "The student did not provide the authentication credentials.",
+      "The host domain name cannot be resolved.",
+      "The parameter of “verify = False” should be replaced with “verify = True”.",
+      "The resource on the host is not available."
+    ],
+    "answer": "The host domain name cannot be resolved."
+  },
+  {
+    "question": "5. Refer to the exhibit. A developer is constructing a Python script to check the link with a host at http://www.somehost.com/. Which function is performed by the script?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_165258.jpg",
+    "choices": [
+      "to obtain an API key to access the host",
+      "to obtain a token for the bearer authentication",
+      "to verify the private API key that is used to access the host",
+      "to verify the basic authentication credentials with the host"
+    ],
+    "answer": "to verify the basic authentication credentials with the host"
+  },
+  {
+    "question": "6. Which situation illustrates the use of a webhook application?",
+    "choices": [
+      "A user sends a REST API call to a webhook server to poll a predefined data set.",
+      "Triggered by the operation of a user, a mobile application sends a REST API request to get information from a webhook server.",
+      "A network automation application queries a router to get CPU and memory usage over a period of time.",
+      "A developer subscribes to a webhook server for an application so that the application will receive a notification when an event occurs."
+    ],
+    "answer": "A developer subscribes to a webhook server for an application so that the application will receive a notification when an event occurs."
+  },
+  {
+    "question": "7. Refer to the exhibit. A student is learning Python in the interpret mode. The student enters Python statements and an error message returns. What causes the error?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_165558.jpg",
+    "choices": [
+      "The host domain name cannot be resolved.",
+      "The parameter of “verify = True” is missing in the requests.get() method.",
+      "The certificate cannot be verified with a CA.",
+      "The resource on the host is not available."
+    ],
+    "answer": "The certificate cannot be verified with a CA."
+  },
+  {
+    "question": "8. Match the principles in the uniform interface constraint of the REST to the description. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/06/2021-09-15_165852.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "9. Refer to the exhibit. Which portion of the RESTful request specifies the API that is being requested.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_170110.jpg",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "10. A user is testing an application by sending requests to gather information from a network device through a REST API. The user reviews the API responses and notices an HTTP header string of “Cache-Control: max-age=3600, public”. Which two statements describe the HTTP directive? (Choose two.)",
+    "choices": [
+      "The response can be saved in cache and the cached content is open to public access.",
+      "The client web browser can save the response in the cache and it will expire in an hour.",
+      "Only responses to requests with the HTTP protocol can be cached.",
+      "The response may be stored by any cache, even if the response is normally noncacheable.",
+      "The response can be saved in cache and the information must be refreshed after 60 minutes"
+    ],
+    "answer": [
+      "The client web browser can save the response in the cache and it will expire in an hour.",
+      "The response may be stored by any cache, even if the response is normally noncacheable."
+    ]
+  },
+  {
+    "question": "11. Refer to the exhibit. Which parameter is needed in the Python code (in place of the question mark) to test for an invalid URI condition?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_170252.jpg",
+    "choices": [
+      "False",
+      "True",
+      "Yes",
+      "No"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "12. Refer to the exhibit. A student is learning the REST API call to a local host. Match the items needed in the curl command. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_170335.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "13. A network engineer has been asked to automate some of the network management and configuration management. The engineer is going to use NETCONF. Why should the engineer consider also using YANG as part of this project?",
+    "choices": [
+      "YANG is a documented set of URIs that could be used as part of the deployment.",
+      "YANG is a set of software development tools that is integrated with vendor-specific configuration libraries.",
+      "YANG provides a hierarchy of data that can be used for device configuration and operational status retrieval.",
+      "YANG is used to provide the transport to and from a network device such as a Cisco switch."
+    ],
+    "answer": "YANG provides a hierarchy of data that can be used for device configuration and operational status retrieval."
+  },
+  {
+    "question": "14. Match the Cisco NSO component to the description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/06/2021-06-23_221132.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "15. Refer to the exhibit. A user is working on Ansible on the local NMS to manage remote network devices. The user issues the ansible webservers -m ping command to test the communication. However, an error message returns. What are two possible causes for the error? (Choose two.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/01/Q12.jpg",
+    "choices": [
+      "The SSH credential is wrong.",
+      "The destination host IP address is wrong.",
+      "The switch -m should be -M",
+      "The SSH client is not installed.",
+      "The destination host alias is wrong.",
+      "The SSH service does not start on the host."
+    ],
+    "answer": [
+      "The destination host IP address is wrong.",
+      "The SSH service does not start on the host."
+    ]
+  },
+  {
+    "question": "16. The development team in the IT department has decided to implement CI/CD. What are three characteristics of this strategy? (Choose three.)",
+    "choices": [
+      "Strategies are used to limit the impact of a possible bad build to users.",
+      "CI/CD places a higher priority on satisfying the customer needs than does the development plan.",
+      "The integration and development process goes in one direction and can never go backwards.",
+      "It is modeled after the software development life cycle and is a more traditional implementation method.",
+      "The development process attempts to eliminate the problem of application merge conflicts.",
+      "Automation is part of the creation, verification, and deployment of software."
+    ],
+    "answer": [
+      "Strategies are used to limit the impact of a possible bad build to users.",
+      "The development process attempts to eliminate the problem of application merge conflicts.",
+      "Automation is part of the creation, verification, and deployment of software."
+    ]
+  },
+  {
+    "question": "17. What are two features of the formal code review? (Choose two.)",
+    "choices": [
+      "For a quicker turnaround, it involves only one reviewer",
+      "It involves the developer going through code with the reviewer line-by-line.",
+      "It promotes discussion among all of the reviewers.",
+      "It allows the developer to make changes on the spot.",
+      "It involves a review of the entire code base in a series of meetings."
+    ],
+    "answer": [
+      "It promotes discussion among all of the reviewers.",
+      "It involves a review of the entire code base in a series of meetings."
+    ]
+  },
+  {
+    "question": "18. What are two benefits of model-driven programmability in infrastructure automation? (Choose two.)",
+    "choices": [
+      "uses human-readable configuration language",
+      "leverages open-source technology",
+      "leverages code that is coupled with transport, protocol, and encoding",
+      "relies on the use of device-specific scripts",
+      "uses device-specific CLIs"
+    ],
+    "answer": [
+      "uses human-readable configuration language",
+      "leverages open-source technology"
+    ]
+  },
+  {
+    "question": "19. Match the component of Chef to the description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_171620.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "20. A credit union has been growing very rapidly in the past 3 years and the IT department has been struggling to keep up. The department has always been criticized for the time it takes to program and implement change requests. The new CIO has decided to implement CI/CD. What are three benefits of this strategy? (Choose three.)",
+    "choices": [
+      "integrates well with Agile software development methods",
+      "delivers a lot of code in a small amount of time",
+      "improves quality",
+      "is less disruptive to future releases",
+      "is easier to market",
+      "requires the use of multiple communication tools, thus improving development"
+    ],
+    "answer": [
+      "integrates well with Agile software development methods",
+      "improves quality",
+      "is less disruptive to future releases"
+    ]
+  },
+  {
+    "question": "21. Refer to the exhibit. A user is working on Ansible on the local NMS to manage remote network devices. Which file is the user creating?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/03/2021-03-04_225042.jpg",
+    "choices": [
+      "service",
+      "playbook",
+      "variable",
+      "hosts"
+    ],
+    "answer": "hosts"
+  },
+  {
+    "question": "22. What two components form the Python-based network device test and validation solution of pyATS?",
+    "choices": [
+      "Python and VIRL",
+      "Python and Genie",
+      "Python and Puppet",
+      "Python and Ansible"
+    ],
+    "answer": "Python and Genie"
+  },
+  {
+    "question": "23. What is immutable infrastructure in DevOps?",
+    "choices": [
+      "infrastructure that is deployed with all component versions locked except for the ability to perform manual configuration changes",
+      "infrastructure that is only deployed and maintained in containers",
+      "infrastructure that is entirely maintained and deployed in code and never subjected to manual changes",
+      "virtualized infrastructure that is deployed as golden images"
+    ],
+    "answer": "infrastructure that is entirely maintained and deployed in code and never subjected to manual changes"
+  },
+  {
+    "question": "24. Match the OWASP threat to the description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_172157.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "25. Which security device is used to make requests from multiple computers look like they all come from the same client?",
+    "choices": [
+      "stateful firewall",
+      "forward proxy",
+      "reverse proxy",
+      "jump box"
+    ],
+    "answer": "forward proxy"
+  },
+  {
+    "question": "26. Which term is used to describe an automated process of testing and deploying code?",
+    "choices": [
+      "CI/CD",
+      "OWASP",
+      "Agile",
+      "SOAP"
+    ],
+    "answer": "CI/CD"
+  },
+  {
+    "question": "27. What is a benefit of using a bare metal deployment solution?",
+    "choices": [
+      "increased processor and memory resource flexibility",
+      "direct access to hardware resources for increased efficiency",
+      "enhanced security",
+      "addition of an extra layer of abstraction"
+    ],
+    "answer": "direct access to hardware resources for increased efficiency"
+  },
+  {
+    "question": "28. Refer to the exhibit. Which network service is being tested?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_172406.jpg",
+    "choices": [
+      "DHCP",
+      "DNS",
+      "SNMP",
+      "NTP"
+    ],
+    "answer": "DNS"
+  },
+  {
+    "question": "29. What are two benefits of using bare metal software deployment for a large enterprise deploying virtualized servers? (Choose two.)",
+    "choices": [
+      "enhanced resource flexibility",
+      "allocation of separate hardware resources to each application",
+      "direct access to specialized hardware resources",
+      "increased application performance",
+      "isolation of application workloads"
+    ],
+    "answer": [
+      "direct access to specialized hardware resources",
+      "increased application performance"
+    ]
+  },
+  {
+    "question": "30. Match the CI/CD software development philosophy with a description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/01/Q7Dev.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "31. An engineer is implementing an edge computing solution where a number of sensors are streaming a large amount data. Where should the computing capability be placed?",
+    "choices": [
+      "as close to the WAN edge as possible",
+      "as close to the internet as possible",
+      "as close to the network edge as possible",
+      "as close to the sources of data possible"
+    ],
+    "answer": "as close to the sources of data possible"
+  },
+  {
+    "question": "32. What type of attack is being attempted if code similar to this is entered in the login field on a web site?",
+    "choices": [
+      "DoS",
+      "zero day",
+      "brute force",
+      "SQL injection"
+    ],
+    "answer": "SQL injection"
+  },
+  {
+    "question": "33. A student is learning network automation using the DevNet site. Which DevNet resource allows users to search and share their programming skills and experiences?",
+    "choices": [
+      "Code Exchange",
+      "Sandbox",
+      "Learning Labs",
+      "Automation Exchange"
+    ],
+    "answer": "Code Exchange"
+  },
+  {
+    "question": "34. Match the Meraki APIs for integration to the description. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-11-25_112012.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "35. Match the node type in YANG to the description. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_173425.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "36. A network administrator is evaluating Cisco UCS Manager products to deploy centralized management for the data center. The data center has about 500 physical servers. Which product should the administrator choose?",
+    "choices": [
+      "UCS Central (UCSC)",
+      "Unified Communications Manager (CUCM)",
+      "UCS Manager (UCSM)",
+      "Integrated Management Controller (CIMC)"
+    ],
+    "answer": "UCS Central (UCSC)"
+  },
+  {
+    "question": "37. Refer to the exhibit. Match the Python coding components to the location. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/06/2021-09-15_173635.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "38. Match Cisco Advanced Malware Protection (AMP) solution components and product integration options to the description. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_173911.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "39. Which two statements describe the characteristics of the model-driven programmability implemented on Cisco IOS XE? (Choose two.)",
+    "choices": [
+      "The configuration command ip http secure-server is required to enable RESTCONF over port 443.",
+      "Both NETCONF and RESTCONF support running and candidate data stores.",
+      "RESTCONF is enabled by the configuration command restconf enable .",
+      "NETCONF connections should be authenticated using AAA credentials.",
+      "NETCONF connections require that a VPN link be established first."
+    ],
+    "answer": [
+      "The configuration command ip http secure-server is required to enable RESTCONF over port 443.",
+      "NETCONF connections should be authenticated using AAA credentials."
+    ]
+  },
+  {
+    "question": "40. Which REST API supported by Cisco Unified Communications Manager is designed to enable end users to update and configure personal settings.?",
+    "choices": [
+      "UDS API",
+      "UC Manager Serviceability API",
+      "Telephony API",
+      "AXL API"
+    ],
+    "answer": "UDS API"
+  },
+  {
+    "question": "41. Match the principle to the software development method. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_174341.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "42. Match the method of organizing code with the description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_174420.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "43. What is the outcome of performing a Git merge between two branches?",
+    "choices": [
+      "The changes/commits located within both the source branch and target branch are modified to cause the branches to converge.",
+      "The changes/commits located within the source branch are modified to mirror the changes/commits stored within the target branch.",
+      "The changes/commits located within the target branch are modified to mirror the changes/commits stored within the source branch.",
+      "The changes/commits of files within the target branch are analyzed against the changes/commits located within the source branch using a generic comparison tool."
+    ],
+    "answer": "The changes/commits located within the target branch are modified to mirror the changes/commits stored within the source branch."
+  },
+  {
+    "question": "44. What is a philosophy associated with the test-driven development process?",
+    "choices": [
+      "More than enough code is written to support the application.",
+      "Failures are expected to occur in order to limit the application code to only what is needed to pass the test.",
+      "Application code is developed at a slower pace to allow for repetitive testing.",
+      "Application code should be written before validating system design and tested for functionality as needed."
+    ],
+    "answer": "Failures are expected to occur in order to limit the application code to only what is needed to pass the test."
+  },
+  {
+    "question": "45. What are two benefits of using a distributed version control system compared to other version control systems? (Choose two.)",
+    "choices": [
+      "A corrupt repository can be restored from any client system.",
+      "Every user has the ability to work on any file at any time.",
+      "An offline user is not required to make a copy of an important file before editing it further.",
+      "A simple database is used to store the delta between the versions of a single file.",
+      "A single user can lock a file to prevent other users from modifying it until the single user is done editing it."
+    ],
+    "answer": [
+      "A corrupt repository can be restored from any client system.",
+      "Every user has the ability to work on any file at any time."
+    ]
+  },
+  {
+    "question": "46. Match the symbols in a .diff file to the appropriate meaning.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_174655.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "47. Match each stage of the Git distributed version control system with the decription.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_174722.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "48. Which two components of XML code are contained within the XML prologue? (Choose two.)",
+    "choices": [
+      "the character encoding",
+      "the XML namespaces",
+      "the tag name xml",
+      "the URNs",
+      "the instance objects"
+    ],
+    "answer": [
+      "the character encoding",
+      "the tag name xml"
+    ]
+  },
+  {
+    "question": "49. What process would need to be taken to extract information from XML and convert it into a form that Python could access conveniently?",
+    "choices": [
+      "serializing",
+      "encoding",
+      "parsing",
+      "decoding"
+    ],
+    "answer": "parsing"
+  },
+  {
+    "question": "50. What is the purpose of the subnet mask in conjunction with an IP address?",
+    "choices": [
+      "to determine the subnet to which the host belongs",
+      "to identify whether the address is public or private",
+      "to uniquely identify a host on a network",
+      "to mask the IP address to outsiders"
+    ],
+    "answer": "to determine the subnet to which the host belongs"
+  },
+  {
+    "question": "51. A network app developer has configured an app to use a particular DNS server in order to test the application against a test database. The developer suspects a DNS issue. Which command could be used to verify a particular domain name?",
+    "choices": [
+      "ifconfig",
+      "nslookup",
+      "sudo puppet agent -t",
+      "ssh -p 53"
+    ],
+    "answer": "nslookup"
+  },
+  {
+    "question": "52. A developer is using Cisco AnyConnect to connect through a VPN to the DevNet Sandbox. Which AnyConnect preference would cause the connection to fail?",
+    "choices": [
+      "Certificate Store Override",
+      "Use Start Before Login",
+      "Local Lan Access",
+      "Block Untrusted Connections"
+    ],
+    "answer": "Block Untrusted Connections"
+  },
+  {
+    "question": "53. Refer to the exhibit. A company uses three servers to support a new network app. The network administrator is looking to include a load balancer as part of the network design to improve the performance of the application response. Where should the load balancer be installed?",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/06/2021-09-15_174835.jpg",
+    "choices": [
+      "attached to the same switch as the servers",
+      "between the host and the cloud",
+      "between the servers and storage",
+      "within the cloud"
+    ],
+    "answer": "attached to the same switch as the servers"
+  },
+  {
+    "question": "54. What are two reasons a VLAN would be used on a Layer 2 switch? (Choose two.)",
+    "choices": [
+      "to create separate broadcast domains on a switch",
+      "to filter network traffic based on protocol port numbers",
+      "to allow a router to broadcast traffic between two networks",
+      "to allow multiple networks to be created at Layer 2",
+      "to allow traffic to be sent between two networks"
+    ],
+    "answer": [
+      "to create separate broadcast domains on a switch",
+      "to allow multiple networks to be created at Layer 2"
+    ]
+  },
+  {
+    "question": "55. Match the default port number to the network protocol. (Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-09-15_174930.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "56. What are two symptoms that DNS is an issue when developing and testing network scripts? (Choose two.)",
+    "choices": [
+      "no connection between the app and a remote server",
+      "403 error code",
+      "authentication failure",
+      "1XX status code",
+      "host IP address showing 169.x.x.x"
+    ],
+    "answer": [
+      "no connection between the app and a remote server",
+      "authentication failure"
+    ]
+  },
+  {
+    "question": "57. What are two functions of MAC addresses in a LAN? (Choose two.)",
+    "choices": [
+      "to indicate the best path between separate networks",
+      "to uniquely identify a node on a network",
+      "to allow the transfer of frames from source to destination",
+      "to associate with a specific network IP address"
+    ],
+    "answer": [
+      "to uniquely identify a node on a network",
+      "to allow the transfer of frames from source to destination"
+    ]
+  },
+  {
+    "question": "58. Which two port numbers are commonly used for Telnet? (Choose two.)",
+    "choices": [
+      "22",
+      "23",
+      "8008",
+      "830",
+      "992",
+      "53"
+    ],
+    "answer": [
+      "23",
+      "992"
+    ]
+  },
+  {
+    "question": "59. What are three characteristics of containers on a host server? (Choose three.)",
+    "choices": [
+      "They are isolated from each other.",
+      "They virtualize a physical server.",
+      "They all share the same OS.",
+      "They leverage the kernel of the host OS for a quick start.",
+      "They are resource intensive and require several minutes to start.",
+      "They include a guest OS."
+    ],
+    "answer": [
+      "They are isolated from each other.",
+      "They all share the same OS.",
+      "They leverage the kernel of the host OS for a quick start."
+    ]
+  },
+  {
+    "question": "60. What are two characteristics of containers that are running on the same host server? (Choose two.)",
+    "choices": [
+      "They all share the same host operating system.",
+      "They are isolated from each other.",
+      "They each include a guest operating system.",
+      "They each virtualize a different physical server.",
+      "They are resource intensive and require several minutes to start."
+    ],
+    "answer": [
+      "They all share the same host operating system.",
+      "They are isolated from each other."
+    ]
+  },
+  {
+    "question": "61. What is a benefit to an organization of implementing edge computing?",
+    "choices": [
+      "provides low latency and increased bandwidth for remote IoT devices",
+      "minimizes high levels of data transfer across the network",
+      "allows all compute resources to be centralized in the data center",
+      "consolidates compute resources into a single cloud"
+    ],
+    "answer": "minimizes high levels of data transfer across the network"
+  },
+  {
+    "question": "62. What is Bash?",
+    "choices": [
+      "a web application framework written in Python",
+      "a code injection technique used to attack data-driven applications",
+      "a Linux script engine that allows commands to be entered on the command line",
+      "a philosophy for software deployment that figures prominently in the field of DevOps"
+    ],
+    "answer": "a Linux script engine that allows commands to be entered on the command line"
+  },
+  {
+    "question": "63. In which situation would a router be used?",
+    "choices": [
+      "when performing a formal code review",
+      "when testing an app on a cloud-based server",
+      "when developing an app on a private server located on the same network as the development team",
+      "when authenticating to a REST API service on the local host"
+    ],
+    "answer": "when testing an app on a cloud-based server"
+  },
+  {
+    "question": "64. Which two statements accurately describe an advantage or a disadvantage when deploying NAT for IPv4 in a network? (Choose two.)",
+    "choices": [
+      "NAT adds authentication capability to IPv4.",
+      "NAT causes routing tables to include more information.",
+      "NAT introduces problems for some applications that require end-to-end connectivity.",
+      "NAT improves packet handling.",
+      "NAT will impact negatively on switch performance.",
+      "NAT provides a solution to slow down the IPv4 address depletion."
+    ],
+    "answer": [
+      "NAT introduces problems for some applications that require end-to-end connectivity.",
+      "NAT provides a solution to slow down the IPv4 address depletion."
+    ]
+  },
+  {
+    "question": "65. A user makes some REST API calls to a server and the responses from the server include third-party executable code. The user notices that the responses do not work. Which network device may prevent the third-party code from execution?",
+    "choices": [
+      "proxy server",
+      "reverse proxy server",
+      "Layer 3 switch",
+      "firewall"
+    ],
+    "answer": "firewall"
+  },
+  {
+    "question": "66. What is one function of a Layer 2 switch?",
+    "choices": [
+      "duplicates the electrical signal of each frame to every port",
+      "determines which interface is used to forward a frame based on the destination MAC address",
+      "learns the port assigned to a host by examining the destination MAC address",
+      "forwards data based on logical addressing"
+    ],
+    "answer": "determines which interface is used to forward a frame based on the destination MAC address"
+  },
+  {
+    "question": "67. A user is testing an application by sending requests to gather information from a network device through a REST API. The user expects a very large amount of data to be returned. The user requests that the network device sends the data back with the compression algorithm of gzip. What response header string would indicate that the return data is compressed as requested?",
+    "choices": [
+      "Accept-Encoding: compress",
+      "Accept-Encoding: gzip",
+      "Content-Encoding: compress; gzip",
+      "Content-Encoding: gzip"
+    ],
+    "answer": "Content-Encoding: gzip"
+  },
+  {
+    "question": "68. Which type of threat defense is provided by Cisco Umbrella?",
+    "choices": [
+      "monitoring and analyzing network traffic for potential network intrusion attacks",
+      "identifying and blocking zero-day threats that manage to infiltrate the network",
+      "blocking requests to malicious Internet destinations",
+      "blocking hidden malware from both suspicious and legitimate websites"
+    ],
+    "answer": "blocking requests to malicious Internet destinations"
+  },
+  {
+    "question": "69. How does Cisco VIRL benefit the testing and development of code and automation?",
+    "choices": [
+      "Cisco VIRL can duplicate network simulations using a .virl file, which is a JSON file.",
+      "Cisco VIRL can duplicate the performance of SDN software components in optimal production conditions.",
+      "Cisco VIRL can duplicate the same code that runs inside actual Cisco products.",
+      "Cisco VIRL can duplicate the performance of elite hardware components in optimal production conditions."
+    ],
+    "answer": "Cisco VIRL can duplicate the same code that runs inside actual Cisco products."
+  },
+  {
+    "question": "70. What CI/CD software development philosophy ensures code is always in a deployable state through the implementation of short development sprints.",
+    "choices": [
+      "continuous implementation",
+      "continuous deployment",
+      "continuous integration",
+      "continuous delivery"
+    ],
+    "answer": "continuous delivery"
+  },
+  {
+    "question": "71. For what purpose are IPv4 addresses utilized?",
+    "choices": [
+      "An IPv4 address is used to uniquely identify a device on an IP network.",
+      "An IPv4 address is burned into the network card to uniquely identify a device.",
+      "An IPv4 address is used to uniquely identify the application that requested the information from a remote device.",
+      "An IPv4 address is used to identify the number of IP networks available.​"
+    ],
+    "answer": "An IPv4 address is used to uniquely identify a device on an IP network."
+  },
+  {
+    "question": "72. What is the purpose of a default gateway?",
+    "choices": [
+      "to physically connect a computer to a network",
+      "to provide a permanent address to a computer",
+      "to identify the network to which a computer is connected",
+      "to identify the logical address of a networked computer and uniquely identify it to the rest of the network",
+      "to identify the device that allows local network computers to communicate with devices on other networks"
+    ],
+    "answer": "to identify the device that allows local network computers to communicate with devices on other networks"
+  },
+  {
+    "question": "73. Refer to the exhibit. A student is learning network automation by using an API. The student constructs a Python file to communicate with a Webex Teams server. Which two statements describe characteristics of the script? (Choose two.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/q36-1617644226.0406.png",
+    "choices": [
+      "It loads two modules from a Cisco SDK.",
+      "The term people in the script is a class object.",
+      "It is used to obtain an access token from the server.",
+      "It is used to retrieve the email addresses associated with the student.",
+      "The access token is set with a WEBEX_TEAMS_ACCESS_TOKEN environment variable."
+    ],
+    "answer": [
+      "The term people in the script is a class object.",
+      "It is used to retrieve the email addresses associated with the student."
+    ]
+  },
+  {
+    "question": "74. Match the cloud model with a description.",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2021-11-25_110754.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  },
+  {
+    "question": "75. Which software is used to create, run, and manage containers in a virtual environment?",
+    "choices": [
+      "Docker",
+      "VMware",
+      "vSphere",
+      "Fusion"
+    ],
+    "answer": "Docker"
+  },
+  {
+    "question": "76. A developer in a company receives feedback that an app is experiencing poor responses from an application on a server. The network engineer is looking for a solution that scales to multiple servers. Which technology should the engineer consider?",
+    "choices": [
+      "forward proxy",
+      "Docker",
+      "server virtualization",
+      "load balancer"
+    ],
+    "answer": "load balancer"
+  },
+  {
+    "question": "77. Match the protocol to the description.(Not all options are used.)",
+    "img": "https://itexamanswers.net/wp-content/uploads/2021/02/2023-03-04_154522.jpg",
+    "type": "special",
+    "choices": [],
+    "answer": "See image for the answer"
+  }
+]

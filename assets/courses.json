@@ -86,6 +86,13 @@
         "checkpoints": [
           "checkpoint12"
         ]
+      },
+      {
+        "id": 13,
+        "name": "Certification Reviewer",
+        "checkpoints": [
+          "checkpoint13"
+        ]
       }
     ]
   },
