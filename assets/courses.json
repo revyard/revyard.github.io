@@ -72,6 +72,20 @@
         "checkpoints": [
           "checkpoint10"
         ]
+      },
+      {
+        "id": 11,
+        "name": "S3 – (M5 & M6)",
+        "checkpoints": [
+          "checkpoint11"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "S4 – (M7 & M8)",
+        "checkpoints": [
+          "checkpoint12"
+        ]
       }
     ]
   },
