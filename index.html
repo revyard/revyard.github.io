@@ -250,20 +250,28 @@
             text-align: center;
         }
 
-        /* Badge shown when the answer was filled in by AI (not human/Canvas verified) */
+        /* AI badge: anchored to the right edge inside the correct-answer button */
+        .btn.has-ai-badge {
+            position: relative;
+            padding-right: 70px;
+            /* room so long answers never sit under the badge */
+        }
+
         .ai-badge {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
             display: inline-flex;
             align-items: center;
             gap: 4px;
-            margin: 8px auto 0;
-            padding: 3px 10px;
+            padding: 3px 9px;
             border-radius: 12px;
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 700;
             letter-spacing: 0.5px;
             color: #fff;
             background: linear-gradient(135deg, #FF9800, #F57C00);
-            width: fit-content;
         }
 
         /* Progress Header */
@@ -1448,14 +1456,6 @@
             const question = currentQuestions[currentQuestionIndex];
             document.getElementById('questionText').textContent = question.question;
 
-            // Flag AI-filled answers so the reviewer knows they aren't human-verified.
-            if (question.answeredBy === 'ai') {
-                const aiBadge = document.createElement('div');
-                aiBadge.className = 'ai-badge';
-                aiBadge.innerHTML = '<span>🤖</span><span>AI ANSWER</span>';
-                document.getElementById('questionText').appendChild(aiBadge);
-            }
-
             // Update progress header
             updateProgressHeader();
 
@@ -1626,6 +1626,8 @@
             // Update progress header
             updateProgressHeader();
 
+            const isAiAnswered = question.answeredBy === 'ai';
+
             buttons.forEach(button => {
                 const buttonText = button.textContent;
                 const isCorrectAnswer = correctAnswers.includes(buttonText);
@@ -1643,6 +1645,15 @@
                 } else if (isCorrectAnswer) {
                     // Show all correct answers
                     button.classList.add('correct');
+                }
+
+                // Anchor the AI badge to the right inside each correct-answer button.
+                if (isCorrectAnswer && isAiAnswered) {
+                    button.classList.add('has-ai-badge');
+                    const aiBadge = document.createElement('span');
+                    aiBadge.className = 'ai-badge';
+                    aiBadge.innerHTML = '<span>🤖</span><span>AI</span>';
+                    button.appendChild(aiBadge);
                 }
             });
 
