@@ -257,7 +257,7 @@
             /* room so long answers never sit under the badge */
         }
 
-        /* Same look as the answer buttons (outline, themed border/text), as a badge */
+        /* Button-styled badge with the app's green correct-answer accent + fill */
         .ai-badge {
             position: absolute;
             right: 12px;
@@ -266,8 +266,8 @@
             display: inline-flex;
             align-items: center;
             padding: 4px 10px;
-            border: 1px solid var(--btn-border);
-            background-color: transparent;
+            border: 1px solid #4caf50;
+            background-color: var(--correct-bg);
             color: var(--text-color);
             border-radius: 8px;
             font-size: 10px;
