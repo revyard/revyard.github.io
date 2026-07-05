@@ -257,6 +257,7 @@
             /* room so long answers never sit under the badge */
         }
 
+        /* Same look as the answer buttons (outline, themed border/text), as a badge */
         .ai-badge {
             position: absolute;
             right: 12px;
@@ -264,15 +265,14 @@
             transform: translateY(-50%);
             display: inline-flex;
             align-items: center;
-            gap: 4px;
             padding: 4px 10px;
-            border-radius: 50px;
+            border: 1px solid var(--btn-border);
+            background-color: transparent;
+            color: var(--text-color);
+            border-radius: 8px;
             font-size: 10px;
             font-weight: 700;
             letter-spacing: 0.5px;
-            color: #fff;
-            background: var(--accent-gradient);
-            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.35);
         }
 
         /* Progress Header */
@@ -1658,7 +1658,7 @@
                     button.classList.add('has-ai-badge');
                     const aiBadge = document.createElement('span');
                     aiBadge.className = 'ai-badge';
-                    aiBadge.innerHTML = '<span>🤖</span><span>AI</span>';
+                    aiBadge.textContent = 'AI';
                     button.appendChild(aiBadge);
                 }
             });
