@@ -1499,8 +1499,13 @@
                     currentQuestionIndex < currentQuestions.length - 1 ? 'block' : 'none';
                 document.querySelector('.submit-btn').style.display = 'none';
             } else {
-                // Regular multiple choice questions
+                // Regular multiple choice questions. Dedupe choices by text so a
+                // duplicated option (present in some source data) doesn't render as
+                // two buttons and highlight twice on reveal.
+                const seenChoices = new Set();
                 question.choices.forEach(choice => {
+                    if (seenChoices.has(choice)) return;
+                    seenChoices.add(choice);
                     const button = document.createElement('button');
                     button.className = 'btn';
                     button.textContent = choice;
