@@ -250,6 +250,22 @@
             text-align: center;
         }
 
+        /* Badge shown when the answer was filled in by AI (not human/Canvas verified) */
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin: 8px auto 0;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #fff;
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            width: fit-content;
+        }
+
         /* Progress Header */
         .progress-header {
             position: fixed;
@@ -1431,6 +1447,14 @@
         function displayQuestion() {
             const question = currentQuestions[currentQuestionIndex];
             document.getElementById('questionText').textContent = question.question;
+
+            // Flag AI-filled answers so the reviewer knows they aren't human-verified.
+            if (question.answeredBy === 'ai') {
+                const aiBadge = document.createElement('div');
+                aiBadge.className = 'ai-badge';
+                aiBadge.innerHTML = '<span>🤖</span><span>AI ANSWER</span>';
+                document.getElementById('questionText').appendChild(aiBadge);
+            }
 
             // Update progress header
             updateProgressHeader();
